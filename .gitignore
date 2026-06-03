@@ -1,0 +1,9 @@
+# Projetos de produto (dados pessoais, não versionados)
+produto-*/
+
+# Documentação interna e referências de trabalho
+docs/
+
+# Ambiente
+.env
+*.env.local
