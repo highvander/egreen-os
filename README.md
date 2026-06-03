@@ -10,16 +10,8 @@ skill independente, invocada como slash command dentro do Claude Code.
 
 O VTSD OS usa o sistema de skills do Claude Code. Ao abrir o projeto no Claude
 Code, os comandos abaixo ficam disponíveis automaticamente. Cada skill lê a
-memória do projeto (`memoria/`), executa sua tarefa e salva o output na pasta
+memória do produto ativo, executa sua tarefa e salva o output na pasta
 correspondente — sem precisar pedir.
-
-```
-memoria/
-  nicho.md       ← quem é o avatar e o mercado
-  produto.md     ← o que está sendo criado e a que preço
-  funil.md       ← estrutura completa do funil de vendas
-  design.md      ← paleta, tipografia e componentes visuais
-```
 
 ---
 
@@ -30,17 +22,62 @@ extensão VS Code / JetBrains).
 
 ---
 
-## Primeiro uso
+## Instalação
 
 ```bash
-git clone https://github.com/seu-usuario/vtsd-os
+git clone https://github.com/highvander/vtsd-os
 cd vtsd-os
-# Abra a pasta no Claude Code e rode:
+```
+
+Abra a pasta no Claude Code e rode:
+
+```
 /instalar
 ```
 
-O comando `/instalar` conduz uma entrevista de 8 minutos, preenche os arquivos
-de memória e desbloqueia o pipeline completo.
+O comando `/instalar` conduz uma entrevista de 8 minutos, cria a pasta do
+novo produto e desbloqueia o pipeline completo.
+
+---
+
+## Estrutura multi-produto
+
+Cada produto vive em sua própria pasta isolada. Rodar `/instalar` novamente
+**nunca sobrescreve** o produto anterior — cria uma pasta nova automaticamente.
+
+```
+vtsd-os/
+  memoria/
+    formatos.md          ← referência permanente do OS
+    produto-ativo.md     ← aponta para o produto em uso
+  produto-01/            ← criado pelo primeiro /instalar
+    memoria/
+      nicho.md
+      produto.md
+      funil.md
+      design.md          ← gerado por /design (opcional)
+    01-nicho/
+    02-pesquisa-mercado/
+    03-produto/
+    04-concepcao/
+    05-funil/
+    06-copy/
+    06-landing/
+    06-mandala/
+    07-carrossel/
+    07-editorial/
+    07-apresentacao/
+    08-trafego-meta/
+    08-trafego-google/
+    09-analise/
+  produto-02/            ← criado pelo segundo /instalar
+    ...
+  .claude/skills/        ← skills do sistema
+  references/            ← referências técnicas do OS
+```
+
+Todas as pastas `produto-*/` estão no `.gitignore` — os dados de cada produto
+ficam apenas na máquina local.
 
 ---
 
@@ -48,8 +85,8 @@ de memória e desbloqueia o pipeline completo.
 
 | # | Comando | O que entrega |
 |---|---------|---------------|
-| 0 | `/instalar` | Entrevista inicial — configura nicho, produto e funil |
-| 0 | `/design` | Sistema de design (paleta, tipografia, componentes) |
+| 0 | `/instalar` | Entrevista inicial — cria pasta produto-XX/, configura memória e funil |
+| 0 | `/design` | Sistema de design (paleta, tipografia, componentes visuais) |
 | 1 | `/nicho` | Pesquisa e posicionamento de nicho |
 | 1.5 | `/pesquisa-mercado` | Pesquisa profunda em 9 eixos com busca real na web |
 | 2 | `/produto` | 50 ideias de infoproduto em 15 formatos |
@@ -66,32 +103,7 @@ de memória e desbloqueia o pipeline completo.
 | 6 | `/trafego-google` | Campanhas Google Ads |
 | 7 | `/analise` | Métricas, relatórios e otimização |
 | — | `/analista-seo` | Auditoria SEO, GEO e AEO completa |
-
----
-
-## Estrutura de pastas
-
-```
-memoria/          ← contexto persistente do projeto
-01-nicho/         ← outputs de /nicho
-02-pesquisa-mercado/
-03-produto/
-04-concepcao/
-05-funil/
-06-copy/
-06-landing/
-06-mandala/
-07-carrossel/
-07-editorial/
-07-apresentacao/
-08-trafego-meta/
-08-trafego-google/
-09-analise/
-backup/           ← gerado por /reset-produto
-.claude/skills/   ← skills do sistema
-```
-
-Todos os arquivos gerados seguem a convenção `YYYY-MM-DD-descricao-curta.ext`.
+| — | `/reset-produto` | Apaga memória do produto ativo com opção de backup |
 
 ---
 
