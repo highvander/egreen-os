@@ -1,16 +1,8 @@
 ---
 name: analista-seo
 description: >
-  Ferramenta completa de auditoria SEO, GEO e AEO de sites. Analisa qualquer URL
-  para Search Engine Optimization (SEO), Generative Engine Optimization (GEO —
-  para motores de busca com IA como Perplexity, ChatGPT Search e Gemini) e
-  Answer Engine Optimization (AEO — para featured snippets e busca por voz).
-  Use quando o usuário fornecer uma URL, domínio ou site e perguntar sobre
-  desempenho em buscas, problemas de SEO, rankings, prontidão para IA, meta tags,
-  schema markup, qualidade de conteúdo ou visibilidade em buscas. Também ative
-  quando o usuário pedir "auditar meu site", "verificar meu SEO",
-  "por que meu site não aparece", "otimizar para busca com IA" ou qualquer
-  solicitação similar envolvendo um site e desempenho em buscas.
+  Ferramenta completa de auditoria SEO, GEO e AEO de sites. Analisa qualquer URL para Search Engine Optimization (SEO), Generative Engine Optimization (GEO — para motores de busca com IA como Perplexity, ChatGPT Search e Gemini) e Answer Engine Optimization (AEO — para featured snippets e busca por voz).
+  Use quando o usuário fornecer uma URL, domínio ou site e perguntar sobre desempenho em buscas, problemas de SEO, rankings, prontidão para IA, meta tags, schema markup, qualidade de conteúdo ou visibilidade em buscas. Também ative quando o usuário pedir "auditar meu site", "verificar meu SEO", "por que meu site não aparece", "otimizar para busca com IA" ou qualquer solicitação similar envolvendo um site e desempenho em buscas.
 ---
 
 # /analista-seo — Auditoria Completa de SEO, GEO e AEO
