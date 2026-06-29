@@ -56,6 +56,10 @@ Voz de marca já existe para este produto.
 
 Aguarde resposta antes de continuar.
 
+Se "1" (Atualizar): releia `{pasta-ativa}/memoria/brand-voice.md` para extrair os valores atuais. Para cada uma das 8 perguntas do Passo 2, exiba o valor atual como sugestão pré-preenchida e pergunte "O que mudou? (Enter para manter)". Pule perguntas cujo valor o usuário confirmar sem alteração. Ao final, regere apenas os blocos que tiverem respostas alteradas.
+
+Se "2" (Recriar): siga o Passo 2 normalmente, sem carregar valores anteriores.
+
 ---
 
 ## Passo 2 — Entrevista (8 perguntas, uma por vez)
@@ -275,7 +279,7 @@ atualizado_em: {YYYY-MM-DD}
 - **DO:** [regra] → `"[exemplo]"`
 
 ### Don'ts
-- **DON'T:** [regra] → Errado: `"[exemplo]"`
+- **DON'T:** [regra específica] → Errado: `"[exemplo fora do tom]"`
 
 ## Amostras de Copy
 **Headline:** ...
