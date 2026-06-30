@@ -277,7 +277,7 @@ Para cada seção:
 **HTML esperado:**
 ```html
 <h2>[headline de oferta com urgência real]</h2>
-<a href="#checkout" class="cta-primary">[mesmo texto CTA de S1]</a>
+<a href="#s6-cta" class="cta-primary">[mesmo texto CTA de S1]</a>
 <div class="garantia">
   <p>[prazo] dias de garantia incondicional. [O que cobre.]</p>
 </div>
@@ -288,7 +288,7 @@ Para cada seção:
   </details>
   <!-- repetir para 3-5 objeções -->
 </div>
-<a href="#checkout" class="cta-primary">[mesmo texto CTA]</a>
+<a href="#s6-cta" class="cta-primary">[mesmo texto CTA]</a>
 ```
 
 ---
@@ -310,7 +310,9 @@ Salvar em: `{pasta-ativa}/egreen-landing/YYYY-MM-DD-landing-{slug-produto}.html`
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[Nome do Produto de produto.md]</title>
-  [link para Google Fonts de design.md, se existir — omitir se design.md ausente ou sem fonte]
+  <!-- Google Fonts (se design.md tiver fonte definida):
+       Ex: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+       Omitir se design.md ausente ou sem fonte especificada -->
   <style>
     /* === DESIGN TOKENS === */
     :root {
