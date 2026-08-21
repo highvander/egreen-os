@@ -1,6 +1,6 @@
 ﻿---
 name: egreen-mandala
-description: Gera anúncios argumentativos pela Mandala de Anúncios do Leandro Ladeira (VTSD/Fluxo), aplicando o Manual da Copy (15 princípios e 20 vícios proibidos) em cada peça. Use sempre que pedirem anúncio, copy, criativo, post pago, peça de tráfego, anúncio para Instagram/Facebook/Meta Ads, ou mencionarem "mandala de anúncios", "Ladeira", "VTSD", "Fluxo", funil de descoberta/relacionamento/conversão/remarketing, ou os tipos ultra segmentado, problema-solução, pesquisa científica, atualidades trend. Fluxo começa coletando nicho/egreen-produto/tom (uma pergunta por turno), então pergunta o tipo entre 4 opções (Ultra Segmentado, Problema-Solução, Pesquisa Científica, Atualidades Trend), gera 12 ideias numeradas, aluno escolhe 1, skill entrega copy completa (gancho + 2 parágrafos) + 4 opções de CTA por fase do funil, aluno escolhe qual CTA gravar. Tudo filtrado pelos vícios proibidos antes de entregar.
+description: Gera anúncios argumentativos pela Mandala de Anúncios do Leandro Ladeira (VTSD/Fluxo), aplicando o Manual da Copy (15 princípios e 20 vícios proibidos) em cada peça. Use sempre que pedirem anúncio, copy, criativo, post pago, peça de tráfego, anúncio para Instagram/Facebook/Meta Ads, ou mencionarem "mandala de anúncios", "Ladeira", "VTSD", "Fluxo", funil de descoberta/relacionamento/conversão/remarketing, ou os tipos ultra segmentado, problema-solução, pesquisa científica, atualidades trend. Fluxo começa coletando nicho/egreen-produto/tom (uma pergunta por turno), então pergunta o tipo entre 4 opções (Ultra Segmentado, Problema-Solução, Pesquisa Científica, Atualidades Trend), gera 12 ideias numeradas, aluno escolhe 1, skill entrega copy completa (gancho + 2 parágrafos) + 4 opções de CTA por fase do funil, aluno escolhe qual CTA gravar. Também converte a copy aprovada em roteiro de vídeo vertical curto (Reels/TikTok/Stories) com marcação de tempo, quando o aluno pedir "roteiro de vídeo", "reels", "tiktok" ou "vídeo curto". Tudo filtrado pelos vícios proibidos antes de entregar.
 ---
 
 # Mandala de Anúncios — Agente VTSD
@@ -105,6 +105,23 @@ Qual CTA você quer usar?
 
 
 O aluno escolhe qual CTA quer gravar.
+
+### Passo 4B — Modo vídeo curto (Reels/TikTok/Stories), quando pedido
+
+Se o aluno pedir roteiro de vídeo em vez de (ou além da) copy estática, converta o gancho + desenvolvimento aprovados no Passo 4 em roteiro vertical curto, mantendo os mesmos 20 vícios proibidos e os mesmos princípios:
+
+```
+[0-3s] GANCHO (na tela + falado): {gancho do Passo 4, cortado pro tamanho de uma frase de impacto}
+[3-20s] DESENVOLVIMENTO (falado, com sugestão de corte/B-roll a cada 3-5s): {parágrafo 1 e 2 do Passo 4, reescritos em frases curtas de fala, não de leitura}
+[20-30s] CTA (na tela + falado): {CTA escolhido no Passo 4, adaptado pra instrução verbal direta}
+```
+
+Regras específicas do modo vídeo:
+- Gancho falado nos 3 primeiros segundos é obrigatório — sem introdução, sem "oi gente", direto no gancho.
+- Frases curtas, feitas pra fala, não pra leitura silenciosa — quebrar qualquer frase que exigiria pausa pra respirar no meio.
+- Sugerir, entre colchetes, troca de cena/corte a cada 3-5 segundos (mantém retenção), sem inventar produção que o aluno não pediu.
+- Mesma proibição de emoji, exclamação e linguagem de vendedor vale no texto na tela.
+- Se o aluno não especificou a rede, perguntar: Reels/Instagram, TikTok ou Stories — cada uma pode ter variação de duração (Stories mais curto, TikTok pode ir até 60s se o aluno confirmar).
 
 ### Passo 5 — Encerramento
 

@@ -17,7 +17,6 @@ memoria/
   produto-ativo.md     ← aponta para a pasta do produto em uso
 produto-01/
   memoria/             ← nicho.md, produto.md, funil.md, design.md deste produto
-  egreen-nicho/
   egreen-pesquisa/
   egreen-produto/
   egreen-concepcao/
@@ -96,22 +95,28 @@ salvar em múltiplos arquivos e listar todos na confirmação.
 
 ## Pipeline de Skills
 
-Execute nesta ordem para um novo infoproduto:
+**Para criar o produto inteiro do zero — nicho, oferta, funil, identidade, copy, landing, anúncios — use `/egreen-lancamento`.** É o orquestrador mestre: invoca todas as skills abaixo na ordem certa, decide os pontos de escolha com 5 frameworks de validação de mercado (Mom Test, Jobs to Be Done, Lean Startup, pretotipagem de Savoia, PMF Pyramid de Dan Olsen + teste Sean Ellis) e para em 4 gates críticos para aprovação. Use as skills individuais da tabela abaixo diretamente só quando quiser rodar uma etapa isolada.
+
+Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` orquestrar):
 
 | # | Slash Command | O que faz |
 |---|---|---|
+| ★ | `/egreen-lancamento` | Orquestrador mestre: roda o pipeline completo do zero, decide pontos de escolha com 5 frameworks de validação de mercado, para em 4 gates para aprovação |
 | 0 | `/egreen-setup` | Entrevista inicial, cria pasta produto-XX/, configura memoria/, pode invocar /egreen-funil |
 | 0 | `/egreen-design` | Entrevista de marca, gera {pasta-ativa}/memoria/design.md (paleta, tipografia, componentes) |
 | 0 | `/egreen-brand` | Entrevista de voz, gera {pasta-ativa}/memoria/brand-voice.md (tom, arquétipo, vocabulário, do/don't, amostras de copy). Execute antes de /egreen-copy |
-| 1 | `/egreen-nicho` | Pesquisa, validação e posicionamento de nicho |
-| 1.5 | `/egreen-pesquisa` | Pesquisa profunda de nicho em 9 eixos com busca real na web (opcional: `/egreen-produto` chama automaticamente; use direto para relatório completo + HTML com gráficos SVG) |
+| 1 | `/egreen-pesquisa` | Pesquisa profunda de nicho em 9 eixos com busca real na web (opcional: `/egreen-produto` chama automaticamente; use direto para relatório completo + HTML com gráficos SVG). `nicho.md` em si é preenchido pela entrevista de `/egreen-setup` |
 | 2 | `/egreen-produto` | Pesquisa nicho, gera 50 ideias em 15 formatos, usuário escolhe o produto |
 | 2.5 | `/egreen-concepcao` | Concepção do produto escolhido: Promessa, 50 Benefícios, 5 Baldes, Identidade do Consumidor |
+| 2.7 | `/egreen-curriculo` | Currículo/módulos do Curso Simples ou Curso Completo (Backward Design + Bloom + Gagné) — o conteúdo de entrega em si |
+| 2.7 | `/egreen-experiencia` | Missões diárias do Desafio, estrutura da Comunidade, ou roteiro de sessão da Mentoria (Atomic Habits + CMX/FeverBee + GROW) |
 | 3 | `/egreen-funil` | Mapeia funil completo, gera opções de produtos |
 | 4 | `/egreen-copy` | Copy completa de página de vendas em 15 blocos, padrão Light Copy (só texto, entrega Markdown no chat) |
 | 4 | `/egreen-landing` | Página de vendas HTML completa |
 | 4 | `/egreen-emails` | Sequências de email completas: Boas-vindas (5 emails), Nutrição (6 emails), Lançamento (9 emails) |
-| 4 | `/egreen-mandala` | Anúncios argumentativos pela Mandala de Anúncios (4 tipos: Ultra Segmentado, Problema-Solução, Pesquisa Científica, Atualidades Trend) |
+| 4 | `/egreen-mandala` | Anúncios argumentativos pela Mandala de Anúncios (4 tipos) + roteiro de vídeo curto (Reels/TikTok/Stories) |
+| 4 | `/egreen-vsl` | Roteiro de vídeo de venda longo — Webinar/live (Perfect Webinar Script) ou VSL gravada (PASTOR) |
+| 4.5 | `/egreen-posvenda` | Copy do momento da compra em diante: order bump/OTO, onboarding pós-compra, upsell, pedido de depoimento |
 | 5 | `/egreen-carrossel` | Carrossel de curiosidade atemporal para Instagram (7-9 slides, 3 modos visuais) |
 | 5 | `/egreen-editorial` | Carrossel editorial 6 slides (dados, pesquisa, polêmica, contas malucas) |
 | 5 | `/egreen-slides` | Slides de apresentação |
@@ -120,6 +125,14 @@ Execute nesta ordem para um novo infoproduto:
 | 6 | `/egreen-google-ads` | Campanhas Google Ads via MCP |
 | 7 | `/egreen-analise` | Performance do funil: ROAS, CPL, CPA, email, scorecard 0-100, diagnóstico de vazamentos, plano de ação, relatório HTML |
 | — | `/egreen-seo` | Auditoria completa SEO, GEO e AEO de qualquer URL (relatório .docx) |
+| — | `/egreen-posicionamento` | Posicionamento de marca/produto (Dunford + Ries & Trout): escada competitiva, canvas e positioning statement |
+| — | `/egreen-identidade` | Diferenciação de marca e identidade (Neumeier Brand Gap/Zag + Pentagram): onliness statement, insumo para `/egreen-design` |
+| — | `/egreen-copywriting` | Copy persuasiva avulsa — anúncio, e-mail, headline, CTA, VSL (Schwartz + Halbert + Wiebe). Complementa `/egreen-copy` |
+| — | `/egreen-growth` | Estratégia de aquisição e Customer Value Journey em 8 etapas (Patel + Deiss). Complementa `/egreen-funil` |
+| — | `/egreen-cro` | Diagnóstico de conversão e priorização de testes A/B (Peep Laja / CXL) |
+| — | `/egreen-metricas` | Plano de medição, KPIs e segmentação See-Think-Do-Care (Avinash Kaushik) |
+| — | `/egreen-seo-estrategia` | Estratégia de SEO e pauta de conteúdo para tráfego orgânico (Fishkin + Dean) |
+| — | `/egreen-afiliados` | Estrutura programa de afiliados (comissão, kit, regras) e copy de recrutamento (Cialdini + prática Hotmart/Eduzz/Kiwify) |
 
 ---
 
@@ -129,18 +142,22 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 
 | Skill | Salva output em |
 |---|---|
+| `/egreen-lancamento` | `{pasta-ativa}/memoria/status-lancamento.md` (progresso do pipeline; cada fase salva no local da skill correspondente) |
 | `/egreen-setup` | `{pasta-ativa}/memoria/` e atualiza `memoria/produto-ativo.md` |
 | `/egreen-design` | `{pasta-ativa}/memoria/` |
 | `/egreen-brand` | `{pasta-ativa}/memoria/` |
-| `/egreen-nicho` | `{pasta-ativa}/egreen-nicho/` |
 | `/egreen-pesquisa` | `{pasta-ativa}/egreen-pesquisa/` |
 | `/egreen-produto` | `{pasta-ativa}/egreen-pesquisa/` (tabela 50 ideias) |
 | `/egreen-concepcao` | `{pasta-ativa}/egreen-concepcao/` |
+| `/egreen-curriculo` | `{pasta-ativa}/egreen-curriculo/` |
+| `/egreen-experiencia` | `{pasta-ativa}/egreen-experiencia/` |
 | `/egreen-funil` | `{pasta-ativa}/egreen-funil/` |
 | `/egreen-copy` | `{pasta-ativa}/egreen-copy/` |
 | `/egreen-landing` | `{pasta-ativa}/egreen-landing/` |
 | `/egreen-emails` | `{pasta-ativa}/egreen-emails/` |
 | `/egreen-mandala` | `{pasta-ativa}/egreen-mandala/` |
+| `/egreen-vsl` | `{pasta-ativa}/egreen-vsl/` |
+| `/egreen-posvenda` | `{pasta-ativa}/egreen-posvenda/` |
 | `/egreen-carrossel` | `{pasta-ativa}/egreen-carrossel/` |
 | `/egreen-editorial` | `{pasta-ativa}/egreen-editorial/` |
 | `/egreen-brand-carrossel` | `{pasta-ativa}/egreen-carrossel/` |
@@ -150,6 +167,14 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-google-ads` | `{pasta-ativa}/egreen-google-ads/` |
 | `/egreen-analise` | `{pasta-ativa}/egreen-analise/` |
 | `/egreen-seo` | `{pasta-ativa}/egreen-seo/` |
+| `/egreen-posicionamento` | `{pasta-ativa}/egreen-posicionamento/` |
+| `/egreen-identidade` | `{pasta-ativa}/egreen-identidade/` |
+| `/egreen-afiliados` | `{pasta-ativa}/egreen-afiliados/` |
+| `/egreen-copywriting` | `{pasta-ativa}/egreen-copywriting/` |
+| `/egreen-growth` | `{pasta-ativa}/egreen-growth/` |
+| `/egreen-cro` | `{pasta-ativa}/egreen-cro/` |
+| `/egreen-metricas` | `{pasta-ativa}/egreen-metricas/` |
+| `/egreen-seo-estrategia` | `{pasta-ativa}/egreen-seo-estrategia/` |
 
 ---
 
