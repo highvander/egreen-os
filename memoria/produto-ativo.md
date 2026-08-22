@@ -1,5 +1,7 @@
 ---
-produto: produto-01
-nome: Curso de Genealogia Amadora
-atualizado_em: 2026-06-03
+status: vazio
+preenchido_por: /egreen-setup
 ---
+
+<!-- Este arquivo é preenchido automaticamente pela skill /egreen-setup -->
+<!-- Não edite manualmente -->
