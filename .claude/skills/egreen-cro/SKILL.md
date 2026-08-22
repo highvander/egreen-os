@@ -34,7 +34,7 @@ Acione esta skill sempre que o usuário pedir para:
 - Priorizar o que testar em A/B
 - Revisar uma página existente antes de investir em redesign ou nova campanha
 
-**Como se encaixa com as outras skills do Evergreen:**
+**Como se encaixa com as outras skills do EGreen OS:**
 - Entra depois de `egreen-growth`, que já identifica em qual etapa da Customer Value Journey está o gargalo — esta skill aprofunda o diagnóstico *dentro* dessa etapa
 - Entra antes de `egreen-copywriting`/`egreen-copy` — o diagnóstico desta skill vira o briefing para a copy nova, em vez de escrever copy nova sem saber o que realmente trava o usuário
 - Se cruza com `egreen-metricas` (Kaushik) — os passos quantitativos (analytics, mouse tracking) e qualitativos (survey, teste de usuário) desta skill são uma aplicação prática do equilíbrio que Kaushik defende

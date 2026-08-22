@@ -12,7 +12,7 @@ Esta skill combina duas camadas complementares:
 
 Use as duas em conjunto: Neumeier decide *o que* a marca deve comunicar de forma diferenciada; o princípio Pentagram orienta *como estruturar o processo* que vai entregar isso com consistência.
 
-**Como se relaciona com as outras skills do Evergreen:**
+**Como se relaciona com as outras skills do EGreen OS:**
 - `egreen-posicionamento` (Dunford + Ries & Trout) define a categoria de mercado e a mensagem verbal/estratégica — reaproveite o resultado se já existir, em vez de repetir o intake
 - Esta skill (`egreen-identidade`) traduz isso em diferenciação radical e síntese de marca — a "onliness statement" gerada aqui deve ser consistente com o positioning statement já definido
 - `egreen-design` (sistema de design do produto: paleta, tipografia, componentes) é o passo seguinte — ele deve traduzir a onliness statement definida aqui em `{pasta-ativa}/memoria/design.md`. Execute `egreen-identidade` antes de `egreen-design` quando o produto ainda não tiver diferenciação de marca clara

@@ -1,4 +1,4 @@
-# Evergreen — Agentic OS para Marketing Digital de Infoprodutos
+# EGreen OS — Agentic OS para Marketing Digital de Infoprodutos
 
 ## O que é este projeto
 
@@ -8,7 +8,7 @@ Sistema de skills para criação e venda de infoprodutos. Cada skill representa 
 
 ## REGRA 0 — Estrutura multi-produto
 
-Cada produto criado no Evergreen vive em sua própria pasta raiz (`produto-01/`, `produto-02/`, etc.).
+Cada produto criado no EGreen OS vive em sua própria pasta raiz (`produto-01/`, `produto-02/`, etc.).
 O produto ativo é sempre indicado por `memoria/produto-ativo.md`.
 
 ```

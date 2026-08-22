@@ -2,8 +2,8 @@
   "permissions": {
     "allow": [
       "mcp__claude_ai_MCP_Meta_Ads__*",
-      "Write(d:/01. VTSD OS/**)",
-      "Read(d:/01. VTSD OS/**)"
+      "Write(d:/02.Egreen OS/**)",
+      "Read(d:/02.Egreen OS/**)"
     ]
   }
 }
