@@ -16,7 +16,7 @@ memoria/
   formatos.md          ← referência permanente do OS (nunca apagar)
   produto-ativo.md     ← aponta para a pasta do produto em uso
 produto-01/
-  memoria/             ← nicho.md, produto.md, funil.md, design.md deste produto
+  memoria/             ← egreen-nicho.md, egreen-produto.md, egreen-funil.md, egreen-design.md deste produto
   egreen-pesquisa/
   egreen-produto/
   egreen-concepcao/
@@ -45,9 +45,9 @@ Todas as skills usam `{pasta-ativa}/` como raiz para leitura e escrita.
 2. Verifique os arquivos de memória do produto ativo:
 
 ```
-{pasta-ativa}/memoria/nicho.md
-{pasta-ativa}/memoria/produto.md
-{pasta-ativa}/memoria/funil.md
+{pasta-ativa}/memoria/egreen-nicho.md
+{pasta-ativa}/memoria/egreen-produto.md
+{pasta-ativa}/memoria/egreen-funil.md
 ```
 
 Se `memoria/produto-ativo.md` não existir, ou se qualquer arquivo de memória
@@ -62,9 +62,9 @@ tiver `status: vazio` no frontmatter ou estiver ausente:
 
 Após verificar o gate, leia TODOS os arquivos existentes em `{pasta-ativa}/memoria/` antes de executar a skill solicitada.
 
-- `{pasta-ativa}/memoria/nicho.md`, `produto.md`, `funil.md` — contexto do produto ativo
+- `{pasta-ativa}/memoria/egreen-nicho.md`, `egreen-produto.md`, `egreen-funil.md` — contexto do produto ativo
 - `memoria/formatos.md` — referência permanente dos formatos disponíveis (e-book, curso simples, curso completo, desafio, comunidade, mentoria)
-- `{pasta-ativa}/memoria/design.md` — sistema de design do produto. Se existir, **toda skill visual deve carregá-lo antes de gerar qualquer output visual**
+- `{pasta-ativa}/memoria/egreen-design.md` — sistema de design do produto. Se existir, **toda skill visual deve carregá-lo antes de gerar qualquer output visual**
 - `{pasta-ativa}/memoria/brand-voice.md` — voz de marca. Se existir, **toda skill de conteúdo de texto deve carregá-lo antes de gerar qualquer texto**
 
 ---
@@ -110,6 +110,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 2.5 | `/egreen-concepcao` | Concepção do produto escolhido: Promessa, 50 Benefícios, 5 Baldes, Identidade do Consumidor |
 | 2.7 | `/egreen-curriculo` | Currículo/módulos do Curso Simples ou Curso Completo (Backward Design + Bloom + Gagné) — o conteúdo de entrega em si |
 | 2.7 | `/egreen-experiencia` | Missões diárias do Desafio, estrutura da Comunidade, ou roteiro de sessão da Mentoria (Atomic Habits + CMX/FeverBee + GROW) |
+| 2.7 | `/egreen-ebook` | Ebook curto e prático de implementação imediata para produtos low ticket |
 | 3 | `/egreen-funil` | Mapeia funil completo, gera opções de produtos |
 | 4 | `/egreen-copy` | Copy completa de página de vendas em 15 blocos, padrão Light Copy (só texto, entrega Markdown no chat) |
 | 4 | `/egreen-landing` | Página de vendas HTML completa |
@@ -119,7 +120,9 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 4.5 | `/egreen-posvenda` | Copy do momento da compra em diante: order bump/OTO, onboarding pós-compra, upsell, pedido de depoimento |
 | 5 | `/egreen-carrossel` | Carrossel de curiosidade atemporal para Instagram (7-9 slides, 3 modos visuais) |
 | 5 | `/egreen-editorial` | Carrossel editorial 6 slides (dados, pesquisa, polêmica, contas malucas) |
+| 5 | `/egreen-brand-carrossel` | Carrossel editorial com identidade de marca do projeto (design system Principal) |
 | 5 | `/egreen-slides` | Slides de apresentação |
+| 5 | `/egreen-material` | Transforma conteúdo educacional em material didático visual (aula, treinamento, infográfico, dashboard de progresso) |
 | 6 | `/egreen-meta-auth` | Configura autenticação com Meta Ads (MCP OAuth ou App com token permanente no .env) |
 | 6 | `/egreen-meta-ads` | Sobe campanha Meta Ads (Sales ou Leads), preview YAML obrigatório, status PAUSED por padrão |
 | 6 | `/egreen-google-ads` | Campanhas Google Ads via MCP |
@@ -133,6 +136,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | — | `/egreen-metricas` | Plano de medição, KPIs e segmentação See-Think-Do-Care (Avinash Kaushik) |
 | — | `/egreen-seo-estrategia` | Estratégia de SEO e pauta de conteúdo para tráfego orgânico (Fishkin + Dean) |
 | — | `/egreen-afiliados` | Estrutura programa de afiliados (comissão, kit, regras) e copy de recrutamento (Cialdini + prática Hotmart/Eduzz/Kiwify) |
+| — | `/egreen-reset` | Apaga a memória do produto atual e restaura o estado inicial do OS, com backup opcional. Não apaga outputs gerados |
 
 ---
 
@@ -151,6 +155,7 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-concepcao` | `{pasta-ativa}/egreen-concepcao/` |
 | `/egreen-curriculo` | `{pasta-ativa}/egreen-curriculo/` |
 | `/egreen-experiencia` | `{pasta-ativa}/egreen-experiencia/` |
+| `/egreen-ebook` | `{pasta-ativa}/egreen-ebook/` |
 | `/egreen-funil` | `{pasta-ativa}/egreen-funil/` |
 | `/egreen-copy` | `{pasta-ativa}/egreen-copy/` |
 | `/egreen-landing` | `{pasta-ativa}/egreen-landing/` |
@@ -162,6 +167,8 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-editorial` | `{pasta-ativa}/egreen-editorial/` |
 | `/egreen-brand-carrossel` | `{pasta-ativa}/egreen-carrossel/` |
 | `/egreen-slides` | `{pasta-ativa}/egreen-slides/` |
+| `/egreen-material` | `{pasta-ativa}/egreen-material/` |
+| `/egreen-reset` | não gera output (apaga/restaura `memoria/`) |
 | `/egreen-meta-auth` | `{pasta-ativa}/egreen-meta-ads/` |
 | `/egreen-meta-ads` | `{pasta-ativa}/egreen-meta-ads/` |
 | `/egreen-google-ads` | `{pasta-ativa}/egreen-google-ads/` |
