@@ -58,7 +58,7 @@ egreen-os/
     produto-ativo.md       ← aponta para a pasta do produto em uso
   produto-01/
     memoria/
-      nicho.md, produto.md, funil.md, design.md, brand-voice.md
+      egreen-nicho.md, egreen-produto.md, egreen-funil.md, egreen-design.md, brand-voice.md
     egreen-pesquisa/
     egreen-concepcao/
     egreen-curriculo/       ou egreen-experiencia/
@@ -72,6 +72,7 @@ egreen-os/
     egreen-vsl/
     egreen-emails/
     egreen-mandala/
+    egreen-stories/
     egreen-carrossel/       egreen-editorial/       egreen-slides/
     egreen-posvenda/
     egreen-afiliados/
@@ -109,6 +110,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Preciso da copy de checkout, onboarding ou pedido de depoimento | `/egreen-posvenda` |
 | Quero montar um programa de afiliados | `/egreen-afiliados` |
 | Preciso de conteúdo orgânico pro Instagram | `/egreen-carrossel`, `/egreen-editorial` ou `/egreen-slides` |
+| Quero vender direto pelo Direct do Instagram (Stories) | `/egreen-stories` |
 | Preciso subir campanha no Meta ou Google Ads | `/egreen-meta-ads` / `/egreen-google-ads` |
 | Quero saber se meu site está bem posicionado no Google | `/egreen-seo` |
 | Quero planejar uma estratégia de SEO/conteúdo orgânico | `/egreen-seo-estrategia` |
@@ -158,6 +160,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | `/egreen-vsl` | Precisa de roteiro de vídeo de venda longo | Script de Webinar/live ou VSL gravada |
 | `/egreen-emails` | Precisa de sequência de e-mail pré-venda | Boas-vindas, nutrição, lançamento |
 | `/egreen-mandala` | Precisa de anúncio argumentativo ou roteiro de vídeo curto | 4 tipos de anúncio + versão Reels/TikTok/Stories |
+| `/egreen-stories` | Precisa de sequência de Stories pra vender pelo Direct | Roteiro story a story (Stories 10X) + fechamento no Inbox Lucrativo |
 
 ### Fase 4 — Conteúdo orgânico
 
@@ -204,3 +207,4 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 
 - Skill `/egreen-slides` baseada em [frontend-slides](https://github.com/zarazhangrui/frontend-slides) por Zara Zhang — licença MIT
 - `/egreen-mandala` baseada na Mandala de Anúncios de Leandro Ladeira (VTSD/Fluxo)
+- `/egreen-stories` baseada no método Stories 10X de Leandro Ladeira (VTSD/Fluxo)
