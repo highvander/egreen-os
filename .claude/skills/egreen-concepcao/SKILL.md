@@ -1,11 +1,11 @@
 ﻿---
 name: egreen-concepcao
 description: >
-  Concepção de produto em versão final e enxuta. Entrega Promessa, Benefícios, Baldes Para Quem É
-  e Identidade do Consumidor. Substitui os termos da metodologia VTSD por uma linguagem pronta
-  para uso externo (Quadro vira Promessa, Decorados viram Benefícios). Recebe produto, nicho,
-  formato e preço já definidos na pergunta inicial. Não faz pesquisa de mercado. Não sugere preço.
-  Aprovação obrigatória bloco a bloco. Termina gerando um arquivo .md para download.
+  Concepção de produto em versão final e enxuta. Entrega Promessa, Benefícios, Baldes Para Quem É,
+  Identidade do Consumidor e Escopo Mínimo Viável. Substitui os termos da metodologia VTSD por uma
+  linguagem pronta para uso externo (Quadro vira Promessa, Decorados viram Benefícios). Recebe
+  produto, nicho, formato e preço já definidos na pergunta inicial. Não faz pesquisa de mercado.
+  Não sugere preço. Aprovação obrigatória bloco a bloco. Termina gerando um arquivo .md para download.
 ---
 
 # Concepção de Produto Final
@@ -16,6 +16,7 @@ Esta skill executa a concepção completa de um produto digital em formato resum
 - **Benefícios** (equivalente aos Decorados)
 - **Baldes Para Quem É** (5 segmentos)
 - **Identidade do Consumidor** (perfil completo + objeções com 7 quebras)
+- **Escopo Mínimo Viável** (o que entra na v1 vendável agora, o que vira Esteira pra depois)
 
 O **preço** é informado pelo aluno na pergunta inicial (já foi definido em outras skills) e vai direto para o documento final, sem nova sugestão.
 
@@ -431,6 +432,52 @@ Tempo estimado: 3 a 5 minutos.
 
 Se escolher 2, pergunte qual seção (perfil, paliativos, alguma objeção, sonho, frases, comunicação) e regere apenas aquela.
 
+### Etapa 6. Escopo Mínimo Viável
+
+> Independente do nicho, formato ou preço, todo produto passa por aqui antes do currículo (`egreen-curriculo`), da experiência (`egreen-experiencia`) ou do ebook (`egreen-ebook`) serem desenhados. É o freio contra produzir demais antes de validar.
+
+#### O que é
+
+O menor conjunto de entregáveis que já cumpre a Promessa inteira, vendável e usável por alguém desde já, sem esperar o resto ser produzido. Não é uma versão incompleta do produto. É o produto completo, na forma mais direta de entregar.
+
+Tudo que não é indispensável para a Promessa acontecer vira **Esteira**: bônus, próximo produto, upsell, aprofundamento futuro.
+
+**Teste obrigatório por item:** "se eu tirar isso, a Promessa ainda acontece?" Se a resposta é sim, o item é Esteira, não Essencial.
+
+#### Regras de geração
+
+- Liste de 3 a 6 **Entregáveis Essenciais** (o que precisa existir: módulo, aula, ritual, ferramenta, template, sessão).
+- Liste de 2 a 5 itens de **Esteira** (o que fica para depois da venda validar o produto).
+- Cada Entregável Essencial precisa sustentar pelo menos 3 dos 50 Benefícios (Etapa 3). Se um Entregável não sustenta nenhum Benefício, é decoração, corte ou mova para Esteira.
+- Use o formato definido na Etapa 1 (curso, desafio, ebook, mentoria, etc.) para nomear os Entregáveis em termos concretos daquele formato, não genéricos.
+
+Avise antes de gerar:
+
+```
+🔍 Próximo passo: gerar o Escopo Mínimo Viável (Essenciais + Esteira). Tempo estimado: 1 a 2 minutos.
+```
+
+#### Apresentação
+
+```
+Escopo Mínimo Viável:
+
+Essenciais (entram na v1, sem eles a Promessa não acontece):
+1. {entregável essencial}
+2. {entregável essencial}
+...
+
+Esteira (fica para depois, não impede a Promessa):
+1. {item de esteira}
+2. {item de esteira}
+...
+
+1. Aprovar e seguir para o documento final
+2. Quero ajustar
+```
+
+Se escolher 2, pergunte o que ajustar (mover item entre Essencial/Esteira, adicionar, remover) e regere apenas o necessário.
+
 ---
 
 ## Encerramento (geração obrigatória do documento final)
@@ -524,6 +571,18 @@ Estrutura obrigatória do arquivo:
 
 {copiar o documento completo da Etapa 5 na íntegra: Para Quem É, Perfil Demográfico,
 Paliativos, 5 Objeções com 7 argumentos cada, Sonho, Frases que diria, Como se comunicar}
+
+---
+
+## 5. Escopo Mínimo Viável
+
+### Essenciais (v1, sem eles a Promessa não acontece)
+1. {entregável essencial}
+... (3 a 6 itens)
+
+### Esteira (para depois da validação)
+1. {item de esteira}
+... (2 a 5 itens)
 ```
 
 ### Passo 3. Confirmar e entregar o caminho
@@ -547,6 +606,7 @@ Resumo do pacote entregue dentro do arquivo:
 📌 BENEFÍCIOS: 50 itens em 5 categorias
 📌 BALDES PARA QUEM É: 5 segmentos distintos
 📌 IDENTIDADE DO CONSUMIDOR: {nome fictício} com 5 objeções e 35 argumentos de quebra
+📌 ESCOPO MÍNIMO VIÁVEL: {N} entregáveis essenciais na v1, {N} itens na esteira
 📌 PREÇO: R$ {valor informado na Etapa 1}
 
 Concepção concluída.
@@ -570,6 +630,8 @@ Antes de declarar o fluxo encerrado, verifique:
 - [ ] Os 50 Benefícios estão divididos em 5 categorias com exatamente 10 cada
 - [ ] Os 5 Baldes são recortes distintos (não variações do mesmo perfil)
 - [ ] A Identidade do Consumidor tem 5 objeções com 7 argumentos de 2 parágrafos cada
+- [ ] Todo Entregável Essencial do Escopo Mínimo Viável sustenta pelo menos 3 dos 50 Benefícios
+- [ ] Nenhum Entregável Essencial passou no teste "se eu tirar isso, a Promessa ainda acontece?" com resposta sim
 - [ ] Nenhum texto tem travessão, exclamação, lero-lero ou pergunta retórica
 - [ ] O preço informado na Etapa 1 aparece no cabeçalho do documento final e foi usado como referência no Argumento de Valor das objeções
 - [ ] Toda a entrega está em pt_BR com acentuação correta

@@ -31,8 +31,8 @@ Skill que constrói a voz de marca completa via entrevista guiada e salva `{past
 Leia `memoria/produto-ativo.md` para obter `{pasta-ativa}`.
 
 Verifique:
-- `{pasta-ativa}/memoria/nicho.md`
-- `{pasta-ativa}/memoria/produto.md`
+- `{pasta-ativa}/memoria/egreen-nicho.md`
+- `{pasta-ativa}/memoria/egreen-produto.md`
 
 Se ausentes ou com `status: vazio`: **PARE** e instrua:
 
@@ -85,7 +85,7 @@ Se a informação já estiver na memória, pré-preencha uma sugestão:
 > 3. Como profissional (respeito mútuo, linguagem técnica moderada)
 > 4. Como aprendiz (você é guia, ele tem potencial inexplorado)"
 
-Use `nicho.md` para sugerir a opção mais coerente com o público identificado.
+Use `egreen-nicho.md` para sugerir a opção mais coerente com o público identificado.
 
 ### Pergunta 4 — O que a marca nunca diz
 

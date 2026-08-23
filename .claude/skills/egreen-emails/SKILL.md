@@ -22,10 +22,10 @@ Antes de qualquer ação, leia **todos** os arquivos existentes:
 
 ```
 memoria/produto-ativo.md          → pasta ativa (ex: produto-01)
-{pasta-ativa}/memoria/nicho.md    → avatar, dores, linguagem, objeções
-{pasta-ativa}/memoria/produto.md  → produto, preço, promessa, benefícios
-{pasta-ativa}/memoria/funil.md    → lead magnet, funil, oferta, upsells
-{pasta-ativa}/memoria/design.md      → identidade visual (se existir)
+{pasta-ativa}/memoria/egreen-nicho.md    → avatar, dores, linguagem, objeções
+{pasta-ativa}/memoria/egreen-produto.md  → produto, preço, promessa, benefícios
+{pasta-ativa}/memoria/egreen-funil.md    → lead magnet, funil, oferta, upsells
+{pasta-ativa}/memoria/egreen-design.md      → identidade visual (se existir)
 {pasta-ativa}/memoria/brand-voice.md → voz de marca: vocabulário, tom, do/don't, amostras (se existir)
 ```
 
@@ -188,7 +188,7 @@ Email 5 — Dia 8       PITCH DIRETO + REVERSÃO DE RISCO
 **Corpo (Framework PAS):**
 - Recapitula a dor principal em 1 frase
 - Apresenta o produto com clareza: o que é, o que entrega, para quem é
-- Responde à objeção #1 do nicho (extraída de `nicho.md`)
+- Responde à objeção #1 do nicho (extraída de `egreen-nicho.md`)
 - Reversão de risco: garantia, período de teste, política de reembolso
 - CTA: link direto com urgência contextual (não artificial)
 
@@ -228,7 +228,7 @@ Email 6 — Dia 18   OFERTA COM URGÊNCIA SUAVE
 **Corpo:** História de aluno/cliente com: situação antes → decisão → ações → resultado com número → o que aprendeu.
 
 ### Email 5 — Objeção Principal Respondida
-**Objetivo:** Eliminar a barreira de compra #1 identificada em `nicho.md`.
+**Objetivo:** Eliminar a barreira de compra #1 identificada em `egreen-nicho.md`.
 **Tom:** Direto, sem rodeios.
 **Corpo:** "Sei que muitos pensam [objeção exata]. Entendo. Mas aqui está o que a evidência mostra: [argumento]. É por isso que [produto] foi construído para [solução específica]."
 
@@ -285,7 +285,7 @@ D+3 tarde   Email 9 — ÚLTIMO DIA — ENCERRA HOJE
 ### Email 5 — FAQ + Objeções (D0, tarde)
 **Objetivo:** Converter indecisos. Eliminar as 5 objeções mais comuns do nicho.
 **Tom:** Paciente, honesto.
-**Corpo:** "Recebi perguntas. Aqui estão as respostas:" → Q&A real com 5 objeções extraídas de `nicho.md`. CTA no final de cada resposta.
+**Corpo:** "Recebi perguntas. Aqui estão as respostas:" → Q&A real com 5 objeções extraídas de `egreen-nicho.md`. CTA no final de cada resposta.
 
 ### Email 6 — Momentum Social (D+1, manhã)
 **Objetivo:** Criar FOMO através de prova social real.

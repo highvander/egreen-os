@@ -22,9 +22,9 @@ Leia antes de qualquer ação:
 
 ```
 memoria/produto-ativo.md           → pasta ativa
-{pasta-ativa}/memoria/nicho.md     → nicho, avatar
-{pasta-ativa}/memoria/produto.md   → produto, preço, ticket, formato
-{pasta-ativa}/memoria/funil.md     → estrutura do funil, metas de CPL/CPA, lead magnet
+{pasta-ativa}/memoria/egreen-nicho.md     → nicho, avatar
+{pasta-ativa}/memoria/egreen-produto.md   → produto, preço, ticket, formato
+{pasta-ativa}/memoria/egreen-funil.md     → estrutura do funil, metas de CPL/CPA, lead magnet
 ```
 
 Se `produto-ativo.md` ausente ou memória vazia → **PARE**, execute `/egreen-setup`.
@@ -153,7 +153,7 @@ CAC          = Investimento total / Vendas
 
 **2. Captação (0-100)** — Eficiência da página de captura
 - Taxa opt-in da LP: 50 pts
-- CPL vs meta definida em funil.md: 30 pts
+- CPL vs meta definida em egreen-funil.md: 30 pts
 - Qualidade da fonte (baixo descadastro): 20 pts
 
 **3. Conversão (0-100)** — Eficiência da oferta e copy de venda

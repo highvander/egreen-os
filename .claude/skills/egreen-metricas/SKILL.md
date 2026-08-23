@@ -19,8 +19,8 @@ Antes do intake, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/produto.md            → produto, oferta
-{pasta-ativa}/memoria/funil.md              → funil já desenhado (via egreen-funil/egreen-growth)
+{pasta-ativa}/memoria/egreen-produto.md            → produto, oferta
+{pasta-ativa}/memoria/egreen-funil.md              → funil já desenhado (via egreen-funil/egreen-growth)
 ```
 
 Se já existir um output de `egreen-growth` salvo em `{pasta-ativa}/egreen-growth/`, reaproveite o mapa de CVJ (Aware/Engage/.../Promote) na Fase 4 em vez de mapear do zero. Se `memoria/produto-ativo.md` não existir, siga com o intake normal — este passo não bloqueia a skill.

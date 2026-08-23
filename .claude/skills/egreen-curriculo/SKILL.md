@@ -16,13 +16,15 @@ Esta skill desenha o **conteúdo de entrega real** do produto — os módulos e 
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → avatar, nível de conhecimento do público
-{pasta-ativa}/memoria/produto.md            → formato (Curso Simples ou Curso Completo), preço
-{pasta-ativa}/memoria/funil.md              → oferta, bônus já definidos
+{pasta-ativa}/memoria/egreen-nicho.md              → avatar, nível de conhecimento do público
+{pasta-ativa}/memoria/egreen-produto.md            → formato (Curso Simples ou Curso Completo), preço
+{pasta-ativa}/memoria/egreen-funil.md              → oferta, bônus já definidos
 memoria/formatos.md                         → faixa de volume esperada por formato
 ```
 
-Se existir output de `egreen-concepcao` em `{pasta-ativa}/egreen-concepcao/`, leia o mais recente — **a Promessa e os 5 Baldes de lá são o ponto de partida do Estágio 1 do Backward Design abaixo**, não redefina do zero. Se o formato (Simples vs Completo) já estiver definido em `produto.md`/`funil.md`, pule a pergunta correspondente na Fase 0.
+Se existir output de `egreen-concepcao` em `{pasta-ativa}/egreen-concepcao/`, leia o mais recente — **a Promessa e os 5 Baldes de lá são o ponto de partida do Estágio 1 do Backward Design abaixo**, não redefina do zero. Se o formato (Simples vs Completo) já estiver definido em `egreen-produto.md`/`egreen-funil.md`, pule a pergunta correspondente na Fase 0.
+
+**Se existir Escopo Mínimo Viável em `egreen-concepcao`, ele é o teto da v1.** Os Entregáveis Essenciais de lá viram os módulos obrigatórios do currículo (mesmo no Curso Completo). Qualquer módulo além disso (aprofundamento, módulo bônus, tema adjacente) vai para uma seção separada "Módulos de Esteira" no fim do currículo, não misturado com os módulos essenciais — só produza a esteira depois que a v1 validar.
 
 ---
 
@@ -30,8 +32,8 @@ Se existir output de `egreen-concepcao` em `{pasta-ativa}/egreen-concepcao/`, le
 
 Complete o que não veio da memória:
 
-1. Formato: Curso Simples (3-7 aulas) ou Curso Completo (30-60+ módulos, 30-100+ aulas)? — reaproveitar de `produto.md` se já definido
-2. Nível de conhecimento prévio do público-alvo (zero, básico, intermediário) — reaproveitar de `nicho.md`
+1. Formato: Curso Simples (3-7 aulas) ou Curso Completo (30-60+ módulos, 30-100+ aulas)? — reaproveitar de `egreen-produto.md` se já definido
+2. Nível de conhecimento prévio do público-alvo (zero, básico, intermediário) — reaproveitar de `egreen-nicho.md`
 3. A transformação final prometida (reaproveitar Promessa de `egreen-concepcao`, ou perguntar se não existir)
 4. Quanto tempo/recurso existe pra produzir o conteúdo (afeta quão ambicioso o currículo pode ser)
 5. Formato de entrega preferido por aula: vídeo, texto, áudio, ou misto

@@ -25,14 +25,14 @@ Antes de iniciar o fluxo, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → avatar, nicho, linguagem
-{pasta-ativa}/memoria/produto.md            → produto, promessa
+{pasta-ativa}/memoria/egreen-nicho.md              → avatar, nicho, linguagem
+{pasta-ativa}/memoria/egreen-produto.md            → produto, promessa
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
 
 Se `brand-voice.md` existir: pule a pergunta 3 do Passo 1 (tom de voz) e use o arquétipo, dimensões e vocabulário do arquivo. Informe o usuário: "Da memória, seu tom é [arquétipo/dimensões resumidas]. Usando isso como base."
 
-Se `nicho.md` e `produto.md` existirem: pré-preencha sugestões nas perguntas 1 e 2.
+Se `egreen-nicho.md` e `egreen-produto.md` existirem: pré-preencha sugestões nas perguntas 1 e 2.
 
 ---
 

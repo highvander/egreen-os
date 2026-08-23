@@ -3,9 +3,9 @@ name: egreen-landing
 description: >
   Gera a página de vendas HTML completa do infoproduto em 6 seções (S1→S6).
   Carrega memória do produto, lê output do /egreen-copy como insumo, aplica
-  design tokens de design.md e brand-voice.md. Aprovação seção a seção.
+  design tokens de egreen-design.md e brand-voice.md. Aprovação seção a seção.
   Salva HTML único auto-contido em {pasta-ativa}/egreen-landing/.
-  Requer design.md para identidade visual. Avisa se brand-voice.md
+  Requer egreen-design.md para identidade visual. Avisa se brand-voice.md
   ou egreen-copy estiverem ausentes antes de qualquer geração.
 ---
 
@@ -23,9 +23,9 @@ Leia `memoria/produto-ativo.md` para obter `{pasta-ativa}`.
 
 Verifique:
 ```
-{pasta-ativa}/memoria/nicho.md
-{pasta-ativa}/memoria/produto.md
-{pasta-ativa}/memoria/funil.md
+{pasta-ativa}/memoria/egreen-nicho.md
+{pasta-ativa}/memoria/egreen-produto.md
+{pasta-ativa}/memoria/egreen-funil.md
 ```
 
 Se `memoria/produto-ativo.md` não existir, ou qualquer arquivo acima tiver `status: vazio` ou estiver ausente:
@@ -35,17 +35,17 @@ Se `memoria/produto-ativo.md` não existir, ou qualquer arquivo acima tiver `sta
 ### 0.2 Carregar memória do produto (REGRA 2)
 
 Leia todos os arquivos existentes em `{pasta-ativa}/memoria/`:
-- `nicho.md` — público-alvo, dores, objeções comuns
-- `produto.md` — promessa, diferencial, mecanismo único
-- `funil.md` — oferta, bônus, preços, garantia
+- `egreen-nicho.md` — público-alvo, dores, objeções comuns
+- `egreen-produto.md` — promessa, diferencial, mecanismo único
+- `egreen-funil.md` — oferta, bônus, preços, garantia
 
 ### 0.3 Avisos bloqueantes
 
 Verifique cada arquivo abaixo **em ordem**, um por vez. Para cada ausente, exiba o aviso, aguarde resposta e registre a escolha antes de verificar o próximo.
 
-**Se `{pasta-ativa}/memoria/design.md` não existir:**
+**Se `{pasta-ativa}/memoria/egreen-design.md` não existir:**
 ```
-⚠️ design.md não encontrado.
+⚠️ egreen-design.md não encontrado.
 Sem ele, o HTML será gerado com estilo genérico (cores, tipografia e espaçamento padrão — sem a identidade visual da sua marca).
 
 1. Continuar com estilo genérico
@@ -80,10 +80,10 @@ Se escolher "1": registrar e avançar para o próximo aviso.
 Após resolver os avisos, exibir resumo:
 
 ```
-Vou gerar a landing page de [nome do produto de produto.md].
+Vou gerar a landing page de [nome do produto de egreen-produto.md].
 
 Insumos:
-- design.md: [✅ carregado com tokens / ⚠️ estilo genérico]
+- egreen-design.md: [✅ carregado com tokens / ⚠️ estilo genérico]
 - brand-voice.md: [✅ carregado / ⚠️ ausente]
 - egreen-copy: [✅ YYYY-MM-DD-nome.md / ⚠️ gerando copy próprio]
 
@@ -122,7 +122,7 @@ Para cada seção:
 **Objetivo:** Parar o scroll. Criar curiosidade sem revelar o produto completo.
 
 **Insumo preferencial:** Bloco de headline do egreen-copy (se disponível).
-**Fallback:** Gerar headline a partir da promessa de `produto.md`.
+**Fallback:** Gerar headline a partir da promessa de `egreen-produto.md`.
 
 **Elementos obrigatórios:**
 - `<h1>`: headline curiosa ou não-óbvia — premissa, aviso ou ensinamento, não o resultado. Máx 12 palavras.
@@ -148,7 +148,7 @@ Para cada seção:
 **Objetivo:** Construir credibilidade antes de apresentar o produto.
 
 **Insumo preferencial:** Blocos de prova social do egreen-copy.
-**Fallback:** Criar com dados de `nicho.md` e `produto.md`.
+**Fallback:** Criar com dados de `egreen-nicho.md` e `egreen-produto.md`.
 
 **Elementos obrigatórios:**
 - 2-3 cards de depoimento, cada um com:
@@ -156,7 +156,7 @@ Para cada seção:
   - Assinatura: Nome + situação antes
   - Se não houver depoimentos reais: `<!-- PLACEHOLDER: Depoimento — [resultado] + [prazo] + [nome] -->`
 - Números agregados se existirem (ex: "127 alunos", "4.9/5") — exatos, não arredondados
-- Logos de clientes ou mídias se mencionados em `produto.md` ou `funil.md`
+- Logos de clientes ou mídias se mencionados em `egreen-produto.md` ou `egreen-funil.md`
 
 **HTML esperado:**
 ```html
@@ -177,7 +177,7 @@ Para cada seção:
 **Objetivo:** Fazer o leitor pensar "isso sou eu". Construir identificação antes de qualquer menção à solução.
 
 **Insumo preferencial:** Bloco de agitação de problema do egreen-copy.
-**Fallback:** Dores de `nicho.md`.
+**Fallback:** Dores de `egreen-nicho.md`.
 
 **Elementos obrigatórios:**
 - `<h2>`: nomeia a dor específica (não a genérica)
@@ -200,7 +200,7 @@ Para cada seção:
 **Objetivo:** Mostrar por que os outros métodos falham e como este produto resolve a causa raiz.
 
 **Insumo preferencial:** Bloco de mecanismo/solução do egreen-copy.
-**Fallback:** Diferencial de `produto.md`.
+**Fallback:** Diferencial de `egreen-produto.md`.
 
 **Elementos obrigatórios:**
 - `<h2>`: nomeia por que os outros falham (sem atacar concorrentes pelo nome)
@@ -223,15 +223,15 @@ Para cada seção:
 
 **Objetivo:** Mostrar que o valor recebido é muito maior que o preço.
 
-**Insumo preferencial:** Blocos de oferta e bônus do egreen-copy + dados de `funil.md`.
-**Fallback:** Construir inteiramente a partir de `funil.md`.
+**Insumo preferencial:** Blocos de oferta e bônus do egreen-copy + dados de `egreen-funil.md`.
+**Fallback:** Construir inteiramente a partir de `egreen-funil.md`.
 
 **Elementos obrigatórios:**
 - `<h2>` da oferta
-- Lista de value stack com produto principal + todos os bônus de `funil.md`:
+- Lista de value stack com produto principal + todos os bônus de `egreen-funil.md`:
   - Cada item: nome + o que resolve em 1 linha + valor declarado
 - Linha de total riscado vs preço real
-- Se houver order bump em `funil.md`: mencionar como oferta adicional após a tabela
+- Se houver order bump em `egreen-funil.md`: mencionar como oferta adicional após a tabela
 
 **HTML esperado:**
 ```html
@@ -263,14 +263,14 @@ Para cada seção:
 
 **Objetivo:** Remover última barreira e converter.
 
-**Insumo preferencial:** Bloco de fechamento do egreen-copy + dados de `funil.md`.
-**Fallback:** Objeções de `nicho.md` + garantia de `funil.md`.
+**Insumo preferencial:** Bloco de fechamento do egreen-copy + dados de `egreen-funil.md`.
+**Fallback:** Objeções de `egreen-nicho.md` + garantia de `egreen-funil.md`.
 
 **Elementos obrigatórios:**
 - `<h2>`: urgência real (sem criar escassez falsa)
 - CTA principal (mesmo texto e href de S1)
 - Bloco de garantia: prazo + o que cobre
-- FAQ com 3-5 itens em `<details>/<summary>` com objeções reais de `nicho.md`
+- FAQ com 3-5 itens em `<details>/<summary>` com objeções reais de `egreen-nicho.md`
 - CTA final repetido abaixo do FAQ
 - Sem links externos que desviem da conversão
 
@@ -297,7 +297,7 @@ Para cada seção:
 
 Após aprovação de S6, montar o HTML completo com a estrutura abaixo. Substituir cada marcador `[SX conteúdo aprovado]` pelo conteúdo interno da seção aprovada (apenas o conteúdo dentro da `<div class="container">`, sem a tag `<section>` externa).
 
-Determinar `{slug-produto}`: pegar o nome do produto de `produto.md`, converter para minúsculas, substituir espaços e acentos por hífens (ex: "Método Foco" → "metodo-foco").
+Determinar `{slug-produto}`: pegar o nome do produto de `egreen-produto.md`, converter para minúsculas, substituir espaços e acentos por hífens (ex: "Método Foco" → "metodo-foco").
 
 Salvar em: `{pasta-ativa}/egreen-landing/YYYY-MM-DD-landing-{slug-produto}.html`
 
@@ -309,24 +309,24 @@ Salvar em: `{pasta-ativa}/egreen-landing/YYYY-MM-DD-landing-{slug-produto}.html`
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Nome do Produto de produto.md]</title>
-  <!-- Google Fonts (se design.md tiver fonte definida):
+  <title>[Nome do Produto de egreen-produto.md]</title>
+  <!-- Google Fonts (se egreen-design.md tiver fonte definida):
        Ex: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-       Omitir se design.md ausente ou sem fonte especificada -->
+       Omitir se egreen-design.md ausente ou sem fonte especificada -->
   <style>
     /* === DESIGN TOKENS === */
     :root {
-      /* Cores — usar tokens reais de design.md se carregado; usar genéricos abaixo se ausente */
-      --brand-500: [hex de design.md ou #2563EB];
-      --brand-400: [hex de design.md ou #3B82F6];
-      --brand-100: [hex de design.md ou #DBEAFE];
-      --neutral-900: [hex de design.md ou #111827];
-      --neutral-600: [hex de design.md ou #4B5563];
-      --neutral-50:  [hex de design.md ou #F9FAFB];
+      /* Cores — usar tokens reais de egreen-design.md se carregado; usar genéricos abaixo se ausente */
+      --brand-500: [hex de egreen-design.md ou #2563EB];
+      --brand-400: [hex de egreen-design.md ou #3B82F6];
+      --brand-100: [hex de egreen-design.md ou #DBEAFE];
+      --neutral-900: [hex de egreen-design.md ou #111827];
+      --neutral-600: [hex de egreen-design.md ou #4B5563];
+      --neutral-50:  [hex de egreen-design.md ou #F9FAFB];
       --white: #FFFFFF;
-      /* Tipografia — usar família de design.md se carregado */
-      --font-display: [família de design.md ou 'Inter'], sans-serif;
-      --font-body:    [família de design.md ou 'Inter'], sans-serif;
+      /* Tipografia — usar família de egreen-design.md se carregado */
+      --font-display: [família de egreen-design.md ou 'Inter'], sans-serif;
+      --font-body:    [família de egreen-design.md ou 'Inter'], sans-serif;
       /* Espaçamento (grade de 4) */
       --space-4:  4px;  --space-8:  8px;  --space-12: 12px;
       --space-16: 16px; --space-24: 24px; --space-32: 32px;
@@ -487,4 +487,4 @@ Próximo passo: /egreen-meta-ads — subir campanha com a landing pronta
 - Não gera JavaScript interativo (countdown, pop-ups, animações)
 - Não integra checkout — usar placeholder de link para Hotmart/Kiwify
 - Não cria imagens — usar `<!-- PLACEHOLDER: nome-arquivo.jpg -->` no HTML
-- Não define oferta ou bônus — lê de `funil.md` e/ou `egreen-copy`
+- Não define oferta ou bônus — lê de `egreen-funil.md` e/ou `egreen-copy`

@@ -21,6 +21,8 @@ O ebook deve parecer menos um material educacional e mais um **atalho organizado
 
 ## ETAPA 1 — ENTENDIMENTO (OBRIGATÓRIO)
 
+Se existir output de `egreen-concepcao` (`{pasta-ativa}/egreen-concepcao/`), reaproveite a Promessa e o Escopo Mínimo Viável de lá em vez de perguntar de novo — os Entregáveis Essenciais listados lá já são o conteúdo do ebook. Pule as perguntas correspondentes na Rodada 1.
+
 Antes de criar qualquer coisa, colete as informações usando `ask_user_input_v0`:
 
 **Rodada 1 (3 perguntas):**

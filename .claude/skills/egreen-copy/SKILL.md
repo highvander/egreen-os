@@ -37,9 +37,9 @@ Antes de qualquer pergunta, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → avatar, dores, linguagem
-{pasta-ativa}/memoria/produto.md            → produto, preço, promessa
-{pasta-ativa}/memoria/funil.md              → funil, oferta
+{pasta-ativa}/memoria/egreen-nicho.md              → avatar, dores, linguagem
+{pasta-ativa}/memoria/egreen-produto.md            → produto, preço, promessa
+{pasta-ativa}/memoria/egreen-funil.md              → funil, oferta
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
 

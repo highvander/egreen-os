@@ -21,11 +21,11 @@ os outputs gerados. O reset apaga apenas a memória (gate) — outputs não são
 
 Leia `memoria/egreen-produto.md` e `memoria/egreen-nicho.md` para extrair o nome do projeto.
 
-- Se `produto.md` tiver `status: vazio`, usar o nicho como identificador.
+- Se `egreen-produto.md` tiver `status: vazio`, usar o nicho como identificador.
 - Se ambos estiverem vazios, avisar que não há projeto ativo e encerrar.
 
-Nome do projeto para exibição: derivar do campo **Nome** de `produto.md` ou do
-campo **Nicho** de `nicho.md`, no formato legível (ex: "Curso de Genealogia Amadora").
+Nome do projeto para exibição: derivar do campo **Nome** de `egreen-produto.md` ou do
+campo **Nicho** de `egreen-nicho.md`, no formato legível (ex: "Curso de Genealogia Amadora").
 
 ---
 

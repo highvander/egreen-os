@@ -16,8 +16,8 @@ Esta skill escreve o conteúdo das etapas da jornada que vêm **depois da decis�
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/produto.md            → produto, preço
-{pasta-ativa}/memoria/funil.md              → order bump/OTO/upsell já definidos, garantia
+{pasta-ativa}/memoria/egreen-produto.md            → produto, preço
+{pasta-ativa}/memoria/egreen-funil.md              → order bump/OTO/upsell já definidos, garantia
 ```
 
 Se existir output de `egreen-growth` (`{pasta-ativa}/egreen-growth/`), reaproveite o mapa de Excite/Ascend/Advocate de lá em vez de perguntar do zero — esta skill escreve o conteúdo daquilo que `egreen-growth` já diagnosticou como lacuna nessas etapas.
@@ -38,7 +38,7 @@ Pergunte qual módulo o usuário precisa (pode ser mais de um):
 
 ## MÓDULO 1 — Order bump / OTO
 
-1. Confirme se já existe order bump/OTO definido em `funil.md`; se não, isso precisa ser resolvido em `egreen-funil` primeiro — esta skill escreve a copy, não desenha a oferta.
+1. Confirme se já existe order bump/OTO definido em `egreen-funil.md`; se não, isso precisa ser resolvido em `egreen-funil` primeiro — esta skill escreve a copy, não desenha a oferta.
 2. Aplique a Value Equation de Hormozi: identifique qual dos 4 fatores (resultado, probabilidade, tempo, esforço) essa oferta complementar melhora especificamente.
 3. **Order bump**: uma frase de benefício + preço ancorado, sem reabrir objeção da oferta principal.
 4. **OTO (thank-you page)**: mais espaço que o order bump, mas ainda curto — sem quebrar o "modo comprador" com página longa.

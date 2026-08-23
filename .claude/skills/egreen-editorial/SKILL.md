@@ -60,8 +60,8 @@ Antes de iniciar, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, avatar, linguagem
-{pasta-ativa}/memoria/produto.md            → produto
+{pasta-ativa}/memoria/egreen-nicho.md              → nicho, avatar, linguagem
+{pasta-ativa}/memoria/egreen-produto.md            → produto
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
 

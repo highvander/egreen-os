@@ -24,14 +24,14 @@ Antes de iniciar, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, avatar
-{pasta-ativa}/memoria/produto.md            → produto
+{pasta-ativa}/memoria/egreen-nicho.md              → nicho, avatar
+{pasta-ativa}/memoria/egreen-produto.md            → produto
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
 
 Se `brand-voice.md` existir: aplique vocabulário autorizado, evite proibidos e siga o guia do/don't ao escrever os slides. O tom das amostras de copy do arquivo serve como âncora para a narrativa.
 
-Se `nicho.md` e `produto.md` existirem: pré-preencha sugestões nas perguntas de nicho e produto da Etapa 1.
+Se `egreen-nicho.md` e `egreen-produto.md` existirem: pré-preencha sugestões nas perguntas de nicho e produto da Etapa 1.
 
 ---
 

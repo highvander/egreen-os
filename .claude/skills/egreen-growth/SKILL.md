@@ -22,9 +22,9 @@ Antes do intake, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, canais já usados
-{pasta-ativa}/memoria/produto.md            → produto, público
-{pasta-ativa}/memoria/funil.md              → funil de oferta já desenhado (se houver, via egreen-funil)
+{pasta-ativa}/memoria/egreen-nicho.md              → nicho, canais já usados
+{pasta-ativa}/memoria/egreen-produto.md            → produto, público
+{pasta-ativa}/memoria/egreen-funil.md              → funil de oferta já desenhado (se houver, via egreen-funil)
 ```
 
 Use esses dados para pular perguntas da Fase 0 abaixo cujas respostas já estejam na memória. Se `memoria/produto-ativo.md` não existir, siga com o intake normal — este passo não bloqueia a skill.

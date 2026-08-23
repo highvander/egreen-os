@@ -16,19 +16,21 @@ Esta skill desenha o **conteúdo de entrega real** dos três formatos de `memori
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → avatar, dores
-{pasta-ativa}/memoria/produto.md            → formato (Desafio, Comunidade ou Mentoria), preço
-{pasta-ativa}/memoria/funil.md              → oferta, bônus já definidos
+{pasta-ativa}/memoria/egreen-nicho.md              → avatar, dores
+{pasta-ativa}/memoria/egreen-produto.md            → formato (Desafio, Comunidade ou Mentoria), preço
+{pasta-ativa}/memoria/egreen-funil.md              → oferta, bônus já definidos
 memoria/formatos.md                         → estrutura esperada do formato escolhido
 ```
 
-Se existir output de `egreen-concepcao` (`{pasta-ativa}/egreen-concepcao/`), reaproveite a Promessa como o resultado final que a experiência (desafio/comunidade/mentoria) precisa entregar. Se o formato já estiver definido em `produto.md`, pule a pergunta 1 da Fase 0.
+Se existir output de `egreen-concepcao` (`{pasta-ativa}/egreen-concepcao/`), reaproveite a Promessa como o resultado final que a experiência (desafio/comunidade/mentoria) precisa entregar. Se o formato já estiver definido em `egreen-produto.md`, pule a pergunta 1 da Fase 0.
+
+**Se existir Escopo Mínimo Viável em `egreen-concepcao`, ele é o teto da v1.** Os Entregáveis Essenciais de lá viram as missões/rituais/sessões obrigatórias (não desenhe mais dias de desafio, mais canais de comunidade ou mais sessões de mentoria do que o necessário pra cumprir só esses). Qualquer ideia extra de engajamento vai para uma seção "Esteira / Fase 2" separada no fim, só implementada depois que a v1 validar.
 
 ---
 
 ## FASE 0 — Intake
 
-1. Qual dos três formatos: Desafio, Comunidade ou Mentoria? (reaproveitar de `produto.md` se já definido)
+1. Qual dos três formatos: Desafio, Comunidade ou Mentoria? (reaproveitar de `egreen-produto.md` se já definido)
 2. A transformação final prometida (reaproveitar de `egreen-concepcao` se existir)
 3. Canal de entrega disponível (WhatsApp, Telegram, Discord, área de membros, Zoom/Meet)
 4. Duração: para Desafio, quantos dias (7-21); para Mentoria, quantos meses e frequência de sessão; para Comunidade, se é lançamento novo ou já existe base de membros

@@ -29,8 +29,8 @@ Antes de começar o intake, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, avatar, concorrentes
-{pasta-ativa}/memoria/produto.md            → produto, formato, preço, promessa
+{pasta-ativa}/memoria/egreen-nicho.md              → nicho, avatar, concorrentes
+{pasta-ativa}/memoria/egreen-produto.md            → produto, formato, preço, promessa
 ```
 
 Use esses dados para pular perguntas da Fase 0 abaixo cujas respostas já estejam na memória. Se `memoria/produto-ativo.md` não existir ou os arquivos estiverem com `status: vazio`, siga com o intake normal perguntando ao usuário — este passo não bloqueia a skill.

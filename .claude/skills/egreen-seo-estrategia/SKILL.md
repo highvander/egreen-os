@@ -22,8 +22,8 @@ Antes do intake, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, avatar, concorrentes
-{pasta-ativa}/memoria/produto.md            → produto, público
+{pasta-ativa}/memoria/egreen-nicho.md              → nicho, avatar, concorrentes
+{pasta-ativa}/memoria/egreen-produto.md            → produto, público
 ```
 
 Se já existir posicionamento salvo (`egreen-posicionamento`) ou plano de growth (`egreen-growth`), reaproveite público-alvo, canais e funil já mapeados em vez de repetir o intake. Se `memoria/produto-ativo.md` não existir, siga com o intake normal — este passo não bloqueia a skill.
@@ -66,7 +66,7 @@ FASE 5 — Métricas                → o que medir, e o que não confundir com 
 
 Complete o que não veio da memória (pergunte ao usuário o que faltar; não invente dados sobre o negócio real):
 
-1. O que o produto vende e para quem (reaproveitar de `egreen-posicionamento`/`nicho.md` se já existir)
+1. O que o produto vende e para quem (reaproveitar de `egreen-posicionamento`/`egreen-nicho.md` se já existir)
 2. Site/domínio já existe? Há quanto tempo? Já publica conteúdo hoje?
 3. Alguma métrica atual de tráfego orgânico, ranking ou backlinks (mesmo aproximada)?
 4. Quanta capacidade de produção de conteúdo existe (pessoas, orçamento, cadência)?

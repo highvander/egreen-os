@@ -15,7 +15,7 @@ Use as duas em conjunto: Neumeier decide *o que* a marca deve comunicar de forma
 **Como se relaciona com as outras skills do EGreen OS:**
 - `egreen-posicionamento` (Dunford + Ries & Trout) define a categoria de mercado e a mensagem verbal/estratégica — reaproveite o resultado se já existir, em vez de repetir o intake
 - Esta skill (`egreen-identidade`) traduz isso em diferenciação radical e síntese de marca — a "onliness statement" gerada aqui deve ser consistente com o positioning statement já definido
-- `egreen-design` (sistema de design do produto: paleta, tipografia, componentes) é o passo seguinte — ele deve traduzir a onliness statement definida aqui em `{pasta-ativa}/memoria/design.md`. Execute `egreen-identidade` antes de `egreen-design` quando o produto ainda não tiver diferenciação de marca clara
+- `egreen-design` (sistema de design do produto: paleta, tipografia, componentes) é o passo seguinte — ele deve traduzir a onliness statement definida aqui em `{pasta-ativa}/memoria/egreen-design.md`. Execute `egreen-identidade` antes de `egreen-design` quando o produto ainda não tiver diferenciação de marca clara
 
 ---
 
@@ -25,12 +25,12 @@ Antes do intake, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, concorrentes
-{pasta-ativa}/memoria/produto.md            → produto, público
-{pasta-ativa}/memoria/design.md             → identidade visual já existente (se houver)
+{pasta-ativa}/memoria/egreen-nicho.md              → nicho, concorrentes
+{pasta-ativa}/memoria/egreen-produto.md            → produto, público
+{pasta-ativa}/memoria/egreen-design.md             → identidade visual já existente (se houver)
 ```
 
-Se já existir um posicionamento salvo (output anterior de `egreen-posicionamento` em `{pasta-ativa}/egreen-posicionamento/`), leia o mais recente e reaproveite público-alvo, categoria e diferencial em vez de perguntar de novo. Se `design.md` já existir, trate como "identidade visual atual" na Fase 0 em vez de perguntar do zero.
+Se já existir um posicionamento salvo (output anterior de `egreen-posicionamento` em `{pasta-ativa}/egreen-posicionamento/`), leia o mais recente e reaproveite público-alvo, categoria e diferencial em vez de perguntar de novo. Se `egreen-design.md` já existir, trate como "identidade visual atual" na Fase 0 em vez de perguntar do zero.
 
 ---
 
@@ -62,7 +62,7 @@ FASE 5 — Nota de estrutura (Pentagram)  → como organizar a entrega para mant
 
 Complete o que não veio da memória (pergunte ao usuário o que faltar; não invente dados sobre o negócio real):
 
-1. O que o produto vende e para quem (reaproveitar de `egreen-posicionamento`/`nicho.md` se já existir)
+1. O que o produto vende e para quem (reaproveitar de `egreen-posicionamento`/`egreen-nicho.md` se já existir)
 2. O que já existe de identidade visual hoje (nome, logo, cores, tom de voz) — ou se é do zero
 3. Quem são os concorrentes diretos e como eles se apresentam visualmente/verbalmente (para identificar o "zig" comum do mercado)
 4. Se já existe positioning statement definido (via `egreen-posicionamento`)
@@ -112,7 +112,7 @@ A onliness statement não deve ficar só no papel — verifique/recomende como e
 |---|---|
 | Nomear/simbolizar | Nome, logo, paleta de cores e tipografia refletem essa singularidade (ver `egreen-design`) |
 | Projetar experiências | Landing page, produto, comunidade, atendimento — todos os pontos de contato reforçam a mesma ideia |
-| Verificar consistência | Existe `{pasta-ativa}/memoria/design.md` (ainda que simples) para novos materiais seguirem a mesma linha |
+| Verificar consistência | Existe `{pasta-ativa}/memoria/egreen-design.md` (ainda que simples) para novos materiais seguirem a mesma linha |
 | Cultivar relacionamento | A comunicação evolui com base em reação real do público, sem perder a singularidade central |
 
 Se alguma dessas áreas não reflete a onliness statement, sinalizar como prioridade de ajuste antes de investir em mais peças de marca.

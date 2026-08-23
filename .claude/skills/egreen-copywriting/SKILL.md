@@ -25,9 +25,9 @@ Antes de perguntar qualquer coisa ao usuário, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → avatar, dores, linguagem do público
-{pasta-ativa}/memoria/produto.md            → produto, preço, promessa
-{pasta-ativa}/memoria/funil.md              → oferta, estágio do funil
+{pasta-ativa}/memoria/egreen-nicho.md              → avatar, dores, linguagem do público
+{pasta-ativa}/memoria/egreen-produto.md            → produto, preço, promessa
+{pasta-ativa}/memoria/egreen-funil.md              → oferta, estágio do funil
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
 

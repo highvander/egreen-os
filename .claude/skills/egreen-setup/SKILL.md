@@ -88,7 +88,7 @@ Se a resposta for vaga, pedir concretude uma única vez. Registrar o que vier.
 >
 > Digite o número:"
 
-- **Opção 1:** invocar a skill `/egreen-funil`. O `funil.md` será preenchido por ela.
+- **Opção 1:** invocar a skill `/egreen-funil`. O `egreen-funil.md` será preenchido por ela.
 - **Opção 2:** salvar `{pasta-ativa}/memoria/egreen-funil.md` com `status: a-mapear` e seguir.
 
 ---
@@ -166,7 +166,7 @@ atualizado_em: YYYY-MM-DD
 # Proposta de valor
 
 **Transformação:** [resposta 8]
-**Para quem:** [do avatar em nicho.md]
+**Para quem:** [do avatar em egreen-nicho.md]
 **Diferencial:** [inferir das respostas]
 
 # Próximos passos

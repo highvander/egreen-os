@@ -16,9 +16,9 @@ Esta skill estrutura o programa de afiliados/parceiros — regras, comissão, ki
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/produto.md            → produto, preço
-{pasta-ativa}/memoria/funil.md              → margem disponível pra comissão
-{pasta-ativa}/memoria/nicho.md              → onde encontrar afiliados potenciais (mesmo nicho, público adjacente)
+{pasta-ativa}/memoria/egreen-produto.md            → produto, preço
+{pasta-ativa}/memoria/egreen-funil.md              → margem disponível pra comissão
+{pasta-ativa}/memoria/egreen-nicho.md              → onde encontrar afiliados potenciais (mesmo nicho, público adjacente)
 ```
 
 Se existir output de `egreen-copywriting`, `egreen-mandala` ou `egreen-emails`, reaproveite como base do kit de afiliado (Fase 2) em vez de escrever do zero.
@@ -52,7 +52,7 @@ Sinalize ao usuário se algum desses 4 pontos ficou indefinido — programa sem 
 Monte a lista do que precisa existir (reaproveitando outputs já salvos quando existirem):
 - Copy de anúncio pronta (de `egreen-copywriting`/`egreen-mandala`)
 - E-mails prontos pra lista do afiliado (de `egreen-emails`, adaptado pra tom de terceiro)
-- Argumentos de venda / principais objeções já resolvidas (de `nicho.md`)
+- Argumentos de venda / principais objeções já resolvidas (de `egreen-nicho.md`)
 - Banners/criativos (referenciar `egreen-carrossel`/`egreen-editorial` se aplicável)
 
 Se algum item não existir ainda, sinalizar como pendência antes do programa ser lançado — programa sem kit pronto tem taxa de ativação muito menor.
@@ -88,6 +88,6 @@ Próximo passo: configurar o programa na plataforma (Hotmart/Eduzz/Kiwify) e env
 
 ## Notas de estilo
 
-- Nunca prometer comissão acima da margem real definida em `funil.md`.
+- Nunca prometer comissão acima da margem real definida em `egreen-funil.md`.
 - Nunca inventar resultado de afiliado pra usar como prova social — usar só o que o usuário confirmar como real e autorizado.
 - Entregar em formato de tabela/lista clara (estrutura do programa) + texto pronto (carta de convite). Se o usuário pedir arquivo específico, gerar no formato apropriado; caso contrário, entregue na conversa e salve o Markdown conforme o Passo Final.

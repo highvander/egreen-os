@@ -17,9 +17,9 @@ Antes do intake, leia:
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → avatar, dores
-{pasta-ativa}/memoria/produto.md            → produto, oferta
-{pasta-ativa}/memoria/funil.md              → funil, etapas
+{pasta-ativa}/memoria/egreen-nicho.md              → avatar, dores
+{pasta-ativa}/memoria/egreen-produto.md            → produto, oferta
+{pasta-ativa}/memoria/egreen-funil.md              → funil, etapas
 ```
 
 Se existir HTML de página de vendas salvo em `{pasta-ativa}/egreen-landing/`, ou performance de campanha em `{pasta-ativa}/egreen-analise/`, use como insumo da Fase 0/1 em vez de perguntar do zero. Se `memoria/produto-ativo.md` não existir, siga com o intake normal — este passo não bloqueia a skill.

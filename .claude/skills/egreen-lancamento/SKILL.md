@@ -22,7 +22,7 @@ Cada fase deste pipeline corresponde a uma camada da **Product-Market Fit Pyrami
 ## Passo 0 — Diagnóstico de progresso e gate de instalação
 
 1. Verifique o gate de instalação (REGRA 1 do `CLAUDE.md`): leia `memoria/produto-ativo.md`. Se não existir, invoque a skill `egreen-setup` primeiro — esta skill não roda sem produto ativo configurado.
-2. Com a pasta ativa identificada, verifique **o que já existe** em `{pasta-ativa}/memoria/` e nas pastas de output de cada skill (`{pasta-ativa}/egreen-pesquisa/`, `{pasta-ativa}/egreen-concepcao/`, `{pasta-ativa}/egreen-curriculo/` ou `{pasta-ativa}/egreen-experiencia/` conforme o formato, `{pasta-ativa}/egreen-posicionamento/`, `{pasta-ativa}/egreen-funil/`, `{pasta-ativa}/egreen-growth/`, `{pasta-ativa}/egreen-metricas/`, `{pasta-ativa}/memoria/design.md`, `{pasta-ativa}/memoria/brand-voice.md`, `{pasta-ativa}/egreen-copy/`, `{pasta-ativa}/egreen-landing/`, `{pasta-ativa}/egreen-emails/`, `{pasta-ativa}/egreen-mandala/`, `{pasta-ativa}/egreen-vsl/`, `{pasta-ativa}/egreen-posvenda/`).
+2. Com a pasta ativa identificada, verifique **o que já existe** em `{pasta-ativa}/memoria/` e nas pastas de output de cada skill (`{pasta-ativa}/egreen-pesquisa/`, `{pasta-ativa}/egreen-concepcao/`, `{pasta-ativa}/egreen-curriculo/` ou `{pasta-ativa}/egreen-experiencia/` conforme o formato, `{pasta-ativa}/egreen-posicionamento/`, `{pasta-ativa}/egreen-funil/`, `{pasta-ativa}/egreen-growth/`, `{pasta-ativa}/egreen-metricas/`, `{pasta-ativa}/memoria/egreen-design.md`, `{pasta-ativa}/memoria/brand-voice.md`, `{pasta-ativa}/egreen-copy/`, `{pasta-ativa}/egreen-landing/`, `{pasta-ativa}/egreen-emails/`, `{pasta-ativa}/egreen-mandala/`, `{pasta-ativa}/egreen-vsl/`, `{pasta-ativa}/egreen-posvenda/`).
 3. Monte um **TodoWrite** com as 9 fases abaixo, marcando como concluídas as que já têm output salvo, e mostre ao usuário um resumo curto:
    ```
    Progresso do lançamento — {nome do produto}:
@@ -61,7 +61,7 @@ Cada fase deste pipeline corresponde a uma camada da **Product-Market Fit Pyrami
 
 ## FASE 2B — Conteúdo de entrega (currículo/experiência)
 
-**Skills invocadas:** `egreen-curriculo` (Curso Simples/Completo) ou `egreen-experiencia` (Desafio/Comunidade/Mentoria) — invoque a que corresponde ao formato definido em `produto.md`. Para E-book, invoque `egreen-ebook`.
+**Skills invocadas:** `egreen-curriculo` (Curso Simples/Completo) ou `egreen-experiencia` (Desafio/Comunidade/Mentoria) — invoque a que corresponde ao formato definido em `egreen-produto.md`. Para E-book, invoque `egreen-ebook`.
 
 Desenhe agora o conteúdo real de entrega do produto — módulos/aulas ou missões/rituais/sessões — antes de desenhar preço e oferta na Fase 3. O que sai daqui vira os Entregáveis (Bloco 07) da copy mais adiante e a evidência de valor do funil.
 
