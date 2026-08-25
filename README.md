@@ -68,6 +68,7 @@ egreen-os/
     egreen-growth/
     egreen-metricas/
     egreen-copy/            egreen-copywriting/
+    egreen-conteudo/
     egreen-landing/
     egreen-vsl/
     egreen-emails/
@@ -110,6 +111,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Preciso da copy de checkout, onboarding ou pedido de depoimento | `/egreen-posvenda` |
 | Quero montar um programa de afiliados | `/egreen-afiliados` |
 | Preciso de conteúdo orgânico pro Instagram | `/egreen-carrossel`, `/egreen-editorial` ou `/egreen-slides` |
+| Não sei sobre o que postar, ou quero autoridade/plano editorial | `/egreen-conteudo` |
 | Quero vender direto pelo Direct do Instagram (Stories) | `/egreen-stories` |
 | Preciso subir campanha no Meta ou Google Ads | `/egreen-meta-ads` / `/egreen-google-ads` |
 | Quero saber se meu site está bem posicionado no Google | `/egreen-seo` |
@@ -170,6 +172,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | `/egreen-editorial` | Conteúdo com dado, pesquisa ou polêmica | Carrossel editorial 6 slides |
 | `/egreen-brand-carrossel` | Carrossel usando o sistema de marca (Principal) | Carrossel com identidade fixa |
 | `/egreen-slides` | Apresentação/pitch/aula | Slides HTML |
+| `/egreen-conteudo` | Sem posicionamento editorial, falta ideia, quer autoridade ou plano de 30 dias | Estratégia/argumento de conteúdo (BrandsDecoded) — não gera peça visual final |
 
 ### Fase 5 — Tráfego pago
 

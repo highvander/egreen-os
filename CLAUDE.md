@@ -132,6 +132,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | — | `/egreen-posicionamento` | Posicionamento de marca/produto (Dunford + Ries & Trout): escada competitiva, canvas e positioning statement |
 | — | `/egreen-identidade` | Diferenciação de marca e identidade (Neumeier Brand Gap/Zag + Pentagram): onliness statement, insumo para `/egreen-design` |
 | — | `/egreen-copywriting` | Copy persuasiva avulsa — anúncio, e-mail, headline, CTA, VSL (Schwartz + Halbert + Wiebe). Complementa `/egreen-copy` |
+| — | `/egreen-conteudo` | Estratégia de conteúdo e autoridade pessoal/de marca: mineração de repertório, matéria-prima em volume, engenharia reversa de creators, ganchos de descoberta, argumento de carrossel, autoridade empresarial, auditoria estilo Ogilvy, plano de 30 dias (BrandsDecoded). Só sob demanda, fora do fluxo automático de `/egreen-lancamento` |
 | — | `/egreen-growth` | Estratégia de aquisição e Customer Value Journey em 8 etapas (Patel + Deiss). Complementa `/egreen-funil` |
 | — | `/egreen-cro` | Diagnóstico de conversão e priorização de testes A/B (Peep Laja / CXL) |
 | — | `/egreen-metricas` | Plano de medição, KPIs e segmentação See-Think-Do-Care (Avinash Kaushik) |
@@ -180,6 +181,7 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-identidade` | `{pasta-ativa}/egreen-identidade/` |
 | `/egreen-afiliados` | `{pasta-ativa}/egreen-afiliados/` |
 | `/egreen-copywriting` | `{pasta-ativa}/egreen-copywriting/` |
+| `/egreen-conteudo` | `{pasta-ativa}/egreen-conteudo/` |
 | `/egreen-growth` | `{pasta-ativa}/egreen-growth/` |
 | `/egreen-cro` | `{pasta-ativa}/egreen-cro/` |
 | `/egreen-metricas` | `{pasta-ativa}/egreen-metricas/` |
