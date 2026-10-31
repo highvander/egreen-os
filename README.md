@@ -117,7 +117,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Quero montar um programa de afiliados | `/egreen-afiliados` |
 | Preciso de conteúdo orgânico pro Instagram | `/egreen-carrossel`, `/egreen-editorial` ou `/egreen-slides` |
 | Não sei sobre o que postar, ou quero autoridade/plano editorial | `/egreen-conteudo` |
-| Quero vender direto pelo Direct do Instagram (Stories) | `/egreen-stories` |
+| Quero vender direto pelo Direct do Instagram (Stories) ou preciso de roteiro de DM/WhatsApp | `/egreen-stories` |
 | Preciso subir campanha no Meta ou Google Ads | `/egreen-meta-ads` / `/egreen-google-ads` |
 | Quero saber se meu site está bem posicionado no Google | `/egreen-seo` |
 | Quero planejar uma estratégia de SEO/conteúdo orgânico | `/egreen-seo-estrategia` |
@@ -168,7 +168,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | `/egreen-vsl` | Precisa de roteiro de vídeo de venda longo | Script de Webinar/live ou VSL gravada |
 | `/egreen-emails` | Precisa de sequência de e-mail pré-venda | Boas-vindas, nutrição, lançamento, pico de vendas |
 | `/egreen-mandala` | Precisa de anúncio argumentativo ou roteiro de vídeo curto | 4 tipos de anúncio + versão Reels/TikTok/Stories |
-| `/egreen-stories` | Precisa de sequência de Stories pra vender pelo Direct | Roteiro story a story (Stories 10X) + fechamento no Inbox Lucrativo |
+| `/egreen-stories` | Precisa de sequência de Stories pra vender pelo Direct | Roteiro story a story (Stories 10X) + fechamento no Inbox Lucrativo com roteiro SPIN de DM/WhatsApp |
 
 ### Fase 4 — Conteúdo orgânico
 

@@ -8,7 +8,9 @@ description: >
   amplificar as melhores respostas da audiência em outros formatos. Use sempre que o usuário
   pedir "roteiro de stories", "sequência de stories", "stories 10x", "como vender pelo direct",
   "engajar audiência no stories", "inbox lucrativo", "dispositivos de engenharia social", ou
-  pedir ajuda pra estruturar uma sequência de Stories pra Instagram — mesmo sem citar Ladeira,
+  pedir ajuda pra estruturar uma sequência de Stories pra Instagram, ou pedir "roteiro de DM",
+  "script de WhatsApp", "como conduzir a conversa no direct", "spin selling", "roteiro de call
+  de vendas" (o Inbox Lucrativo usa SPIN Selling adaptado para conversa escrita) — mesmo sem citar Ladeira,
   VTSD ou Stories 10X explicitamente. Para carrossel ou anúncio estático/vídeo curto use
   `egreen-carrossel`/`egreen-editorial`/`egreen-mandala` em vez desta.
 ---
@@ -18,6 +20,10 @@ description: >
 Skill que desenha a sequência completa de Stories do Instagram pelo método Stories 10X. Não é sobre views: é sobre puxar quem interage pra dentro do Direct e fechar venda numa conversa 1:1 com Light Copy. Cobre roteiro story a story, dispositivos de engenharia social, funil de fechamento em DM e reaproveitamento das melhores respostas em outros formatos.
 
 **Antes de escolher qualquer dispositivo, leia `references/dispositivos-engenharia-social.md`** — catálogo completo dos 38 dispositivos, com lógica e exemplo de cada um.
+
+**Antes do Passo 5 (Inbox Lucrativo), leia `references/spin-inbox.md`** — SPIN Selling adaptado para DM/WhatsApp, profundidade por ticket, ramificações de objeção, follow-up e roteiro de call.
+
+**Atalho:** se o usuário pedir só o roteiro de DM/WhatsApp ou de call (sem sequência de Stories), faça o Passo 0 e vá direto ao Passo 5.
 
 ---
 
@@ -104,16 +110,23 @@ Se "2": pergunte qual número e regere só aquele story, mantendo o resto.
 
 ---
 
-## Passo 5 — Roteiro do Inbox Lucrativo
+## Passo 5 — Roteiro do Inbox Lucrativo (SPIN)
 
-O funil da sequência inteira é: **Contexto → Intenção → Interesse → Conversa em DM → Venda**. Quando alguém responde ao "Levante a Mão" do Story final, produza o roteiro de resposta em DM:
+O funil da sequência inteira é: **Contexto → Intenção → Interesse → Conversa em DM → Venda**. Quando alguém responde ao "Levante a Mão" do Story final, a conversa segue o **SPIN adaptado** de `references/spin-inbox.md`.
 
-1. Mensagem de abertura confirmando recebimento (calorosa, sem parecer bot).
-2. 1-2 perguntas de qualificação curtas (identifica a dor específica da pessoa dentro do que a sequência já mapeou).
-3. Oferta com Light Copy: argumento lógico curto conectando a dor identificada à Promessa do produto, sem pressão, sem gatilho descontextualizado.
-4. Link de checkout ou próximo passo.
+**Insumos** (da memória, se existirem): `egreen-argumentos.md` (Promessa, Mecanismo, objeções, urgências ocultas), `egreen-oferta.md` (o que inclui, preço, condições), `egreen-pico.md` (condição temporária real, se a sequência for de pico).
 
-Regras de Light Copy pra DM (mesmas de `egreen-copy`/`egreen-mandala`): sem travessão, sem exclamação, tom de conversa real entre duas pessoas, nunca script robótico colado.
+1. **Canal e ticket:** confirme se a conversa é no Direct ou no WhatsApp e defina a profundidade pelo ticket (low: SPIN curto + link; mid: SPIN completo enxuto; high: SPIN até o N + convite para call).
+2. **Abertura:** resposta ao gatilho, com nome e tema da sequência, calorosa, sem parecer bot.
+3. **S, P, I, N:** uma pergunta por mensagem, ligadas à dor que a sequência de Stories trabalhou. Implicação inspirada nas Urgências Ocultas, sem ameaça.
+4. **Ponte + oferta:** resumo com as palavras da pessoa → Promessa e Mecanismo ligados à dor dela → o que inclui, preço/condição e link (ou convite para call no high ticket).
+5. **Ramificações:** pronta para comprar, objeção de preço, de tempo, a principal objeção de `egreen-argumentos.md`, "vou pensar" e desqualificação honesta.
+6. **Follow-up:** +24h e +72h, e encerrar. Sem terceira cobrança.
+7. **High ticket:** inclua o roteiro de call SPIN (20 a 30 min).
+
+Entregue no formato "Estrutura do roteiro entregue" da referência, com as mensagens prontas para copiar.
+
+Regras de Light Copy pra DM (mesmas de `egreen-copy`/`egreen-mandala`): sem travessão, sem exclamação, tom de conversa real entre duas pessoas, nunca script robótico colado. Escassez só se for real.
 
 ---
 

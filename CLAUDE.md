@@ -126,7 +126,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 5 | `/egreen-brand-carrossel` | Carrossel editorial com identidade de marca do projeto (design system Principal) |
 | 5 | `/egreen-slides` | Slides de apresentação |
 | 5 | `/egreen-material` | Transforma conteúdo educacional em material didático visual (aula, treinamento, infográfico, dashboard de progresso) |
-| 5 | `/egreen-stories` | Sequência de Stories do Instagram pelo método Stories 10X (Ladeira): tipo de sequência, esqueleto com os 38 Dispositivos de Engenharia Social, fechamento no Inbox Lucrativo |
+| 5 | `/egreen-stories` | Sequência de Stories do Instagram pelo método Stories 10X (Ladeira): tipo de sequência, esqueleto com os 38 Dispositivos de Engenharia Social, fechamento no Inbox Lucrativo com roteiro SPIN de DM/WhatsApp (e roteiro de call no high ticket) |
 | 6 | `/egreen-meta-auth` | Configura autenticação com Meta Ads (MCP OAuth ou App com token permanente no .env) |
 | 6 | `/egreen-meta-ads` | Sobe campanha Meta Ads (Sales ou Leads), preview YAML obrigatório, status PAUSED por padrão |
 | 6 | `/egreen-google-ads` | Campanhas Google Ads via MCP |
