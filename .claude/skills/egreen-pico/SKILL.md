@@ -165,7 +165,7 @@ O que você vai aprender:
   • Aula 2 — {promessa da aula 2}
   • Aula 3 — {promessa da aula 3}
 Para quem é: {3 bullets a partir dos Baldes da concepção}
-Quem conduz: {release curto do expert, 2 a 3 linhas}
+Quem conduz: {release médio de brand-voice.md, se existir; senão 2 a 3 linhas com conquista concreta}
 CTA: {texto do botão}
 Campos do formulário: nome, e-mail, WhatsApp (opcional, com consentimento explícito)
 Página de obrigado: {próximo passo único: entrar no grupo ou adicionar na agenda}

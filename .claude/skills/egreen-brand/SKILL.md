@@ -1,9 +1,11 @@
 ---
 name: egreen-brand
 description: >
-  Constrói a voz de marca do infoproduto via entrevista de 8 perguntas (uma por vez).
-  Gera 5 blocos aprovados sequencialmente: 4 dimensões de voz com score, arquétipo de marca,
-  vocabulário autorizado/proibido, guia do/don't com exemplos, e 6 amostras de copy prontas.
+  Constrói a voz de marca do infoproduto via entrevista de 11 perguntas (uma por vez).
+  Gera 6 blocos aprovados sequencialmente: 4 dimensões de voz com score, arquétipo de marca,
+  vocabulário autorizado/proibido, guia do/don't com exemplos, 6 amostras de copy prontas e
+  Identidade do Comunicador (história de origem, crenças, inimigo, provas de autoridade e release
+  do autor em 3 tamanhos).
   Salva em {pasta-ativa}/memoria/brand-voice.md. Lido automaticamente por egreen-copy,
   egreen-mandala, egreen-carrossel, egreen-editorial e egreen-emails antes de gerar texto.
   Execute após /egreen-design e antes de /egreen-copy.
@@ -20,8 +22,8 @@ Skill que constrói a voz de marca completa via entrevista guiada e salva `{past
 ## O que esta skill faz
 
 1. Verifica gate de memória do OS.
-2. Realiza entrevista de 8 perguntas (uma por vez), usando dados da memória existente para pré-preencher sugestões.
-3. Gera 5 blocos com aprovação obrigatória um a um.
+2. Realiza entrevista de 11 perguntas (uma por vez), usando dados da memória existente para pré-preencher sugestões.
+3. Gera 6 blocos com aprovação obrigatória um a um.
 4. Salva `{pasta-ativa}/memoria/brand-voice.md`.
 
 ---
@@ -56,13 +58,13 @@ Voz de marca já existe para este produto.
 
 Aguarde resposta antes de continuar.
 
-Se "1" (Atualizar): releia `{pasta-ativa}/memoria/brand-voice.md` para extrair os valores atuais. Para cada uma das 8 perguntas do Passo 2, exiba o valor atual como sugestão pré-preenchida e pergunte "O que mudou? (Enter para manter)". Pule perguntas cujo valor o usuário confirmar sem alteração. Ao final, regere apenas os blocos que tiverem respostas alteradas.
+Se "1" (Atualizar): releia `{pasta-ativa}/memoria/brand-voice.md` para extrair os valores atuais. Para cada uma das 11 perguntas do Passo 2, exiba o valor atual como sugestão pré-preenchida e pergunte "O que mudou? (Enter para manter)". Pule perguntas cujo valor o usuário confirmar sem alteração. Ao final, regere apenas os blocos que tiverem respostas alteradas.
 
 Se "2" (Recriar): siga o Passo 2 normalmente, sem carregar valores anteriores.
 
 ---
 
-## Passo 2 — Entrevista (8 perguntas, uma por vez)
+## Passo 2 — Entrevista (11 perguntas, uma por vez)
 
 Faça **uma pergunta por vez**. Aguarde a resposta antes de passar para a próxima. Se o usuário responder "não sei" ou pular, registre como indefinido e continue.
 
@@ -109,6 +111,20 @@ Use `egreen-nicho.md` para sugerir a opção mais coerente com o público identi
 
 Se colado: analise vocabulário, ritmo e tom. Use como âncora nos blocos gerados.
 
+As perguntas 9 a 11 alimentam a Identidade do Comunicador (Bloco F). Se a marca não tem um rosto (empresa sem expert), pule-as e o Bloco F.
+
+### Pergunta 9 — História de origem
+
+> "Como você chegou até aqui? Me conta o antes (onde você estava, o que te incomodava), o momento da virada e o depois. Pode ser solto."
+
+### Pergunta 10 — Provas de autoridade
+
+> "Quais conquistas concretas você tem nesse tema? Números, anos de prática, alunos/clientes atendidos, resultados seus ou de clientes, formações, aparições. Só o que for verdade e você puder sustentar."
+
+### Pergunta 11 — Crença e inimigo
+
+> "Em que você discorda do que a maioria do seu mercado ensina ou faz? O que você combate?"
+
 ---
 
 ## Passo 3 — Resumo para aprovação
@@ -125,6 +141,7 @@ Resumo do que vou gerar:
 - Vocabulário proibido: [lista]
 - Sensação-alvo: [frase]
 - Texto de referência: [analisado / não tenho]
+- Origem / autoridade / crença: [resumo ou "sem rosto"]
 
 1. Tudo certo, pode gerar
 2. Quero ajustar algo
@@ -229,11 +246,26 @@ Todas escritas usando vocabulário autorizado, evitando proibidos, seguindo arqu
 5. **CTA** — texto do botão (3-5 palavras) + frase de apoio abaixo (até 10 palavras)
 6. **Mensagem de boas-vindas ao comprador** — 2-3 linhas, tom pós-compra, sem promessa de entrega técnica
 
+### Bloco F — Identidade do Comunicador e Release
+
+Pule se a marca não tem rosto (perguntas 9 a 11 puladas).
+
+1. **História de origem** (5 a 7 linhas): antes → virada → depois, com cena concreta. Sem drama inventado.
+2. **3 crenças** que a marca defende (1 frase cada, específicas, discutíveis).
+3. **Inimigo:** o comportamento, prática ou crença do mercado que o comunicador combate (nunca pessoa ou marca nomeada).
+4. **Provas de autoridade:** lista só com o que foi informado na Pergunta 10. Nada inventado ou arredondado para cima.
+5. **Release do autor em 3 tamanhos:**
+   - **Curto** (bio de Instagram, até 150 caracteres)
+   - **Médio** (3 a 4 linhas, para página de captura, evento, convite de live)
+   - **Longo** (2 a 3 parágrafos, para o bloco de Autoridade da página de vendas, imprensa e podcast), em terceira pessoa, com a conquista mais forte na primeira frase
+
+Se existir `{pasta-ativa}/memoria/egreen-argumentos.md`, alinhe o inimigo e as crenças com o Inimigo e a Big Idea do produto.
+
 ---
 
 ## Passo 5 — Salvar e confirmar (REGRA 3)
 
-Após aprovação do Bloco E, salvar automaticamente:
+Após aprovação do Bloco F (ou do Bloco E, se a marca não tem rosto), salvar automaticamente:
 
 **Caminho:** `{pasta-ativa}/memoria/brand-voice.md`
 
@@ -288,6 +320,17 @@ atualizado_em: {YYYY-MM-DD}
 **Assunto de email:** ...
 **CTA:** [botão] — [frase de apoio]
 **Boas-vindas:** ...
+
+## Identidade do Comunicador
+**História de origem:** ...
+**Crenças:** 1. ... 2. ... 3. ...
+**Inimigo:** ...
+**Provas de autoridade:** ...
+
+### Release do autor
+**Curto:** ...
+**Médio:** ...
+**Longo:** ...
 ```
 
 Exibir confirmação obrigatória:

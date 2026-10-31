@@ -1,7 +1,7 @@
 ---
 name: egreen-posvenda
 description: >
-  Escreve a copy do momento da compra em diante — order bump, OTO/upsell no checkout, sequência de onboarding pós-compra, upsell/cross-sell posterior e pedido de depoimento — as etapas Convert-final, Excite, Ascend e Advocate da Customer Value Journey que `egreen-growth` planeja mas não escreve. Usa a Value Equation de Alex Hormozi (checkout/upsell), o princípio de "tempo até o primeiro valor" de Lincoln Murphy/Customer Success (onboarding) e o gatilho de reciprocidade de Robert Cialdini (pedido de depoimento no momento certo). Use esta skill sempre que o usuário pedir "copy de order bump", "texto da página de obrigado", "sequência de boas-vindas pós-compra", "como pedir depoimento", "copy de upsell", "onboarding do cliente que acabou de comprar" — mesmo sem citar os frameworks. Para e-mails de pré-venda (boas-vindas de lead, nutrição, lançamento) use `egreen-emails`; para a página de vendas principal use `egreen-copy`/`egreen-landing`.
+  Escreve a copy do momento da compra em diante — order bump, OTO/upsell no checkout, sequência de onboarding pós-compra, upsell/cross-sell posterior, downsell para quem recusou e pedido de depoimento — as etapas Convert-final, Excite, Ascend e Advocate da Customer Value Journey que `egreen-growth` planeja mas não escreve. Usa a Value Equation de Alex Hormozi (checkout/upsell), o princípio de "tempo até o primeiro valor" de Lincoln Murphy/Customer Success (onboarding) e o gatilho de reciprocidade de Robert Cialdini (pedido de depoimento no momento certo). Use esta skill sempre que o usuário pedir "copy de order bump", "texto da página de obrigado", "sequência de boas-vindas pós-compra", "como pedir depoimento", "copy de upsell", "downsell", "onboarding do cliente que acabou de comprar" — mesmo sem citar os frameworks. Para e-mails de pré-venda (boas-vindas de lead, nutrição, lançamento) use `egreen-emails`; para a página de vendas principal use `egreen-copy`/`egreen-landing`.
 ---
 
 # Pós-Venda: Checkout, Onboarding, Upsell, Depoimento
@@ -32,6 +32,7 @@ Pergunte qual módulo o usuário precisa (pode ser mais de um):
 2. Onboarding pós-compra (primeiros dias)
 3. Upsell/cross-sell posterior
 4. Pedido de depoimento
+5. Downsell (oferta alternativa para quem recusou)
 ```
 
 ---
@@ -66,6 +67,26 @@ Pergunte qual módulo o usuário precisa (pode ser mais de um):
 
 1. Pergunte ao usuário qual resultado específico e reconhecido o cliente teve (nunca gerar pedido genérico "conta o que achou").
 2. Escreva o pedido seguindo a estrutura: reconhecer o resultado específico → pedir algo fácil e guiado (2-3 perguntas, não "escreva um depoimento") → oferecer forma fácil de responder (vídeo curto, print, áudio) → deixar claramente opcional.
+
+---
+
+## MÓDULO 5 — Downsell
+
+Oferta alternativa apresentada **logo depois de um "não"**: recusa do OTO/upsell na página de obrigado, ou recusa da oferta principal (ex: saída da página de vendas, fim do carrinho de um pico para quem não comprou).
+
+1. Confirme o ponto de disparo: recusa de OTO/upsell, ou não compra da oferta principal. Se o funil (`egreen-funil.md`) já prevê downsell, use-o; se não, proponha e peça aprovação antes de escrever.
+2. **Desenho da oferta (regra de ouro):** o downsell é uma versão **menor da mesma solução**, não o mesmo produto mais barato. Opções válidas:
+   - Versão reduzida (só o módulo ou a parte que resolve a objeção principal)
+   - Formato mais leve (ebook/guia em vez de curso; gravado em vez de ao vivo)
+   - Condição de pagamento diferente (mais parcelas, entrada menor) para o mesmo produto, quando a objeção é fluxo de caixa
+   Nunca: o mesmo produto com desconto logo depois do "não" (ensina o público a recusar e destrói a ancoragem de preço).
+3. Aplique a Value Equation: diga qual dos 4 fatores o downsell preserva (geralmente resultado e tempo até o primeiro valor) e o que a pessoa abre mão.
+4. **Copy (curta):**
+   - Reconhecer o "não" sem culpa ("Tudo bem, essa oferta não é para todo mundo agora.")
+   - Nomear a provável razão (preço, tempo, momento) em 1 frase
+   - Apresentar a alternativa: o que é, o que resolve, preço
+   - 1 CTA de aceite + link "Não, obrigado" visível e sem constrangimento
+5. Mostre só um downsell por recusa. Downsell de downsell vira cascata e queima confiança.
 
 ---
 

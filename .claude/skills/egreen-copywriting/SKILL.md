@@ -1,6 +1,6 @@
 ---
 name: egreen-copywriting
-description: "Escreve ou revisa copy persuasiva (anuncios, paginas de venda, landing pages, e-mails, cartas de venda, headlines, CTAs) combinando tres escolas: o diagnostico de consciencia e sofisticacao de mercado de Eugene Schwartz (Breakthrough Advertising), a validacao de mercado e estrutura AIDA de resposta direta de Gary Halbert, e a mineracao de Voice of Customer (VoC) de Joanna Wiebe (conversion copywriting / Copyhackers). A skill escolhe quais tecnicas aplicar de acordo com a necessidade real do pedido, nao aplica as tres sempre. Use esta skill sempre que o usuario pedir para escrever, revisar ou melhorar qualquer copy de venda ou marketing - anuncio, e-mail de venda, headline, CTA, roteiro de video de vendas, ou copy de post pago - mesmo que ele nao mencione os nomes Schwartz, Halbert ou Wiebe explicitamente. Para a copy completa dos 15 blocos de uma página de vendas no padrão Light Copy, usar `egreen-copy` em vez desta; esta skill cobre os demais formatos e serve de reforço teórico para qualquer copy avulsa."
+description: "Escreve ou revisa copy persuasiva (anuncios, paginas de venda, landing pages, e-mails, cartas de venda, headlines, CTAs) combinando tres escolas: o diagnostico de consciencia e sofisticacao de mercado de Eugene Schwartz (Breakthrough Advertising), a validacao de mercado e estrutura AIDA de resposta direta de Gary Halbert, e a mineracao de Voice of Customer (VoC) de Joanna Wiebe (conversion copywriting / Copyhackers). A skill escolhe quais tecnicas aplicar de acordo com a necessidade real do pedido, nao aplica as tres sempre. Use esta skill sempre que o usuario pedir para escrever, revisar ou melhorar qualquer copy de venda ou marketing - anuncio, e-mail de venda, headline, CTA, roteiro de video de vendas, ou copy de post pago, native ad/advertorial e pagina de pre-venda - mesmo que ele nao mencione os nomes Schwartz, Halbert ou Wiebe explicitamente. Para a copy completa dos 15 blocos de uma página de vendas no padrão Light Copy, usar `egreen-copy` em vez desta; esta skill cobre os demais formatos e serve de reforço teórico para qualquer copy avulsa."
 ---
 
 # Copywriting Persuasivo (Schwartz + Halbert + Wiebe)
@@ -29,6 +29,7 @@ memoria/produto-ativo.md                    → pasta ativa
 {pasta-ativa}/memoria/egreen-produto.md            → produto, preço, promessa
 {pasta-ativa}/memoria/egreen-funil.md              → oferta, estágio do funil
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
+{pasta-ativa}/memoria/egreen-argumentos.md   → promessa, mecanismo, Big Idea, inimigo, objeções, urgências ocultas (se existir)
 ```
 
 Se `brand-voice.md` existir: use vocabulário autorizado, evite palavras proibidas, siga as dimensões de tom e o guia do/don't do arquivo. As amostras de copy servem como âncora de estilo — priorize-as como fonte de VoC junto com a Fase 3 (Wiebe) abaixo.
@@ -112,6 +113,40 @@ Ao entregar a copy final:
 2. Em 2-3 linhas, explique as decisões-chave tomadas (estágio de consciência assumido, ângulo de sofisticação, se a linguagem veio de VoC real ou foi inferida).
 3. Se algo foi assumido por falta de informação (prova, depoimento, estatística), sinalize claramente como placeholder a ser substituído por dado real antes de publicar.
 4. Se o pedido for de formato curto, não force as três camadas em texto explicativo longo — a explicação deve ser proporcional ao tamanho do pedido.
+
+---
+
+## Modo Native Ad + Página de Pré-venda (advertorial)
+
+Use quando o pedido for "native ad", "advertorial", "anúncio em formato de matéria", "pre-sell", "página de pré-venda" ou quando o público for frio (Schwartz: inconsciente ou consciente do problema) e a página de vendas direta não converte esse tráfego.
+
+O fluxo é: **Native ad** (parece conteúdo, gera clique por curiosidade) → **Página de pré-venda** (educa, muda a crença e aquece) → **Página de vendas** (`egreen-copy`/`egreen-landing`).
+
+### Compliance (obrigatório)
+- A página e o anúncio são **identificados como publicidade** ("Publicidade" ou "Conteúdo patrocinado" no topo), conforme CONAR e políticas da Meta/Google.
+- **Proibido imitar veículo de imprensa real** (logo, nome, layout de G1, Folha, etc.), inventar jornalista, especialista, estudo ou "reportagem". O formato é editorial; a autoria é da marca.
+- Depoimentos, números e estudos só se forem reais e fornecidos pelo usuário. Senão, placeholder sinalizado.
+
+### Native ad (3 variações)
+```
+Headline editorial: {curiosidade + especificidade, sem cara de anúncio, até 12 palavras}
+Imagem sugerida: {cena real e cotidiana do problema, nada de banco de imagem "sorrindo"}
+Texto (2 a 3 linhas): {abre um loop, não revela a solução}
+CTA: "Ler mais" / "Entenda"
+```
+Ângulos: descoberta ("o detalhe que faz…"), erro comum (Inimigo), dado contraintuitivo (Urgência Oculta), história.
+
+### Página de pré-venda (800 a 1.500 palavras)
+1. **Headline e subtítulo** editoriais, ligados ao native ad (mesma promessa de curiosidade, sem quebra de expectativa)
+2. **Lead:** história ou cena concreta de alguém do público (real, ou claramente ilustrativa)
+3. **O problema e a causa real:** Big Idea + Inimigo; por que as tentativas anteriores falham
+4. **A descoberta:** o Mecanismo apresentado como explicação, com o nome próprio
+5. **Prova:** demonstração, lógica, dados reais, depoimento real
+6. **Objeção principal** respondida
+7. **Transição:** "Se você quer aplicar isso, {nome do produto} foi feito para…" (1 a 2 parágrafos, sem preço longo)
+8. **CTA** para a página de vendas, repetido 2 a 3 vezes ao longo do texto
+
+Aplique o diagnóstico Schwartz (Fase 1) para calibrar o quanto educar antes de mencionar o produto, e Wiebe (Fase 3) para as palavras do lead e dos subtítulos.
 
 ---
 

@@ -50,6 +50,8 @@ Se `egreen-oferta.md` existir (gerado por `/egreen-oferta`), ele é a fonte ofic
 
 Se `egreen-argumentos.md` existir: a Promessa e a Big Idea guiam o Bloco 01 (Hero), o Inimigo e as Urgências Ocultas alimentam o Bloco 02 (Dor) e o Bloco 15 (custo de esperar no fechamento), e os argumentos de objeção abastecem o Bloco 14 (FAQ). Pule as perguntas 2 a 5 da coleta.
 
+Se `brand-voice.md` tiver a seção Identidade do Comunicador, o release longo e as provas de autoridade abastecem o Bloco 13 (Autoridade); não invente conquistas além delas.
+
 Se `brand-voice.md` existir: use vocabulário autorizado, evite palavras proibidas, siga dimensões de tom e guia do/don't em todos os 15 blocos. As amostras de copy do arquivo servem como âncora de estilo. Pule perguntas da Coleta de Contexto cujas respostas já estejam na memória.
 
 ### Escolha do modo
@@ -370,7 +372,7 @@ Microcopy: {ex: "Chega no seu e-mail em 1 minuto."}
 Não é para: {1 ou 2 bullets, opcional}
 
 ## C4 — Quem ensina
-{2 a 3 linhas com conquista concreta. Sem currículo longo}
+{release médio de brand-voice.md, se existir; senão 2 a 3 linhas com conquista concreta. Sem currículo longo}
 
 ## C5 — Prova (opcional)
 {número real de downloads/inscritos ou 1 depoimento com resultado. Se não houver nada real, omita o bloco}

@@ -135,7 +135,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 |---|---|---|
 | `/egreen-setup` | Sempre o primeiro comando de um produto novo | Entrevista inicial, cria `produto-XX/`, configura memória |
 | `/egreen-design` | Depois do setup, antes de qualquer peça visual | Paleta, tipografia, componentes — `memoria/design.md` |
-| `/egreen-brand` | Depois do design, antes de qualquer copy | Tom, arquétipo, vocabulário, amostras — `memoria/brand-voice.md` |
+| `/egreen-brand` | Depois do design, antes de qualquer copy | Tom, arquétipo, vocabulário, amostras, release do autor — `memoria/brand-voice.md` |
 
 ### Fase 1 — Pesquisa e validação
 
@@ -165,7 +165,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Comando | Quando usar | O que entrega |
 |---|---|---|
 | `/egreen-copy` | Precisa da copy completa da página de vendas ou de uma página de captura | 15 blocos em Markdown (Light Copy); Modo Captura em 6 blocos + obrigado |
-| `/egreen-copywriting` | Precisa de uma peça avulsa (anúncio, e-mail, headline, CTA) | Copy pontual com diagnóstico Schwartz/Halbert/Wiebe |
+| `/egreen-copywriting` | Precisa de uma peça avulsa (anúncio, e-mail, headline, CTA, native ad, pré-venda) | Copy pontual com diagnóstico Schwartz/Halbert/Wiebe |
 | `/egreen-landing` | Copy pronta, precisa virar página | HTML completo da página de vendas; Modo Captura com formulário + página de obrigado |
 | `/egreen-vsl` | Precisa de roteiro de vídeo de venda longo | Script de Webinar/live ou VSL gravada |
 | `/egreen-emails` | Precisa de sequência de e-mail pré-venda | Boas-vindas, nutrição, lançamento, pico de vendas |
@@ -195,7 +195,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 
 | Comando | Quando usar | O que entrega |
 |---|---|---|
-| `/egreen-posvenda` | Cliente comprou, precisa de checkout/onboarding/upsell/depoimento | Copy de order bump, onboarding, upsell, pedido de depoimento |
+| `/egreen-posvenda` | Cliente comprou, precisa de checkout/onboarding/upsell/depoimento | Copy de order bump, onboarding, upsell, downsell, pedido de depoimento |
 | `/egreen-afiliados` | Quer recrutar afiliados/parceiros | Estrutura do programa + carta de convite |
 
 ### Fase 7 — Diagnóstico e otimização

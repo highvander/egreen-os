@@ -107,7 +107,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | ★ | `/egreen-lancamento` | Orquestrador mestre: roda o pipeline completo do zero, decide pontos de escolha com 5 frameworks de validação de mercado, para em 4 gates para aprovação |
 | 0 | `/egreen-setup` | Entrevista inicial, cria pasta produto-XX/, configura memoria/, pode invocar /egreen-funil |
 | 0 | `/egreen-design` | Entrevista de marca, gera {pasta-ativa}/memoria/design.md (paleta, tipografia, componentes) |
-| 0 | `/egreen-brand` | Entrevista de voz, gera {pasta-ativa}/memoria/brand-voice.md (tom, arquétipo, vocabulário, do/don't, amostras de copy). Execute antes de /egreen-copy |
+| 0 | `/egreen-brand` | Entrevista de voz, gera {pasta-ativa}/memoria/brand-voice.md (tom, arquétipo, vocabulário, do/don't, amostras de copy, identidade do comunicador e release do autor em 3 tamanhos). Execute antes de /egreen-copy |
 | 1 | `/egreen-pesquisa` | Pesquisa profunda de nicho em 9 eixos com busca real na web (opcional: `/egreen-produto` chama automaticamente; use direto para relatório completo + HTML com gráficos SVG). `nicho.md` em si é preenchido pela entrevista de `/egreen-setup` |
 | 2 | `/egreen-produto` | Pesquisa nicho, gera 50 ideias em 15 formatos, usuário escolhe o produto |
 | 2.5 | `/egreen-concepcao` | Concepção do produto escolhido: Promessa, Mecanismo nomeado, 50 Benefícios, 5 Baldes, Identidade do Consumidor com objeções, Urgências Ocultas, Escopo Mínimo Viável, Identidade do Produto (nome, Big Idea, inimigo). Salva resumo em memoria/egreen-argumentos.md |
@@ -121,7 +121,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 4 | `/egreen-emails` | Sequências de email completas: Boas-vindas (5 emails), Nutrição (6 emails), Lançamento (9 emails), Pico de Vendas (convite, confirmação, lembretes, carrinho, encerramento) |
 | 4 | `/egreen-mandala` | Anúncios argumentativos pela Mandala de Anúncios (4 tipos) + roteiro de vídeo curto (Reels/TikTok/Stories) |
 | 4 | `/egreen-vsl` | Roteiro de vídeo de venda longo — Webinar/live (Perfect Webinar Script) ou VSL gravada (PASTOR) |
-| 4.5 | `/egreen-posvenda` | Copy do momento da compra em diante: order bump/OTO, onboarding pós-compra, upsell, pedido de depoimento |
+| 4.5 | `/egreen-posvenda` | Copy do momento da compra em diante: order bump/OTO, onboarding pós-compra, upsell, downsell, pedido de depoimento |
 | 5 | `/egreen-carrossel` | Carrossel de curiosidade atemporal para Instagram (7-9 slides, 3 modos visuais) |
 | 5 | `/egreen-editorial` | Carrossel editorial 6 slides (dados, pesquisa, polêmica, contas malucas) |
 | 5 | `/egreen-brand-carrossel` | Carrossel editorial com identidade de marca do projeto (design system Principal) |
@@ -137,7 +137,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | — | `/egreen-seo` | Auditoria completa SEO, GEO e AEO de qualquer URL (relatório .docx) |
 | — | `/egreen-posicionamento` | Posicionamento de marca/produto (Dunford + Ries & Trout): escada competitiva, canvas e positioning statement |
 | — | `/egreen-identidade` | Diferenciação de marca e identidade (Neumeier Brand Gap/Zag + Pentagram): onliness statement, insumo para `/egreen-design` |
-| — | `/egreen-copywriting` | Copy persuasiva avulsa — anúncio, e-mail, headline, CTA, VSL (Schwartz + Halbert + Wiebe). Complementa `/egreen-copy` |
+| — | `/egreen-copywriting` | Copy persuasiva avulsa — anúncio, e-mail, headline, CTA, VSL, native ad e página de pré-venda (Schwartz + Halbert + Wiebe). Complementa `/egreen-copy` |
 | — | `/egreen-conteudo` | Estratégia de conteúdo e autoridade pessoal/de marca: mineração de repertório, matéria-prima em volume, engenharia reversa de creators, ganchos de descoberta, argumento de carrossel, autoridade empresarial, auditoria estilo Ogilvy, plano de 30 dias (BrandsDecoded). Só sob demanda, fora do fluxo automático de `/egreen-lancamento` |
 | — | `/egreen-growth` | Estratégia de aquisição e Customer Value Journey em 8 etapas (Patel + Deiss). Complementa `/egreen-funil` |
 | — | `/egreen-cro` | Diagnóstico de conversão e priorização de testes A/B (Peep Laja / CXL) |
