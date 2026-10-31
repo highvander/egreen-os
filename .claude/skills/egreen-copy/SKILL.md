@@ -2,13 +2,13 @@
 name: egreen-copy
 description: >
   Gera a copy completa de uma página de vendas no padrão Light Copy, estruturada em 15 blocos atômicos (Hero, Dor, Prova Social, CTA intermediário, Método, Para Quem É, Entregáveis, Bônus, Stack de Valor, Depoimentos, Suporte, Garantia, Autoridade, FAQ, Oferta Final). Foco apenas em texto. Não gera HTML, não gera design, não usa templates visuais.
-  Entrega final em um documento Markdown único e completo apresentado no chat, pronto para o usuário copiar ou baixar. Não salva em pasta de projeto.
+  Entrega final em um documento Markdown único e completo apresentado no chat, pronto para o usuário copiar ou baixar, e salvo em {pasta-ativa}/egreen-copy/ para o /egreen-landing usar.
   Também tem o Modo Captura: copy de página de captura (isca digital, aula/webinário, lista de espera, inscrição de evento ou pico de vendas) em 6 blocos + página de obrigado, salva em {pasta-ativa}/egreen-copy/ para o /egreen-landing montar o HTML. Use quando pedirem "página de captura", "página de inscrição", "copy da isca", "landing de lead magnet", "página do webinário", "lista de espera".
 ---
 
 # Copy de Página de Vendas. Só Texto. Padrão Light Copy
 
-Skill autocontida para gerar a copy completa de uma página de vendas no estilo Light Copy, estruturada em 15 blocos. **Não produz HTML, não produz design, não usa templates visuais. Não salva em pasta de projeto nenhuma.** Ao final, entrega um documento Markdown único, completo e formatado, com os 15 títulos `## Bloco NN — Nome`, pronto para o usuário copiar, baixar ou colar em qualquer template HTML, ferramenta de página, email ou exportador de PDF.
+Skill autocontida para gerar a copy completa de uma página de vendas no estilo Light Copy, estruturada em 15 blocos. **Não produz HTML, não produz design, não usa templates visuais.** Ao final, entrega no chat e salva em `{pasta-ativa}/egreen-copy/` um documento Markdown único, completo e formatado, com os 15 títulos `## Bloco NN — Nome`, pronto para o usuário copiar, baixar ou colar em qualquer template HTML, ferramenta de página, email ou exportador de PDF.
 
 ---
 
@@ -24,9 +24,9 @@ Skill autocontida para gerar a copy completa de uma página de vendas no estilo 
 - Não gera HTML, CSS ou JavaScript.
 - Não escolhe paleta de cores, fontes, layout ou componentes visuais.
 - Não monta página em ferramenta nenhuma.
-- Não salva arquivos em estrutura de projeto, não cria pastas, não toca em manifest ou painel de entregas.
+- Não salva nada fora de `{pasta-ativa}/egreen-copy/` (só o documento final, ao término), não toca em manifest ou painel de entregas.
 - Não cria depoimentos de pessoas reais (cria modelos sinalizados para substituição).
-- Não encaminha pra outras skills externas. O fluxo termina dentro desta skill, com o documento entregue no chat.
+- Não chama outras skills durante o fluxo. Ao final, apenas sugere o próximo passo (`/egreen-landing`).
 
 ---
 
@@ -161,7 +161,7 @@ Digite o número:
 **Modo 1. Bloco a bloco.** Para cada NN de 01 a 15:
 1. Gere o bloco com o título exato `## Bloco NN — Nome`.
 2. Aplique a revisão (Passo 6) só nesse bloco.
-3. **Acumule internamente** o bloco aprovado em memória (não salvar arquivo nenhum no disco. esta skill não salva). Mantenha a lista de blocos aprovados pra montar o documento final no Passo 7.
+3. **Acumule internamente** o bloco aprovado em memória (não salvar arquivo durante o processo; o documento é salvo uma única vez no Passo 7). Mantenha a lista de blocos aprovados pra montar o documento final no Passo 7.
 4. Mostre o bloco no chat e pergunte:
    ```
    Bloco NN/15 pronto.
@@ -264,7 +264,7 @@ A promessa é o headline principal da hero. É o argumento que leva o leitor à 
 
 ## Passo 7. Entrega Final. Documento Consolidado no Chat
 
-> Esta skill **não salva arquivos** em pasta de projeto, não cria diretório, não toca em estrutura externa nenhuma. A entrega final é um documento Markdown único apresentado no chat, que o usuário copia ou baixa pela própria interface (botão de copiar, exportar markdown, ou simplesmente selecionar e colar).
+> A entrega final é um documento Markdown único apresentado no chat (para o usuário copiar) **e salvo** em `{pasta-ativa}/egreen-copy/{YYYY-MM-DD}-copy-{slug-do-produto}.md` (REGRA 3 do `CLAUDE.md`), onde o `/egreen-landing` procura a copy. Em uso avulso, sem produto ativo, apenas entregue no chat.
 
 Quando todos os 15 blocos estiverem aprovados (ou gerados, dependendo do modo escolhido no Passo 5), monte **um único bloco de código Markdown** com a copy completa e apresente no chat. Antes do bloco de código, escreva uma linha curta de entrega:
 
@@ -307,13 +307,17 @@ Em seguida o documento completo, dentro de um único fence ```` ```markdown ````
 
 Os títulos `## Bloco NN — Nome` são **obrigatórios** e devem permanecer exatamente assim, para que a copy possa ser preenchida depois em qualquer template HTML, sem perder fidelidade entre texto aprovado e página final.
 
-Depois do documento, encerre com uma linha curta:
+Depois do documento, salve o arquivo e encerre com:
 
 ```
-Copy completa entregue. 15 blocos no padrão Light Copy, prontos pra colar onde precisar.
+✅ Salvo em: {pasta-ativa}/egreen-copy/{YYYY-MM-DD}-copy-{slug-do-produto}.md
+
+Copy completa entregue. 15 blocos no padrão Light Copy.
+
+Próximo passo: /egreen-landing para transformar a copy em página HTML
 ```
 
-**Nada além disso.** Não oferecer próxima skill, não encaminhar pra HTML, não sugerir salvar em pasta, não criar artefato no disco.
+`{slug-do-produto}`: nome do produto em minúsculas, sem acento, com hífens. Se o usuário ajustar blocos depois da entrega, regrave o mesmo arquivo.
 
 ---
 

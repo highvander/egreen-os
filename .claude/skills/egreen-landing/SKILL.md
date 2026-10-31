@@ -64,7 +64,7 @@ O copy pode ficar inconsistente com a voz da marca (vocabulário, tom, regras de
 2. Parar e rodar /egreen-brand primeiro
 ```
 
-**Se não houver arquivo em `{pasta-ativa}/egreen-copy/` (buscar o mais recente por data no nome):**
+**Se não houver arquivo `{pasta-ativa}/egreen-copy/*-copy-*.md` (buscar o mais recente por data no nome; arquivos `*-captura-*` são do Modo Captura):**
 ```
 ⚠️ Nenhum output de /egreen-copy encontrado.
 A landing gerará copy próprio a partir da memória do produto. Para maior consistência, rode /egreen-copy antes.

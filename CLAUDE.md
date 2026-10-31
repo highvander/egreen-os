@@ -115,7 +115,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 2.7 | `/egreen-ebook` | Ebook curto e prático de implementação imediata para produtos low ticket |
 | 2.8 | `/egreen-oferta` | Oferta completa: mecanismo nomeado, entregáveis em 9 categorias, matriz de objeções, bônus que eliminam objeções, garantia, stack de valor e pagamento. Salva resumo em memoria/egreen-oferta.md para copy, landing e VSL |
 | 3 | `/egreen-funil` | Mapeia funil completo, gera opções de produtos |
-| 4 | `/egreen-copy` | Copy completa de página de vendas em 15 blocos, padrão Light Copy (só texto, entrega Markdown no chat). Modo Captura: copy de página de captura/inscrição (isca, aula, pico, lista de espera) |
+| 4 | `/egreen-copy` | Copy completa de página de vendas em 15 blocos, padrão Light Copy (só texto, entrega Markdown no chat e salva em egreen-copy/). Modo Captura: copy de página de captura/inscrição (isca, aula, pico, lista de espera) |
 | 4 | `/egreen-landing` | Página de vendas HTML completa. Modo Captura: página de captura com formulário + página de obrigado |
 | 4 | `/egreen-emails` | Sequências de email completas: Boas-vindas (5 emails), Nutrição (6 emails), Lançamento (9 emails), Pico de Vendas (convite, confirmação, lembretes, carrinho, encerramento) |
 | 4 | `/egreen-mandala` | Anúncios argumentativos pela Mandala de Anúncios (4 tipos) + roteiro de vídeo curto (Reels/TikTok/Stories) |
