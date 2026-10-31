@@ -134,7 +134,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Comando | Quando usar | O que entrega |
 |---|---|---|
 | `/egreen-setup` | Sempre o primeiro comando de um produto novo | Entrevista inicial, cria `produto-XX/`, configura memória |
-| `/egreen-design` | Depois do setup, antes de qualquer peça visual | Paleta, tipografia, componentes — `memoria/design.md` |
+| `/egreen-design` | Depois do setup, antes de qualquer peça visual | Paleta, tipografia, componentes — `memoria/egreen-design.md` |
 | `/egreen-brand` | Depois do design, antes de qualquer copy | Tom, arquétipo, vocabulário, amostras, release do autor — `memoria/brand-voice.md` |
 
 ### Fase 1 — Pesquisa e validação

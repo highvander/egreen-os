@@ -75,7 +75,11 @@ Defina a **faixa de ticket**, que guia o volume de entregáveis:
 
 ## Bloco 2 — Entregáveis
 
-Gere sugestões nas **9 categorias**, sempre **derivadas das fases do Mecanismo**:
+Gere sugestões nas **9 categorias**, sempre **derivadas das fases do Mecanismo**.
+
+Se a concepção tiver **Escopo Mínimo Viável**, ele manda: os **Essenciais** entram obrigatoriamente na oferta; os itens de **Esteira** só entram se o usuário quiser, e de preferência como bônus, upsell ou próximo produto (sinalize isso). Não infle a v1 com o que a concepção já decidiu deixar para depois.
+
+As 9 categorias:
 
 | # | Categoria | Regra de geração |
 |---|---|---|

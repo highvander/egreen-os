@@ -106,7 +106,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 |---|---|---|
 | ★ | `/egreen-lancamento` | Orquestrador mestre: roda o pipeline completo do zero, decide pontos de escolha com 5 frameworks de validação de mercado, para em 4 gates para aprovação |
 | 0 | `/egreen-setup` | Entrevista inicial, cria pasta produto-XX/, configura memoria/, pode invocar /egreen-funil |
-| 0 | `/egreen-design` | Entrevista de marca, gera {pasta-ativa}/memoria/design.md (paleta, tipografia, componentes) |
+| 0 | `/egreen-design` | Entrevista de marca, gera {pasta-ativa}/memoria/egreen-design.md (paleta, tipografia, componentes) |
 | 0 | `/egreen-brand` | Entrevista de voz, gera {pasta-ativa}/memoria/brand-voice.md (tom, arquétipo, vocabulário, do/don't, amostras de copy, identidade do comunicador e release do autor em 3 tamanhos). Execute antes de /egreen-copy |
 | 1 | `/egreen-pesquisa` | Pesquisa profunda de nicho em 9 eixos com busca real na web (opcional: `/egreen-produto` chama automaticamente; use direto para relatório completo + HTML com gráficos SVG). `nicho.md` em si é preenchido pela entrevista de `/egreen-setup` |
 | 2 | `/egreen-produto` | Pesquisa nicho, gera 50 ideias em 15 formatos, usuário escolhe o produto |

@@ -16,8 +16,8 @@ Sistema de estratégia editorial em 7 metodologias + plano de implementação, b
 
 ```
 memoria/produto-ativo.md                    → pasta ativa
-{pasta-ativa}/memoria/nicho.md              → nicho, avatar (se existir)
-{pasta-ativa}/memoria/produto.md            → produto (se já definido)
+{pasta-ativa}/memoria/egreen-nicho.md       → nicho, avatar (se existir)
+{pasta-ativa}/memoria/egreen-produto.md     → produto (se já definido)
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
 
@@ -58,7 +58,7 @@ Mapeamento pergunta → módulo:
 
 Consulte `references/01-meisler-repertorio.md` e execute as 6 fases em ordem (Repertório → Assunto → Audiência → Comunidade → Escuta → Produto), sem pular nenhuma. Aplique o filtro de validação antes de propor qualquer produto.
 
-Se o usuário já tem produto definido em `memoria/produto.md`, use a Fase 6 pra checar se o produto atual bate com a demanda/repertório reais, sinalizando gap em vez de aceitar cegamente.
+Se o usuário já tem produto definido em `{pasta-ativa}/memoria/egreen-produto.md`, use a Fase 6 pra checar se o produto atual bate com a demanda/repertório reais, sinalizando gap em vez de aceitar cegamente.
 
 ---
 

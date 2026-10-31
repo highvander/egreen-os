@@ -2,7 +2,7 @@
 name: egreen-design
 description: >
   Conduz entrevista de marca e gera o sistema de design completo do infoproduto
-  em memoria/egreen-design.md. Cobre princípios, paleta com tokens CSS, tipografia,
+  em {pasta-ativa}/memoria/egreen-design.md. Cobre princípios, paleta com tokens CSS, tipografia,
   sistema de espaçamento/raio/sombra, componentes UI básicos, componentes de
   domínio do produto e aplicações principais (landing, carrossel, slides, email).
   Deve ser executada antes de qualquer skill visual. O arquivo gerado é lido
@@ -11,7 +11,7 @@ description: >
 
 # /egreen-design — Sistema de Design do Infoproduto
 
-Skill que conduz uma entrevista de marca e gera `memoria/egreen-design.md` — o sistema de design completo do produto atual. Esse arquivo é lido automaticamente antes de qualquer skill visual (`/egreen-landing`, `/egreen-carrossel`, `/egreen-editorial`, `/egreen-slides`, `/egreen-pesquisa` HTML).
+Skill que conduz uma entrevista de marca e gera `{pasta-ativa}/memoria/egreen-design.md` — o sistema de design completo do produto atual. Esse arquivo é lido automaticamente antes de qualquer skill visual (`/egreen-landing`, `/egreen-carrossel`, `/egreen-editorial`, `/egreen-slides`, `/egreen-pesquisa` HTML).
 
 **Não gera HTML, não gera componentes de código.** Gera apenas o documento de sistema de design em Markdown, estruturado e rico, pronto para ser lido por outras skills como fonte única de verdade visual.
 
@@ -21,16 +21,16 @@ Skill que conduz uma entrevista de marca e gera `memoria/egreen-design.md` — o
 
 1. Conduz entrevista de marca em 10 perguntas (uma por vez).
 2. Com base nas respostas, gera a paleta completa com tokens CSS, escala tipográfica, sistema de espaçamento e componentes aplicados ao produto.
-3. Salva `memoria/egreen-design.md` com o sistema completo.
-4. Instrui onde colocar os arquivos de marca em `memoria/assets/`.
+3. Salva `{pasta-ativa}/memoria/egreen-design.md` com o sistema completo.
+4. Instrui onde colocar os arquivos de marca em `{pasta-ativa}/memoria/assets/`.
 
 ---
 
 ## Passo 1 — Verificar memória existente
 
-Antes de começar, leia `memoria/egreen-nicho.md` e `memoria/egreen-produto.md` se existirem. Use as informações já disponíveis para pular perguntas redundantes ou pré-preencher sugestões.
+Leia `memoria/produto-ativo.md` para obter `{pasta-ativa}` (se não existir, PARE e indique `/egreen-setup`). Depois leia `{pasta-ativa}/memoria/egreen-nicho.md` e `{pasta-ativa}/memoria/egreen-produto.md` se existirem. Use as informações já disponíveis para pular perguntas redundantes ou pré-preencher sugestões.
 
-Verifique também se `memoria/egreen-design.md` já existe. Se existir, pergunte:
+Verifique também se `{pasta-ativa}/memoria/egreen-design.md` já existe. Se existir, pergunte:
 
 ```
 Um sistema de design já existe para este produto.
@@ -118,7 +118,7 @@ Resumo da marca antes de gerar o sistema:
 
 ## Passo 3 — Gerar o sistema de design
 
-Com base nas respostas, gere o `memoria/egreen-design.md` completo, seguindo a estrutura abaixo. O nível de detalhe deve ser equivalente ao do exemplo de referência em `docs/egreen-design-exemplo.md` — com tokens CSS nomeados, escalas completas, regras de uso e componentes aplicados ao domínio do produto.
+Com base nas respostas, gere o `{pasta-ativa}/memoria/egreen-design.md` completo, seguindo a estrutura abaixo. O nível de detalhe deve ser equivalente ao do exemplo de referência em `docs/egreen-design-exemplo.md` — com tokens CSS nomeados, escalas completas, regras de uso e componentes aplicados ao domínio do produto.
 
 ### Estrutura obrigatória do documento gerado
 
@@ -231,13 +231,13 @@ Exemplos: "A cor é gesto, não preenchimento.", "Densidade calma para público 
 ## 9. Arquivos de marca
 
 [Instruções claras de onde colocar cada arquivo:]
-[memoria/assets/logo.png — uso principal]
-[memoria/assets/logo-branco.png — uso em fundos escuros]
-[memoria/assets/favicon.png — 32×32px]
-[memoria/assets/foto-autor.jpg — seção de autoridade]
+[{pasta-ativa}/memoria/assets/logo.png — uso principal]
+[{pasta-ativa}/memoria/assets/logo-branco.png — uso em fundos escuros]
+[{pasta-ativa}/memoria/assets/favicon.png — 32×32px]
+[{pasta-ativa}/memoria/assets/foto-autor.jpg — seção de autoridade]
 [Lista outros arquivos relevantes para o produto]
 
-[Se algum arquivo ainda não existe, marcar como: (pendente — soltar em memoria/assets/ quando tiver)]
+[Se algum arquivo ainda não existe, marcar como: (pendente — soltar em {pasta-ativa}/memoria/assets/ quando tiver)]
 
 ---
 
@@ -253,14 +253,14 @@ Exemplos: "A cor é gesto, não preenchimento.", "Densidade calma para público 
 
 ## Passo 4 — Salvar e finalizar
 
-Salve o documento gerado em `memoria/egreen-design.md`.
+Salve o documento gerado em `{pasta-ativa}/memoria/egreen-design.md`.
 
 Após salvar, mostre ao usuário:
 
 ```
-Sistema de design gerado e salvo em memoria/egreen-design.md.
+Sistema de design gerado e salvo em {pasta-ativa}/memoria/egreen-design.md.
 
-Arquivos de marca esperados em memoria/assets/:
+Arquivos de marca esperados em {pasta-ativa}/memoria/assets/:
 [lista dos arquivos esperados com instrução de cada um]
 
 As skills /egreen-landing, /egreen-carrossel, /egreen-editorial, /egreen-slides e /egreen-pesquisa

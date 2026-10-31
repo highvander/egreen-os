@@ -186,7 +186,7 @@ atualizado_em: YYYY-MM-DD
 <!-- Funil ainda não mapeado. Execute /egreen-funil para mapear. -->
 ```
 
-### 4E. Atualizar `memoria/egreen-produto-ativo.md`
+### 4E. Atualizar `memoria/produto-ativo.md`
 
 Sobrescrever com o novo produto ativo:
 
@@ -208,7 +208,7 @@ Mostrar confirmação com o que foi configurado:
 ✓ {pasta-nova}/memoria/egreen-nicho.md — preenchido
 ✓ {pasta-nova}/memoria/egreen-produto.md — preenchido
 ✓ {pasta-nova}/memoria/egreen-funil.md — [preenchido via /egreen-funil | marcado para mapear]
-✓ memoria/egreen-produto-ativo.md — aponta para {pasta-nova}
+✓ memoria/produto-ativo.md — aponta para {pasta-nova}
 
 Produto "{nome}" configurado em {pasta-nova}/.
 O EGreen OS está pronto para usar.
@@ -247,4 +247,4 @@ Mencionar `/egreen-design` se identidade visual ainda não foi configurada:
 5. **Não** fazer perguntas além das listadas — profundidade é tarefa das skills do pipeline
 6. Setup deve levar no máximo 8 minutos
 7. Ao salvar os arquivos, **remover os comentários HTML** de placeholder — substituir pelo conteúdo real
-8. Atualizar `memoria/egreen-produto-ativo.md` **sempre** ao final — é o que todas as outras skills usam para saber onde escrever
+8. Atualizar `memoria/produto-ativo.md` **sempre** ao final — é o que todas as outras skills usam para saber onde escrever
