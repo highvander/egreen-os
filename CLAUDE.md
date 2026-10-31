@@ -25,6 +25,7 @@ produto-01/
   egreen-copy/
   egreen-landing/
   egreen-mandala/
+  egreen-reels/
   egreen-carrossel/
   egreen-editorial/
   egreen-slides/
@@ -126,6 +127,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 5 | `/egreen-brand-carrossel` | Carrossel editorial com identidade de marca do projeto (design system Principal) |
 | 5 | `/egreen-slides` | Slides de apresentação |
 | 5 | `/egreen-material` | Transforma conteúdo educacional em material didático visual (aula, treinamento, infográfico, dashboard de progresso) |
+| 5 | `/egreen-reels` | Pauta e roteiros de Reels/TikTok/Shorts orgânicos em 2 formatos (Problema → Solução; Pergunta → Resposta → Objeção), com texto na tela, cortes, legenda e CTA para o Direct |
 | 5 | `/egreen-stories` | Sequência de Stories do Instagram pelo método Stories 10X (Ladeira): tipo de sequência, esqueleto com os 38 Dispositivos de Engenharia Social, fechamento no Inbox Lucrativo com roteiro SPIN de DM/WhatsApp (e roteiro de call no high ticket) |
 | 6 | `/egreen-meta-auth` | Configura autenticação com Meta Ads (MCP OAuth ou App com token permanente no .env) |
 | 6 | `/egreen-meta-ads` | Sobe campanha Meta Ads (Sales ou Leads), preview YAML obrigatório, status PAUSED por padrão |
@@ -175,6 +177,7 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-brand-carrossel` | `{pasta-ativa}/egreen-carrossel/` |
 | `/egreen-slides` | `{pasta-ativa}/egreen-slides/` |
 | `/egreen-material` | `{pasta-ativa}/egreen-material/` |
+| `/egreen-reels` | `{pasta-ativa}/egreen-reels/` |
 | `/egreen-stories` | `{pasta-ativa}/egreen-stories/` |
 | `/egreen-reset` | não gera output (apaga/restaura `memoria/`) |
 | `/egreen-meta-auth` | `{pasta-ativa}/egreen-meta-ads/` |
