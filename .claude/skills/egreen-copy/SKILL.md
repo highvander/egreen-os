@@ -3,6 +3,7 @@ name: egreen-copy
 description: >
   Gera a copy completa de uma página de vendas no padrão Light Copy, estruturada em 15 blocos atômicos (Hero, Dor, Prova Social, CTA intermediário, Método, Para Quem É, Entregáveis, Bônus, Stack de Valor, Depoimentos, Suporte, Garantia, Autoridade, FAQ, Oferta Final). Foco apenas em texto. Não gera HTML, não gera design, não usa templates visuais.
   Entrega final em um documento Markdown único e completo apresentado no chat, pronto para o usuário copiar ou baixar. Não salva em pasta de projeto.
+  Também tem o Modo Captura: copy de página de captura (isca digital, aula/webinário, lista de espera, inscrição de evento ou pico de vendas) em 6 blocos + página de obrigado, salva em {pasta-ativa}/egreen-copy/ para o /egreen-landing montar o HTML. Use quando pedirem "página de captura", "página de inscrição", "copy da isca", "landing de lead magnet", "página do webinário", "lista de espera".
 ---
 
 # Copy de Página de Vendas. Só Texto. Padrão Light Copy
@@ -50,6 +51,19 @@ Se `egreen-oferta.md` existir (gerado por `/egreen-oferta`), ele é a fonte ofic
 Se `egreen-argumentos.md` existir: a Promessa e a Big Idea guiam o Bloco 01 (Hero), o Inimigo e as Urgências Ocultas alimentam o Bloco 02 (Dor) e o Bloco 15 (custo de esperar no fechamento), e os argumentos de objeção abastecem o Bloco 14 (FAQ). Pule as perguntas 2 a 5 da coleta.
 
 Se `brand-voice.md` existir: use vocabulário autorizado, evite palavras proibidas, siga dimensões de tom e guia do/don't em todos os 15 blocos. As amostras de copy do arquivo servem como âncora de estilo. Pule perguntas da Coleta de Contexto cujas respostas já estejam na memória.
+
+### Escolha do modo
+
+Antes da coleta, pergunte (pule se o pedido já deixou claro):
+
+```
+Que página vamos escrever?
+
+1. Página de vendas (15 blocos, este fluxo completo)
+2. Página de captura (isca, aula/webinário, lista de espera, inscrição de evento ou pico)
+```
+
+Se escolher **2**, siga a seção **Modo Captura** no fim desta skill e ignore os Passos 1 a 7.
 
 ### Passo 1. Coleta de Contexto
 
@@ -306,6 +320,86 @@ Copy completa entregue. 15 blocos no padrão Light Copy, prontos pra colar onde 
 ## Quando o usuário pedir ajuste depois de aprovar um bloco
 
 Edite **apenas o bloco solicitado**. Não reescreva blocos vizinhos. Não corrija o que não foi pedido. Se notar outro problema, mencione depois da entrega, separado, como sugestão opcional. Nunca corrija sem autorização.
+
+---
+
+## Modo Captura
+
+Página curta cujo único objetivo é trocar uma promessa pequena e concreta por um contato (e-mail, WhatsApp) ou uma inscrição. Tudo que não ajuda nisso sai da página.
+
+### C0. Memória e coleta
+
+Leia, além da memória do Passo 0: `{pasta-ativa}/memoria/egreen-pico.md` (se a captura for de um pico), `{pasta-ativa}/egreen-ebook/` (se a isca for um ebook já produzido) e o lead magnet descrito em `egreen-funil.md`.
+
+Pergunte uma por vez, só o que faltar:
+
+1. **Tipo de captura:** isca digital (ebook, checklist, planilha, mini-aula gravada) / aula ou webinário ao vivo / evento de pico (série de aulas) / lista de espera (produto ainda não lançado ou teste de demanda) / desafio gratuito.
+2. **Nome e formato da isca ou do evento.**
+3. **O que a pessoa consegue fazer depois de consumir** (a vitória rápida). Se for evento: promessa de cada aula, datas e horário.
+4. **Quais dados pedir no formulário** (padrão: nome + e-mail; WhatsApp só se for usar, com consentimento explícito).
+5. **Próximo passo depois da inscrição** (receber no e-mail, entrar no grupo, adicionar na agenda, ver oferta de entrada).
+
+### Regras do Modo Captura
+
+- **A promessa da captura é menor que a do produto** e entrega uma vitória real e rápida, de preferência uma fase do Mecanismo (`egreen-argumentos.md`). Isca que resolve tudo canibaliza a venda; isca vazia queima a lista.
+- **Um objetivo, um CTA.** Sem menu, sem links para fora, sem segunda oferta na página.
+- **Formulário mínimo.** Cada campo extra derruba conversão; peça só o que vai usar.
+- **Gratuito é gratuito.** Proibido "grátis só hoje" ou "vagas limitadas" se não for verdade. Evento com data real pode dizer a data.
+- **Lista de espera** (teste de demanda / pretotipagem): seja honesto que o produto ainda não abriu. Pode oferecer condição de fundador real para quem entrar na lista.
+- Light Copy, Manual da Copy e `brand-voice.md` valem igual à página de vendas.
+
+### Estrutura (6 blocos + obrigado)
+
+```
+## C1 — Hero
+Pré-headline: {para quem é, 1 linha}
+Headline: {resultado da isca ou da aula, curiosa e específica, até 12 palavras}
+Subheadline: {formato + gratuito + tempo para consumir, ou data e hora do evento}
+CTA: {1ª pessoa, ex: "Quero receber o checklist"}
+Microcopy: {ex: "Chega no seu e-mail em 1 minuto."}
+
+## C2 — O que você vai receber / aprender
+{3 a 5 bullets de fascinação: o que + por que importa. Evento: 1 bullet por aula com data}
+
+## C3 — Para quem é
+{3 bullets a partir dos Baldes da concepção}
+Não é para: {1 ou 2 bullets, opcional}
+
+## C4 — Quem ensina
+{2 a 3 linhas com conquista concreta. Sem currículo longo}
+
+## C5 — Prova (opcional)
+{número real de downloads/inscritos ou 1 depoimento com resultado. Se não houver nada real, omita o bloco}
+
+## C6 — Formulário + CTA final
+Campos: {lista}
+Botão: {mesmo CTA do C1}
+Consentimento LGPD: "Ao se inscrever, você concorda em receber e-mails de {marca}. Você pode sair quando quiser."
+{WhatsApp: checkbox separado de consentimento para mensagens}
+
+## Página de obrigado
+Headline: {confirmação, ex: "Pronto. Seu checklist está a caminho."}
+Próximo passo único: {grupo OU agenda OU abrir o e-mail}
+Opcional: oferta de entrada (tripwire do `egreen-funil.md`), só se existir no funil, curta e abaixo do próximo passo
+```
+
+Gere **3 opções de headline** no C1 e peça a escolha. Depois gere os demais blocos de uma vez e peça aprovação (`1. Aprovar` / `2. Ajustar bloco N`).
+
+### Entrega e salvamento
+
+Apresente o documento no chat em um único bloco Markdown e **salve também** em:
+
+```
+{pasta-ativa}/egreen-copy/{YYYY-MM-DD}-captura-{slug-da-isca-ou-evento}.md
+```
+
+(o `/egreen-landing` lê esse arquivo para montar o HTML). Confirmação:
+
+```
+✅ Salvo em: {pasta-ativa}/egreen-copy/{YYYY-MM-DD}-captura-{slug}.md
+
+Próximo passo: /egreen-landing (Modo Captura) para gerar o HTML, ou /egreen-emails para a sequência de boas-vindas da isca
+```
 
 ---
 

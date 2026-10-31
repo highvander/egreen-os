@@ -7,6 +7,9 @@ description: >
   Salva HTML único auto-contido em {pasta-ativa}/egreen-landing/.
   Requer egreen-design.md para identidade visual. Avisa se brand-voice.md
   ou egreen-copy estiverem ausentes antes de qualquer geração.
+  Tem também o Modo Captura: página de captura/inscrição em 4 seções com
+  formulário (isca, aula/webinário, evento de pico, lista de espera) + página
+  de obrigado, a partir da copy de captura do /egreen-copy.
 ---
 
 # /egreen-landing — Página de Vendas HTML
@@ -72,6 +75,21 @@ A landing gerará copy próprio a partir da memória do produto. Para maior cons
 
 Se o usuário escolher "2" em qualquer aviso: encerrar a skill imediatamente.
 Se escolher "1": registrar e avançar para o próximo aviso.
+
+---
+
+## Passo 0.4 — Escolha do modo
+
+Pergunte (pule se o pedido já deixou claro):
+
+```
+Que página vamos montar?
+
+1. Página de vendas (6 seções, fluxo padrão)
+2. Página de captura / inscrição (isca, aula, evento de pico, lista de espera)
+```
+
+Se escolher **2**, siga a seção **Modo Captura** no fim desta skill. No aviso de copy ausente do Passo 0.3, procure por `{pasta-ativa}/egreen-copy/*-captura-*.md` em vez da copy de vendas e recomende `/egreen-copy` (Modo Captura) se não houver.
 
 ---
 
@@ -477,6 +495,67 @@ Salvar em: `{pasta-ativa}/egreen-landing/YYYY-MM-DD-landing-{slug-produto}.html`
 
 Próximo passo: /egreen-meta-ads — subir campanha com a landing pronta
 (ou /egreen-google-ads para campanhas no Google)
+```
+
+---
+
+## Modo Captura
+
+Página curta, um objetivo (inscrição), um CTA. Reaproveite **o mesmo `<head>`, tokens e CSS** da estrutura do Passo 3, removendo o que não for usado.
+
+**Insumo:** arquivo mais recente `{pasta-ativa}/egreen-copy/*-captura-*.md` (blocos C1 a C6 + página de obrigado). Sem ele, gere a copy a partir de `egreen-funil.md` (lead magnet), `egreen-pico.md` e `egreen-argumentos.md`, seguindo as regras do Modo Captura do `egreen-copy`.
+
+### Seções (aprovação entre cada uma, mesmo ritual do Passo 2)
+
+| Seção | Conteúdo | Origem na copy |
+|---|---|---|
+| **L1 — Hero + formulário** | Pré-headline, headline, subheadline e **formulário já acima da dobra** (no mobile, logo abaixo da subheadline). Imagem/mockup da isca como placeholder | C1 + C6 |
+| **L2 — O que você recebe** | Bullets (ou cards por aula, com data e hora, se for evento) | C2 |
+| **L3 — Para quem é + quem ensina + prova** | Lista curta, mini bio com foto placeholder, prova se houver | C3 + C4 + C5 |
+| **L4 — Formulário final** | Repete o formulário com o mesmo CTA e o consentimento LGPD | C6 |
+
+### Formulário (sem JavaScript)
+
+```html
+<form class="lead-form" action="[URL_DA_FERRAMENTA_DE_EMAIL]" method="post">
+  <label for="nome">Seu nome</label>
+  <input id="nome" name="nome" type="text" autocomplete="given-name" required>
+  <label for="email">Seu melhor e-mail</label>
+  <input id="email" name="email" type="email" autocomplete="email" required>
+  <!-- WhatsApp apenas se a copy pedir:
+  <label for="whatsapp">WhatsApp (opcional)</label>
+  <input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel">
+  <label class="consent"><input type="checkbox" name="consent_whatsapp"> Aceito receber mensagens no WhatsApp</label>
+  -->
+  <button type="submit" class="cta-primary">[CTA em 1ª pessoa]</button>
+  <p class="form-consent">[texto de consentimento LGPD da copy]</p>
+</form>
+```
+
+- `action` fica como placeholder `[URL_DA_FERRAMENTA_DE_EMAIL]` (ActiveCampaign, Mailchimp, RD, Hotmart Send, etc.). Avise o usuário para trocar.
+- Labels visíveis (acessibilidade), campos com `autocomplete`, botão com contraste dos tokens.
+- Sem `<nav>`, sem links de saída, sem CTA sticky de compra.
+
+### Página de obrigado
+
+Segundo arquivo HTML, mesma base visual: headline de confirmação, **um** próximo passo em destaque (botão para o grupo, link de agenda ou "abra seu e-mail") e, se a copy tiver, a oferta de entrada abaixo, discreta.
+
+### Salvar
+
+```
+{pasta-ativa}/egreen-landing/{YYYY-MM-DD}-captura-{slug}.html
+{pasta-ativa}/egreen-landing/{YYYY-MM-DD}-captura-{slug}-obrigado.html
+```
+
+Confirmação:
+
+```
+✅ Salvo em: {pasta-ativa}/egreen-landing/{YYYY-MM-DD}-captura-{slug}.html
+✅ Salvo em: {pasta-ativa}/egreen-landing/{YYYY-MM-DD}-captura-{slug}-obrigado.html
+
+Antes de publicar: troque [URL_DA_FERRAMENTA_DE_EMAIL] pela URL do formulário da sua ferramenta e configure o redirecionamento para a página de obrigado.
+
+Próximo passo: /egreen-emails (boas-vindas da isca ou Sequência Pico) e /egreen-mandala para os anúncios de captação
 ```
 
 ---

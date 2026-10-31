@@ -162,9 +162,9 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 
 | Comando | Quando usar | O que entrega |
 |---|---|---|
-| `/egreen-copy` | Precisa da copy completa da página de vendas | 15 blocos em Markdown (Light Copy) |
+| `/egreen-copy` | Precisa da copy completa da página de vendas ou de uma página de captura | 15 blocos em Markdown (Light Copy); Modo Captura em 6 blocos + obrigado |
 | `/egreen-copywriting` | Precisa de uma peça avulsa (anúncio, e-mail, headline, CTA) | Copy pontual com diagnóstico Schwartz/Halbert/Wiebe |
-| `/egreen-landing` | Copy pronta, precisa virar página | HTML completo da página de vendas |
+| `/egreen-landing` | Copy pronta, precisa virar página | HTML completo da página de vendas; Modo Captura com formulário + página de obrigado |
 | `/egreen-vsl` | Precisa de roteiro de vídeo de venda longo | Script de Webinar/live ou VSL gravada |
 | `/egreen-emails` | Precisa de sequência de e-mail pré-venda | Boas-vindas, nutrição, lançamento, pico de vendas |
 | `/egreen-mandala` | Precisa de anúncio argumentativo ou roteiro de vídeo curto | 4 tipos de anúncio + versão Reels/TikTok/Stories |

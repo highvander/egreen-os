@@ -172,7 +172,7 @@ Página de obrigado: {próximo passo único: entrar no grupo ou adicionar na age
 ```
 
 Gere 3 opções de headline. Inclua o aviso de consentimento LGPD no formulário.
-Para versão em HTML, indique `/egreen-landing` usando esta copy.
+Para a versão em HTML, indique `/egreen-landing` (Modo Captura) usando esta copy. Se o usuário quiser a copy salva no formato padrão de captura, ela também pode ser gerada por `/egreen-copy` (Modo Captura, tipo "evento de pico").
 
 Aprovação.
 
