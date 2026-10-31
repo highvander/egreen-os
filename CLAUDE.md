@@ -20,6 +20,7 @@ produto-01/
   egreen-pesquisa/
   egreen-produto/
   egreen-concepcao/
+  egreen-oferta/
   egreen-funil/
   egreen-copy/
   egreen-landing/
@@ -111,6 +112,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 2.7 | `/egreen-curriculo` | Currículo/módulos do Curso Simples ou Curso Completo (Backward Design + Bloom + Gagné) — o conteúdo de entrega em si |
 | 2.7 | `/egreen-experiencia` | Missões diárias do Desafio, estrutura da Comunidade, ou roteiro de sessão da Mentoria (Atomic Habits + CMX/FeverBee + GROW) |
 | 2.7 | `/egreen-ebook` | Ebook curto e prático de implementação imediata para produtos low ticket |
+| 2.8 | `/egreen-oferta` | Oferta completa: mecanismo nomeado, entregáveis em 9 categorias, matriz de objeções, bônus que eliminam objeções, garantia, stack de valor e pagamento. Salva resumo em memoria/egreen-oferta.md para copy, landing e VSL |
 | 3 | `/egreen-funil` | Mapeia funil completo, gera opções de produtos |
 | 4 | `/egreen-copy` | Copy completa de página de vendas em 15 blocos, padrão Light Copy (só texto, entrega Markdown no chat) |
 | 4 | `/egreen-landing` | Página de vendas HTML completa |
@@ -158,6 +160,7 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-curriculo` | `{pasta-ativa}/egreen-curriculo/` |
 | `/egreen-experiencia` | `{pasta-ativa}/egreen-experiencia/` |
 | `/egreen-ebook` | `{pasta-ativa}/egreen-ebook/` |
+| `/egreen-oferta` | `{pasta-ativa}/egreen-oferta/` e `{pasta-ativa}/memoria/egreen-oferta.md` |
 | `/egreen-funil` | `{pasta-ativa}/egreen-funil/` |
 | `/egreen-copy` | `{pasta-ativa}/egreen-copy/` |
 | `/egreen-landing` | `{pasta-ativa}/egreen-landing/` |

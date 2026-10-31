@@ -62,6 +62,7 @@ egreen-os/
     egreen-pesquisa/
     egreen-concepcao/
     egreen-curriculo/       ou egreen-experiencia/
+    egreen-oferta/
     egreen-posicionamento/
     egreen-identidade/
     egreen-funil/
@@ -100,6 +101,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Escolhi o produto, preciso da promessa e dos benefícios | `/egreen-concepcao` |
 | Preciso decidir como me diferencio da concorrência | `/egreen-posicionamento` |
 | Preciso desenhar os módulos/aulas do curso | `/egreen-curriculo` |
+| Preciso montar a oferta: entregáveis, bônus, garantia, preço | `/egreen-oferta` |
 | Vou lançar um Desafio, Comunidade ou Mentoria e preciso do roteiro de entrega | `/egreen-experiencia` |
 | Preciso decidir preço, order bump, upsell | `/egreen-funil` |
 | Preciso saber de onde vai vir o tráfego e como reter cliente | `/egreen-growth` |
@@ -137,6 +139,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | `/egreen-pesquisa` | Antes de escolher produto, ou quando pedirem pesquisa de mercado de um nicho | Relatório em 9 eixos com busca real na web |
 | `/egreen-produto` | Depois da pesquisa, na hora de decidir o que vender | 50 ideias em 15 formatos |
 | `/egreen-concepcao` | Depois de escolher o produto | Promessa, 50 benefícios, 5 baldes, identidade do consumidor |
+| `/egreen-oferta` | Depois da concepção (e do currículo, se houver), antes da copy | Mecanismo nomeado, entregáveis, matriz de objeções, bônus, garantia, stack de valor e pagamento |
 
 ### Fase 2 — Estratégia e conteúdo de entrega
 

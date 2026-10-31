@@ -71,9 +71,10 @@ Sem gate formal aqui — segue direto para a Fase 3, mas não pule esta fase mes
 
 ## FASE 3 — Oferta & funil (PMF camada 4)
 
-**Skills invocadas:** `egreen-funil`, `egreen-growth`, `egreen-metricas`
+**Skills invocadas:** `egreen-funil`, `egreen-oferta`, `egreen-growth`, `egreen-metricas`
 
 1. Invoque `egreen-funil` (Brunson/Hormozi/Gadzhi) — arquitetura de oferta: tripwire, order bump, upsell, preço.
+1.5. Invoque `egreen-oferta` para o produto principal — mecanismo nomeado, entregáveis, matriz de objeções, bônus, garantia e stack de valor, reaproveitando concepção, currículo e o preço definido no funil. O resumo salvo em `memoria/egreen-oferta.md` alimenta toda a copy da Fase 6.
 2. Invoque `egreen-growth` (Patel/Deiss) — motor de aquisição e Customer Value Journey completa, reaproveitando o funil de oferta da Fase 3.1 dentro do mapeamento Convert/Ascend.
 3. Invoque `egreen-metricas` (Kaushik) — plano de medição. **Rode isto antes de qualquer tráfego real ser gerado**, para que a instrumentação já exista quando a Fase 4 testar o mercado.
 

@@ -40,8 +40,11 @@ memoria/produto-ativo.md                    → pasta ativa
 {pasta-ativa}/memoria/egreen-nicho.md              → avatar, dores, linguagem
 {pasta-ativa}/memoria/egreen-produto.md            → produto, preço, promessa
 {pasta-ativa}/memoria/egreen-funil.md              → funil, oferta
+{pasta-ativa}/memoria/egreen-oferta.md             → oferta aprovada (se existir)
 {pasta-ativa}/memoria/brand-voice.md        → voz de marca (se existir)
 ```
+
+Se `egreen-oferta.md` existir (gerado por `/egreen-oferta`), ele é a fonte oficial para o Bloco 05 (Método, usar o nome do mecanismo), Bloco 07 (Entregáveis), Bloco 08 (Bônus), Bloco 09 (Stack), Bloco 12 (Garantia), Bloco 14 (FAQ, a partir da matriz de objeções) e Bloco 15 (preço e pagamento). Não crie bônus, valores ou garantia diferentes dos aprovados ali, e pule as perguntas 5 a 8 da coleta.
 
 Se `brand-voice.md` existir: use vocabulário autorizado, evite palavras proibidas, siga dimensões de tom e guia do/don't em todos os 15 blocos. As amostras de copy do arquivo servem como âncora de estilo. Pule perguntas da Coleta de Contexto cujas respostas já estejam na memória.
 
