@@ -5,7 +5,8 @@ description: >-
   boas-vindas para leads, follow-up pós lead magnet, aquecimento de lista, copy de email,
   ou qualquer sequência de email marketing para infoproduto. Dispara com "emails de
   lançamento", "sequência de nutrição", "boas-vindas para lista", "email de venda",
-  "sequência de aquecimento", "copy de email", "/egreen-emails".
+  "sequência de aquecimento", "copy de email", "e-mails de pico de vendas", "e-mails de
+  convite/confirmação/lembrete das aulas", "/egreen-emails".
 allowed-tools: Read, Write, Edit, Glob, AskUserQuestion
 model: sonnet
 ---
@@ -27,6 +28,9 @@ memoria/produto-ativo.md          → pasta ativa (ex: produto-01)
 {pasta-ativa}/memoria/egreen-funil.md    → lead magnet, funil, oferta, upsells
 {pasta-ativa}/memoria/egreen-design.md      → identidade visual (se existir)
 {pasta-ativa}/memoria/brand-voice.md → voz de marca: vocabulário, tom, do/don't, amostras (se existir)
+{pasta-ativa}/memoria/egreen-argumentos.md → promessa, mecanismo, objeções, urgências ocultas (se existir)
+{pasta-ativa}/memoria/egreen-oferta.md     → oferta aprovada: entregáveis, bônus, garantia, stack (se existir)
+{pasta-ativa}/memoria/egreen-pico.md       → pico de vendas planejado: datas, oferta do pico, o que acaba e quando (se existir)
 ```
 
 Se `brand-voice.md` existir: use vocabulário autorizado, evite palavras proibidas, siga as dimensões de tom e o guia do/don't. As amostras de copy servem como âncora de estilo para subject lines e corpo dos emails.
@@ -47,7 +51,8 @@ Qual sequência você quer gerar?
 1. Boas-vindas (5 emails, 8 dias) — pós download de lead magnet
 2. Nutrição (6 emails, 18 dias) — leads que ainda não compraram
 3. Lançamento (9 emails, 7 dias) — abertura de carrinho
-4. Todas as três
+4. Pico de Vendas (convite, confirmação, aquecimento, lembretes, pré-abertura, carrinho, encerramento)
+5. Todas as quatro
 
 → Digite o número ou nome.
 ```
@@ -57,6 +62,8 @@ Se escolher **Lançamento** ou **Todas**, pergunte logo em seguida:
 ```
 Qual é a data de abertura do carrinho? (ex: 15/07/2026)
 ```
+
+Se escolher **Pico de Vendas**: use as datas e a oferta de `egreen-pico.md` (ou do briefing enviado por `/egreen-pico`). Se não existir, recomende rodar `/egreen-pico` antes; se o usuário quiser seguir, pergunte em uma mensagem: nome do evento, datas e horas das aulas, abertura e fechamento do carrinho, e o que muda na oferta durante o pico.
 
 ---
 
@@ -309,6 +316,82 @@ D+3 tarde   Email 9 — ÚLTIMO DIA — ENCERRA HOJE
 
 ---
 
+## Sequência 4 — Pico de Vendas (evento + carrinho)
+
+Marcos: **A1, A2, A3** = datas das aulas (adapte para live única = só A1, ou desafio = um dia por missão). **C0** = abertura do carrinho (normalmente no fim da última aula). **CF** = fechamento.
+
+**Regra de escassez:** só cite como "acaba" o que está em `egreen-pico.md` como item temporário real, com a data/hora exata de fim. Nada de "últimas vagas" inventadas.
+
+```
+FASE 1 — CONVITE (para a lista existente)
+A1-7  manhã   Convite 1 — O problema + anúncio do evento
+A1-4  manhã   Convite 2 — O que cada aula entrega
+A1-1  manhã   Convite 3 — Última chamada para inscrição
+
+FASE 2 — CONFIRMAÇÃO (gatilho: inscrição)
+imediato      Confirmação — Inscrição feita + próximo passo único
+
+FASE 3 — AQUECIMENTO (gatilho: inscrição, até A1)
++1 dia        Aquecimento 1 — Por que este evento existe (história + Big Idea)
++2 dias       Aquecimento 2 — Tarefa preparatória para a Aula 1
+
+FASE 4 — LEMBRETES (repetir para cada aula)
+A{n}-1 tarde  Lembrete D-1 — Amanhã: o que você vai sair sabendo
+A{n} -1h      Lembrete 1h — Começa em 1 hora + link
+A{n} ao vivo  Estamos ao vivo — Link + o que já está acontecendo
+A{n}+1 manhã  Replay — Link do replay + resumo em 3 pontos + gancho da próxima aula
+
+FASE 5 — PRÉ-ABERTURA
+entre A2 e A3 Pré-abertura — Antecipa a condição especial e a data de fim
+
+FASE 6 — CARRINHO ABERTO
+C0 (fim A3)   Carrinho aberto — Oferta do pico completa (adaptar Email 4 da Sequência 3)
+C0+1 manhã    FAQ + objeções (adaptar Email 5 da Sequência 3)
+C0+2 manhã    Caso real / objeção principal (adaptar Email 7 da Sequência 3)
+
+FASE 7 — ENCERRAMENTO
+CF-1 manhã    Encerra amanhã — o que acaba e a hora exata
+CF   tarde    Últimas horas — curto, 5 a 7 linhas
+CF   -1h      Fecha em 1 hora (opcional, só para quem clicou e não comprou)
+```
+
+### Convite 1 — O problema + anúncio do evento
+**Objetivo:** gerar inscrição. **Corpo:** abre com uma Urgência Oculta ou o Inimigo, nomeia o problema com cena concreta, apresenta o evento (nome, datas, gratuito), 1 frase de promessa de cada aula. CTA: "Garantir minha vaga gratuita."
+
+### Convite 2 — O que cada aula entrega
+**Objetivo:** inscrição de quem ficou em dúvida. **Corpo:** uma promessa por aula, com o resultado concreto que a pessoa leva mesmo sem comprar nada. CTA: inscrição.
+
+### Convite 3 — Última chamada para inscrição
+**Objetivo:** pegar os atrasados. **Corpo:** curto. "Começa amanhã às {hora}." 3 bullets das aulas. CTA.
+
+### Confirmação — Inscrição feita
+**Objetivo:** garantir comparecimento. **Corpo:** confirma datas e horas, **um** próximo passo (entrar no grupo OU adicionar na agenda, não os dois disputando atenção), o que preparar. CTA: o próximo passo.
+
+### Aquecimento 1 — Por que este evento existe
+**Objetivo:** criar vínculo e expectativa. **Corpo:** história de origem curta do expert ligada à Big Idea, o erro que a maioria comete (Inimigo). CTA: responder o e-mail com a maior dificuldade (gera dado para as aulas).
+
+### Aquecimento 2 — Tarefa preparatória
+**Objetivo:** compromisso antes da A1. **Corpo:** uma ação de 5 minutos que deixa a pessoa pronta para a Aula 1. CTA: "Fiz a tarefa" (link para o grupo ou resposta).
+
+### Lembretes (por aula)
+- **D-1:** promessa da aula + horário + link de agenda. 4 a 6 linhas.
+- **1h:** "Começa em 1 hora." Link. 2 a 3 linhas.
+- **Ao vivo:** "Estamos ao vivo agora." 1 detalhe do que já aconteceu. Link. Assunto curto e direto.
+- **Replay:** resumo em 3 pontos, link do replay com prazo real de disponibilidade (se houver), gancho da próxima aula.
+
+### Pré-abertura
+**Objetivo:** preparar a decisão antes do pitch. **Corpo:** avisa que na Aula 3 abre uma condição que só existe nesta janela, diz o que é em linhas gerais e até quando vale. Não revela preço ainda. CTA: confirmar presença na Aula 3.
+
+### Carrinho aberto, FAQ, Caso real
+Use a estrutura dos Emails 4, 5 e 7 da Sequência 3, trocando a oferta pela **oferta do pico** (oferta base + itens temporários) e citando a data e hora de fechamento real.
+
+### Encerramento
+Use a estrutura dos Emails 8 e 9 da Sequência 3. Liste exatamente o que deixa de existir no fechamento (bônus do pico, condição, preço) e a hora. O e-mail "Fecha em 1 hora" é opcional e vai só para quem clicou no link de vendas e não comprou.
+
+**Segmentação recomendada:** quem já comprou sai das Fases 5 a 7 e entra no onboarding (`/egreen-posvenda`).
+
+---
+
 ## Cadência Visual
 
 | Sequência | D0 | D1 | D3 | D5 | D8 | D10 | D14 | D18 |
@@ -317,6 +400,7 @@ D+3 tarde   Email 9 — ÚLTIMO DIA — ENCERRA HOJE
 | Nutrição | E1 | — | E2 | — | E3 | E4 | E5 | E6 |
 
 Para Lançamento: usar cronograma D-2 a D+3 acima com data real fornecida.
+Para Pico de Vendas: usar os marcos A1-A3, C0 e CF da Sequência 4 com as datas de `egreen-pico.md`.
 
 **Melhores horários de envio (Brasil):**
 - Infoprodutos B2C: terça a quinta, 8h-10h ou 19h-21h (horário de Brasília)
@@ -371,6 +455,7 @@ Após gerar e aprovar as sequências:
    - `{pasta-ativa}/egreen-emails/YYYY-MM-DD-boas-vindas.md`
    - `{pasta-ativa}/egreen-emails/YYYY-MM-DD-nutricao.md`
    - `{pasta-ativa}/egreen-emails/YYYY-MM-DD-lancamento.md`
+   - `{pasta-ativa}/egreen-emails/YYYY-MM-DD-pico-{slug-do-evento}.md`
 
 2. Exibir confirmação:
 

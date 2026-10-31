@@ -142,6 +142,7 @@ Sempre status PAUSED por padrão e preview obrigatório antes de qualquer ativa�
 2. Invoque `egreen-analise` para ROAS, CPL, CPA, scorecard e diagnóstico de vazamento com dados reais de campanha.
 3. Se o PMF (Sean Ellis) estiver baixo mas a campanha estiver "otimizada", sinalize isso explicitamente: o problema não está na mídia, está numa camada mais baixa da pirâmide (proposta de valor ou até cliente-alvo) — recomendar voltar à Fase 1/2, não só ajustar criativo/lance.
 4. Se o vazamento for de conversão de página, encaminhar para `egreen-cro`. Se for de mensagem, para `egreen-copywriting`.
+5. Com o perpétuo vendendo de forma estável, a escala vem de picos de vendas: recomende `egreen-pico` (evento + condição temporária real) e, a cada pico, salvar os números reais para calibrar o próximo.
 
 ---
 

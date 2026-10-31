@@ -81,6 +81,7 @@ egreen-os/
     egreen-afiliados/
     egreen-meta-ads/        egreen-google-ads/
     egreen-cro/
+    egreen-pico/
     egreen-analise/
     egreen-seo/             egreen-seo-estrategia/
   produto-02/               ← criado pelo próximo /egreen-setup
@@ -112,6 +113,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Minha página existe mas não converte | `/egreen-cro` |
 | Minha campanha está rodando mas não sei se o número é bom | `/egreen-metricas` (plano) ou `/egreen-analise` (performance real) |
 | Preciso da copy de checkout, onboarding ou pedido de depoimento | `/egreen-posvenda` |
+| Quero um pico de vendas (evento + condição especial) no produto perpétuo | `/egreen-pico` |
 | Quero montar um programa de afiliados | `/egreen-afiliados` |
 | Preciso de conteúdo orgânico pro Instagram | `/egreen-carrossel`, `/egreen-editorial` ou `/egreen-slides` |
 | Não sei sobre o que postar, ou quero autoridade/plano editorial | `/egreen-conteudo` |
@@ -164,7 +166,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | `/egreen-copywriting` | Precisa de uma peça avulsa (anúncio, e-mail, headline, CTA) | Copy pontual com diagnóstico Schwartz/Halbert/Wiebe |
 | `/egreen-landing` | Copy pronta, precisa virar página | HTML completo da página de vendas |
 | `/egreen-vsl` | Precisa de roteiro de vídeo de venda longo | Script de Webinar/live ou VSL gravada |
-| `/egreen-emails` | Precisa de sequência de e-mail pré-venda | Boas-vindas, nutrição, lançamento |
+| `/egreen-emails` | Precisa de sequência de e-mail pré-venda | Boas-vindas, nutrição, lançamento, pico de vendas |
 | `/egreen-mandala` | Precisa de anúncio argumentativo ou roteiro de vídeo curto | 4 tipos de anúncio + versão Reels/TikTok/Stories |
 | `/egreen-stories` | Precisa de sequência de Stories pra vender pelo Direct | Roteiro story a story (Stories 10X) + fechamento no Inbox Lucrativo |
 
@@ -198,6 +200,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 | Comando | Quando usar | O que entrega |
 |---|---|---|
 | `/egreen-cro` | Página existe mas não converte como esperado | Diagnóstico de conversão + hipóteses priorizadas |
+| `/egreen-pico` | Produto já vende no perpétuo e quer um pico de faturamento | Definições do pico, metas, roteiro das aulas, página de inscrição, briefing de e-mails, cronograma |
 | `/egreen-analise` | Campanha rodando, precisa saber se está indo bem | ROAS, CPL, CPA, scorecard, diagnóstico de vazamento |
 | `/egreen-seo` | Site publicado, quer auditoria de SEO/GEO/AEO | Relatório completo (.docx) |
 | `/egreen-seo-estrategia` | Quer planejar estratégia de SEO/conteúdo antes de auditar | Pauta de conteúdo priorizada |

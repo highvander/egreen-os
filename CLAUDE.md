@@ -30,6 +30,7 @@ produto-01/
   egreen-slides/
   egreen-meta-ads/
   egreen-google-ads/
+  egreen-pico/
   egreen-analise/
 produto-02/            ← criado pelo próximo /egreen-setup
   ...
@@ -116,7 +117,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 3 | `/egreen-funil` | Mapeia funil completo, gera opções de produtos |
 | 4 | `/egreen-copy` | Copy completa de página de vendas em 15 blocos, padrão Light Copy (só texto, entrega Markdown no chat) |
 | 4 | `/egreen-landing` | Página de vendas HTML completa |
-| 4 | `/egreen-emails` | Sequências de email completas: Boas-vindas (5 emails), Nutrição (6 emails), Lançamento (9 emails) |
+| 4 | `/egreen-emails` | Sequências de email completas: Boas-vindas (5 emails), Nutrição (6 emails), Lançamento (9 emails), Pico de Vendas (convite, confirmação, lembretes, carrinho, encerramento) |
 | 4 | `/egreen-mandala` | Anúncios argumentativos pela Mandala de Anúncios (4 tipos) + roteiro de vídeo curto (Reels/TikTok/Stories) |
 | 4 | `/egreen-vsl` | Roteiro de vídeo de venda longo — Webinar/live (Perfect Webinar Script) ou VSL gravada (PASTOR) |
 | 4.5 | `/egreen-posvenda` | Copy do momento da compra em diante: order bump/OTO, onboarding pós-compra, upsell, pedido de depoimento |
@@ -129,6 +130,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 6 | `/egreen-meta-auth` | Configura autenticação com Meta Ads (MCP OAuth ou App com token permanente no .env) |
 | 6 | `/egreen-meta-ads` | Sobe campanha Meta Ads (Sales ou Leads), preview YAML obrigatório, status PAUSED por padrão |
 | 6 | `/egreen-google-ads` | Campanhas Google Ads via MCP |
+| 6.5 | `/egreen-pico` | Pico de Vendas do produto perpétuo: evento (aulas, live ou desafio) + mudança temporária real na oferta, metas com cálculo reverso, roteiro das aulas, página de inscrição, briefing de e-mails e cronograma mestre |
 | 7 | `/egreen-analise` | Performance do funil: ROAS, CPL, CPA, email, scorecard 0-100, diagnóstico de vazamentos, plano de ação, relatório HTML |
 | — | `/egreen-seo` | Auditoria completa SEO, GEO e AEO de qualquer URL (relatório .docx) |
 | — | `/egreen-posicionamento` | Posicionamento de marca/produto (Dunford + Ries & Trout): escada competitiva, canvas e positioning statement |
@@ -178,6 +180,7 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-meta-auth` | `{pasta-ativa}/egreen-meta-ads/` |
 | `/egreen-meta-ads` | `{pasta-ativa}/egreen-meta-ads/` |
 | `/egreen-google-ads` | `{pasta-ativa}/egreen-google-ads/` |
+| `/egreen-pico` | `{pasta-ativa}/egreen-pico/` e `{pasta-ativa}/memoria/egreen-pico.md` |
 | `/egreen-analise` | `{pasta-ativa}/egreen-analise/` |
 | `/egreen-seo` | `{pasta-ativa}/egreen-seo/` |
 | `/egreen-posicionamento` | `{pasta-ativa}/egreen-posicionamento/` |
