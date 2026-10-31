@@ -35,6 +35,7 @@ memoria/formatos.md                            → faixa de preço e escopo por 
 {pasta-ativa}/memoria/egreen-nicho.md          → público, dores
 {pasta-ativa}/memoria/egreen-funil.md          → posição do produto na esteira, order bump/upsell previstos
 {pasta-ativa}/memoria/brand-voice.md           → (se existir) tom dos nomes de bônus e entregáveis
+{pasta-ativa}/memoria/egreen-argumentos.md     → (se existir) Promessa, Mecanismo nomeado, objeções, urgências ocultas, Big Idea
 {pasta-ativa}/egreen-concepcao/                → arquivo mais recente: Promessa, Benefícios, Baldes, Identidade do Consumidor, Escopo Mínimo Viável
 {pasta-ativa}/egreen-curriculo/ ou egreen-experiencia/  → (se existir) módulos/missões já desenhados
 {pasta-ativa}/egreen-pesquisa/                 → (se existir) concorrentes e preços praticados
@@ -62,6 +63,8 @@ Defina a **faixa de ticket**, que guia o volume de entregáveis:
 ## Bloco 1 — Mecanismo nomeado
 
 "Nomear cria realidade": um método com nome próprio parece único e defensável.
+
+**Se `egreen-argumentos.md` já tem o Mecanismo nomeado (vindo da concepção), mostre nome + fases e peça só confirmação. Não gere opções novas.** Caso contrário:
 
 1. Liste as fases do método (3 a 6), cada uma com verbo de ação e resultado parcial.
 2. Proponha **5 nomes** para o método. Mistura de estilos: descritivo ("Método Varanda Produtiva"), sigla com sentido, metáfora, número + resultado ("Os 4 Passos da Colheita Contínua"), nome do expert + método.
@@ -105,7 +108,7 @@ Peça ao usuário para escolher os entregáveis (lista numerada; ele responde co
 
 ## Bloco 3 — Matriz de objeções
 
-Tabela com **todas** as objeções dos insumos:
+Tabela com **todas** as objeções dos insumos (se existir `egreen-argumentos.md`, comece pelas objeções principais e secundárias de lá e reaproveite o argumento mais forte como resposta):
 
 | Objeção | Resposta (argumento) | Onde é respondida |
 |---|---|---|
@@ -193,7 +196,7 @@ Uma frase comparando preço com o benefício financeiro ou de tempo dos insumos 
 Pergunte: Pix, cartão (quantas parcelas), boleto. Mostre o valor da parcela aproximado ("12x de ~R$ 9,90, sujeito a juros da plataforma").
 
 ### 5. Urgência (opcional)
-Pergunte se existe algum motivo **real** para comprar agora: preço de lançamento com data, turma com vagas limitadas de verdade, bônus temporário. Se não existir, a oferta segue sem urgência e a copy trabalha o custo da inação.
+Pergunte se existe algum motivo **real** para comprar agora: preço de lançamento com data, turma com vagas limitadas de verdade, bônus temporário. Se não existir, a oferta segue sem urgência de prazo e a copy trabalha o custo da inação, usando as Urgências Ocultas de `egreen-argumentos.md` quando houver.
 
 Aprovação.
 

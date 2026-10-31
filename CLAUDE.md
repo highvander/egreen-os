@@ -16,7 +16,7 @@ memoria/
   formatos.md          ← referência permanente do OS (nunca apagar)
   produto-ativo.md     ← aponta para a pasta do produto em uso
 produto-01/
-  memoria/             ← egreen-nicho.md, egreen-produto.md, egreen-funil.md, egreen-design.md deste produto
+  memoria/             ← egreen-nicho.md, egreen-produto.md, egreen-funil.md, egreen-design.md, egreen-argumentos.md, egreen-oferta.md deste produto
   egreen-pesquisa/
   egreen-produto/
   egreen-concepcao/
@@ -108,7 +108,7 @@ Execute nesta ordem para um novo infoproduto (ou deixe o `/egreen-lancamento` or
 | 0 | `/egreen-brand` | Entrevista de voz, gera {pasta-ativa}/memoria/brand-voice.md (tom, arquétipo, vocabulário, do/don't, amostras de copy). Execute antes de /egreen-copy |
 | 1 | `/egreen-pesquisa` | Pesquisa profunda de nicho em 9 eixos com busca real na web (opcional: `/egreen-produto` chama automaticamente; use direto para relatório completo + HTML com gráficos SVG). `nicho.md` em si é preenchido pela entrevista de `/egreen-setup` |
 | 2 | `/egreen-produto` | Pesquisa nicho, gera 50 ideias em 15 formatos, usuário escolhe o produto |
-| 2.5 | `/egreen-concepcao` | Concepção do produto escolhido: Promessa, 50 Benefícios, 5 Baldes, Identidade do Consumidor |
+| 2.5 | `/egreen-concepcao` | Concepção do produto escolhido: Promessa, Mecanismo nomeado, 50 Benefícios, 5 Baldes, Identidade do Consumidor com objeções, Urgências Ocultas, Escopo Mínimo Viável, Identidade do Produto (nome, Big Idea, inimigo). Salva resumo em memoria/egreen-argumentos.md |
 | 2.7 | `/egreen-curriculo` | Currículo/módulos do Curso Simples ou Curso Completo (Backward Design + Bloom + Gagné) — o conteúdo de entrega em si |
 | 2.7 | `/egreen-experiencia` | Missões diárias do Desafio, estrutura da Comunidade, ou roteiro de sessão da Mentoria (Atomic Habits + CMX/FeverBee + GROW) |
 | 2.7 | `/egreen-ebook` | Ebook curto e prático de implementação imediata para produtos low ticket |
@@ -156,7 +156,7 @@ Todos os caminhos são relativos à pasta do produto ativo (`{pasta-ativa}/`).
 | `/egreen-brand` | `{pasta-ativa}/memoria/` |
 | `/egreen-pesquisa` | `{pasta-ativa}/egreen-pesquisa/` |
 | `/egreen-produto` | `{pasta-ativa}/egreen-pesquisa/` (tabela 50 ideias) |
-| `/egreen-concepcao` | `{pasta-ativa}/egreen-concepcao/` |
+| `/egreen-concepcao` | `{pasta-ativa}/egreen-concepcao/` e `{pasta-ativa}/memoria/egreen-argumentos.md` |
 | `/egreen-curriculo` | `{pasta-ativa}/egreen-curriculo/` |
 | `/egreen-experiencia` | `{pasta-ativa}/egreen-experiencia/` |
 | `/egreen-ebook` | `{pasta-ativa}/egreen-ebook/` |

@@ -1,11 +1,14 @@
 ﻿---
 name: egreen-concepcao
 description: >
-  Concepção de produto em versão final e enxuta. Entrega Promessa, Benefícios, Baldes Para Quem É,
-  Identidade do Consumidor e Escopo Mínimo Viável. Substitui os termos da metodologia VTSD por uma
-  linguagem pronta para uso externo (Quadro vira Promessa, Decorados viram Benefícios). Recebe
-  produto, nicho, formato e preço já definidos na pergunta inicial. Não faz pesquisa de mercado.
-  Não sugere preço. Aprovação obrigatória bloco a bloco. Termina gerando um arquivo .md para download.
+  Concepção de produto em versão final e enxuta. Entrega Promessa, Mecanismo nomeado, Benefícios,
+  Baldes Para Quem É, Identidade do Consumidor (com objeções), Urgências Ocultas, Escopo Mínimo
+  Viável e Identidade do Produto (nome, Big Idea, inimigo, posicionamento). Substitui os termos da
+  metodologia VTSD por uma linguagem pronta para uso externo (Quadro vira Promessa, Furadeira vira
+  Mecanismo, Decorados viram Benefícios). Lê produto, nicho, formato e preço da memória do produto
+  ativo (ou pergunta, se faltar). Não faz pesquisa de mercado. Não sugere preço. Aprovação
+  obrigatória bloco a bloco. Salva o documento em {pasta-ativa}/egreen-concepcao/ e um resumo de
+  argumentos em {pasta-ativa}/memoria/egreen-argumentos.md, lido por oferta, copy, anúncios e e-mails.
 ---
 
 # Concepção de Produto Final
@@ -13,10 +16,13 @@ description: >
 Esta skill executa a concepção completa de um produto digital em formato resumido e pronto para uso fora do projeto. Toda regra da metodologia continua valendo, mas os entregáveis recebem nomes mais diretos:
 
 - **Promessa** (equivalente ao Quadro)
+- **Mecanismo** (equivalente à Furadeira: o método com nome próprio)
 - **Benefícios** (equivalente aos Decorados)
 - **Baldes Para Quem É** (5 segmentos)
-- **Identidade do Consumidor** (perfil completo + objeções com 7 quebras)
+- **Identidade do Consumidor** (perfil completo + objeções com 7 quebras + objeções secundárias)
+- **Urgências Ocultas** (razões reais e não óbvias para agir agora)
 - **Escopo Mínimo Viável** (o que entra na v1 vendável agora, o que vira Esteira pra depois)
+- **Identidade do Produto** (nome, Big Idea, inimigo, frase de posicionamento)
 
 O **preço** é informado pelo aluno na pergunta inicial (já foi definido em outras skills) e vai direto para o documento final, sem nova sugestão.
 
@@ -67,11 +73,38 @@ Ao concluir:
 
 ---
 
-## Fluxo Completo (5 etapas)
+## Passo 0. Gate e memória
+
+Aplique REGRA 1 e REGRA 2 do `CLAUDE.md` e leia:
+
+```
+memoria/produto-ativo.md                       → pasta ativa
+memoria/formatos.md                            → escopo típico de cada formato
+{pasta-ativa}/memoria/egreen-produto.md        → produto, formato, preço
+{pasta-ativa}/memoria/egreen-nicho.md          → nicho, público, dores
+{pasta-ativa}/memoria/brand-voice.md           → (se existir) tom dos textos
+{pasta-ativa}/egreen-pesquisa/                 → (se existir) concorrentes e paliativos já mapeados
+```
+
+Se os 4 dados da Etapa 1 (produto, nicho, formato, preço) já estiverem na memória, mostre-os em um resumo de 4 linhas e peça confirmação em vez de perguntar do zero. Se não houver produto ativo (uso avulso, fora do OS), siga normalmente pela Etapa 1.
+
+---
+
+## Fluxo Completo (9 etapas)
+
+1. Pergunta inicial
+2. Promessa
+3. Mecanismo (Etapa 2B)
+4. Benefícios
+5. Baldes Para Quem É
+6. Identidade do Consumidor
+7. Urgências Ocultas (Etapa 5B)
+8. Escopo Mínimo Viável
+9. Identidade do Produto (Etapa 7)
 
 ### Etapa 1. Pergunta inicial sobre o produto
 
-Faça uma única pergunta aberta capturando os 4 dados que o aluno já tem definidos de etapas anteriores (produto, nicho, formato e preço):
+Se o Passo 0 já trouxe os 4 dados da memória, apenas confirme. Caso contrário, faça uma única pergunta aberta capturando os 4 dados que o aluno já tem definidos de etapas anteriores (produto, nicho, formato e preço):
 
 ```
 Vamos começar a concepção. Me passa 4 informações que você já definiu:
@@ -174,6 +207,54 @@ Escolha o número da que mais conecta. Pode também digitar uma versão sua.
 ```
 
 Salve a Promessa escolhida.
+
+### Etapa 2B. Mecanismo (substitui Furadeira)
+
+#### O que é
+
+O Mecanismo é o **caminho** que leva à Promessa: o método, em fases, que o produto ensina ou executa. A Promessa é o quadro na parede; o Mecanismo é a furadeira. Ninguém compra a furadeira pela furadeira, mas é ela que torna a Promessa crível.
+
+Um Mecanismo com **nome próprio** parece único, defensável e difícil de copiar. Nomear cria realidade.
+
+#### Pergunta obrigatória (conhecimento exclusivo do aluno)
+
+```
+Como você leva a pessoa do zero até a Promessa?
+Me conta as etapas na ordem, do jeito que você faria na prática.
+(pode ser solto, eu organizo)
+```
+
+Se o aluno não tiver método definido, proponha um com base no produto e formato e deixe claro que é sugestão para ele validar.
+
+#### Regras de geração
+
+- 3 a 6 fases, em ordem, cada uma com: nome curto da fase (verbo de ação), o que a pessoa faz, resultado parcial ao fim da fase.
+- O resultado parcial de cada fase é um degrau visível rumo à Promessa (a pessoa sente progresso).
+- Fases concretas: ferramenta, ação, entregável. Sem lero-lero ("despertar", "ressignificar").
+- 5 opções de nome para o Mecanismo, misturando estilos: descritivo ("Método Varanda Produtiva"), número + resultado ("Os 4 Passos da Colheita Contínua"), metáfora, sigla com sentido, nome do autor + método.
+- Para cada nome, uma linha dizendo por que conecta com esse público.
+
+#### Apresentação
+
+```
+Mecanismo em {N} fases:
+
+Fase 1. {Nome}: {o que faz} → {resultado parcial}
+Fase 2. {Nome}: {o que faz} → {resultado parcial}
+...
+
+Opções de nome para o método:
+1. {Nome 1}: {por que funciona}
+...
+5. {Nome 5}: {por que funciona}
+
+Escolha o número do nome (ou digite o seu) e diga se as fases estão certas.
+
+1. Aprovar e seguir
+2. Quero ajustar
+```
+
+Salve o Mecanismo aprovado (nome + fases). Ele é a base do Escopo Mínimo Viável (Etapa 6), do currículo (`egreen-curriculo`) e da oferta (`egreen-oferta`).
 
 ### Etapa 3. Benefícios (substitui Decorados)
 
@@ -379,6 +460,13 @@ o consumidor.}
 ### Objeção 5: {texto}
 {mesma estrutura}
 
+## Objeções Secundárias
+
+Objeções menores que não merecem os 7 argumentos, mas não podem ficar sem resposta
+(praticidade, logística, medo pontual). De 3 a 6 itens:
+
+- "{objeção}" → {resposta em 1 ou 2 frases, concreta}
+
 ## Sonho
 
 "{Frase longa em primeira pessoa, entre aspas, descrevendo a cena do futuro
@@ -432,6 +520,49 @@ Tempo estimado: 3 a 5 minutos.
 
 Se escolher 2, pergunte qual seção (perfil, paliativos, alguma objeção, sonho, frases, comunicação) e regere apenas aquela.
 
+### Etapa 5B. Urgências Ocultas
+
+#### O que são
+
+Razões **reais e não óbvias** para a pessoa resolver o problema agora, e não "um dia". A urgência óbvia ("quanto antes melhor") não move ninguém. A oculta revela um custo que a pessoa está pagando sem perceber.
+
+É a resposta ética à pergunta "por que agora?": ancorada no custo real da inação, nunca em escassez falsa, contador fictício ou "últimas vagas" inventadas.
+
+#### Tipos de urgência oculta (use como lente, não precisa cobrir todos)
+
+1. **Custo que acumula:** dinheiro, tempo ou saúde que se perde todo mês enquanto nada muda.
+2. **Efeito composto:** quanto mais tarde começa, menor o resultado acumulado (hábitos, carreira, investimento, idade).
+3. **Janela que fecha:** sazonalidade, fase da vida, momento de mercado, idade do filho, prazo externo real.
+4. **Problema que piora sozinho:** o quadro se agrava ou fica mais caro de resolver com o tempo.
+5. **Custo de oportunidade:** o que a pessoa deixa de ganhar ou viver enquanto adia.
+6. **Custo social ou emocional:** desgaste em relações, autoimagem, exemplo para os filhos, reputação.
+7. **Gatilho de evento:** um acontecimento próximo e real que torna o problema mais visível (início de ano, volta às aulas, verão, data comemorativa, mudança de lei).
+
+#### Regras de geração
+
+- Gere **7 Urgências Ocultas**, cada uma com:
+  - **Nome curto** da urgência
+  - **A urgência** em 1 frase, específica para esse consumidor
+  - **Por que é oculta:** o que a pessoa não está percebendo hoje
+  - **Custo de esperar:** número, prazo ou cena concreta (ex: "6 meses adiando = R$ 480 a mais em feira")
+  - **Onde usar:** headline, anúncio, e-mail, stories, VSL ou fechamento da oferta
+- Use preço, Benefícios Financeiro e Tempo, Sonho e Objeções como base para os números.
+- Proibido: escassez falsa, ameaça, catastrofismo, culpa pesada. Light Copy.
+- Se uma urgência depender de dado que você não tem (estatística do nicho), marque `{confirmar dado}` em vez de inventar número.
+
+Avise antes de gerar:
+
+```
+🔍 Próximo passo: gerar 7 Urgências Ocultas com custo de esperar. Tempo estimado: 1 a 2 minutos.
+```
+
+#### Aprovação
+
+```
+1. Aprovar e seguir
+2. Quero ajustar uma urgência específica
+```
+
 ### Etapa 6. Escopo Mínimo Viável
 
 > Independente do nicho, formato ou preço, todo produto passa por aqui antes do currículo (`egreen-curriculo`), da experiência (`egreen-experiencia`) ou do ebook (`egreen-ebook`) serem desenhados. É o freio contra produzir demais antes de validar.
@@ -449,6 +580,7 @@ Tudo que não é indispensável para a Promessa acontecer vira **Esteira**: bôn
 - Liste de 3 a 6 **Entregáveis Essenciais** (o que precisa existir: módulo, aula, ritual, ferramenta, template, sessão).
 - Liste de 2 a 5 itens de **Esteira** (o que fica para depois da venda validar o produto).
 - Cada Entregável Essencial precisa sustentar pelo menos 3 dos 50 Benefícios (Etapa 3). Se um Entregável não sustenta nenhum Benefício, é decoração, corte ou mova para Esteira.
+- Toda fase do Mecanismo (Etapa 2B) precisa estar coberta por pelo menos um Entregável Essencial. Fase sem entregável = Promessa quebrada no meio.
 - Use o formato definido na Etapa 1 (curso, desafio, ebook, mentoria, etc.) para nomear os Entregáveis em termos concretos daquele formato, não genéricos.
 
 Avise antes de gerar:
@@ -478,11 +610,41 @@ Esteira (fica para depois, não impede a Promessa):
 
 Se escolher 2, pergunte o que ajustar (mover item entre Essencial/Esteira, adicionar, remover) e regere apenas o necessário.
 
+### Etapa 7. Identidade do Produto
+
+#### O que é
+
+A síntese de tudo: como o produto se chama, qual ideia nova ele carrega e contra o que ele luta. É o que torna o produto reconhecível e diferente dos Paliativos (Etapa 5).
+
+#### Regras de geração
+
+1. **Nome do produto:** 5 opções. Curtas (até 4 palavras), fáceis de falar em voz alta, ligadas à Promessa ou ao Mecanismo. Se o aluno já tem nome definido, mostre-o como opção 1 e gere 4 alternativas.
+2. **Big Idea:** 1 frase com a ideia central nova que muda a forma como o público vê o problema. Ela explica por que as tentativas anteriores falharam e por que o Mecanismo funciona. Ex: "Horta de apartamento não morre por falta de cuidado, morre por falta de luz certa."
+3. **Inimigo:** o que o produto combate. Um comportamento, crença, prática do mercado ou paliativo (nunca uma pessoa ou marca nomeada). 1 frase + por que ele prejudica o consumidor.
+4. **Frase de posicionamento:** "O único {categoria} que {diferencial ligado ao Mecanismo} para {público do Para Quem É}."
+5. **Subtítulo do produto:** Promessa + Mecanismo em até 15 palavras (ex: "Colha seus temperos em 60 dias com o Método Varanda Produtiva").
+
+Light Copy em tudo. Sem superlativos vazios ("revolucionário", "definitivo").
+
+Avise antes de gerar:
+
+```
+🔍 Próximo passo: gerar a Identidade do Produto (nome, Big Idea, inimigo, posicionamento).
+Tempo estimado: 1 minuto.
+```
+
+#### Aprovação
+
+```
+1. Aprovar e seguir para o documento final
+2. Quero ajustar
+```
+
 ---
 
 ## Encerramento (geração obrigatória do documento final)
 
-Depois que a Identidade do Consumidor for aprovada, **gere automaticamente** o documento final consolidado. Não pergunte se o aluno quer. Não dê opção. O documento é o entregável principal da skill e precisa estar pronto para download no fim de toda execução.
+Depois que a Identidade do Produto (Etapa 7) for aprovada, **gere automaticamente** o documento final consolidado. Não pergunte se o aluno quer. Não dê opção. O documento é o entregável principal da skill e precisa estar pronto para download no fim de toda execução.
 
 ### Passo 1. Avisar que vai gerar
 
@@ -493,13 +655,13 @@ para download. Tempo estimado: cerca de 30 segundos.
 
 ### Passo 2. Montar o arquivo
 
-Nome do arquivo: `concepcao-{slug-do-produto}.md` onde `{slug-do-produto}` é o nome do produto em ASCII minúsculo com hífens (ex: `curso-sono-bebe`, `mentoria-ingles-atletas`).
+Nome do arquivo: `{YYYY-MM-DD}-concepcao-{slug-do-produto}.md` onde `{slug-do-produto}` é o nome do produto em ASCII minúsculo com hífens (ex: `2026-10-31-concepcao-curso-sono-bebe.md`).
 
 Local de salvamento (por ordem de preferência, use o primeiro que existir e for gravável):
 
-1. Pasta de Downloads do usuário (`C:\Users\{usuario}\Downloads\` no Windows, `~/Downloads/` no Mac/Linux)
-2. Diretório de trabalho atual
-3. Pasta temporária do sistema (`%TEMP%` no Windows, `/tmp` no Mac/Linux)
+1. `{pasta-ativa}/egreen-concepcao/` (padrão no EGreen OS, REGRA 3 do `CLAUDE.md`)
+2. Pasta de Downloads do usuário (só em uso avulso, sem produto ativo)
+3. Diretório de trabalho atual
 
 Estrutura obrigatória do arquivo:
 
@@ -516,6 +678,14 @@ Estrutura obrigatória do arquivo:
 ## 1. Promessa
 
 {promessa aprovada na Etapa 2}
+
+---
+
+## 1B. Mecanismo: {nome do método}
+
+1. **{Fase 1}:** {o que faz} → {resultado parcial}
+2. **{Fase 2}:** {o que faz} → {resultado parcial}
+... (3 a 6 fases)
 
 ---
 
@@ -570,54 +740,116 @@ Estrutura obrigatória do arquivo:
 ## 4. Identidade do Consumidor
 
 {copiar o documento completo da Etapa 5 na íntegra: Para Quem É, Perfil Demográfico,
-Paliativos, 5 Objeções com 7 argumentos cada, Sonho, Frases que diria, Como se comunicar}
+Paliativos, 5 Objeções com 7 argumentos cada, Objeções Secundárias, Sonho, Frases que diria,
+Como se comunicar}
+
+---
+
+## 4B. Urgências Ocultas
+
+### {Nome da urgência 1}
+- **Urgência:** {frase}
+- **Por que é oculta:** {frase}
+- **Custo de esperar:** {número, prazo ou cena}
+- **Onde usar:** {canais}
+
+... (7 urgências)
 
 ---
 
 ## 5. Escopo Mínimo Viável
 
 ### Essenciais (v1, sem eles a Promessa não acontece)
-1. {entregável essencial}
+1. {entregável essencial} (cobre a Fase {N} do Mecanismo)
 ... (3 a 6 itens)
 
 ### Esteira (para depois da validação)
 1. {item de esteira}
 ... (2 a 5 itens)
+
+---
+
+## 6. Identidade do Produto
+
+- **Nome:** {nome aprovado}
+- **Subtítulo:** {Promessa + Mecanismo}
+- **Big Idea:** {frase}
+- **Inimigo:** {frase + por que prejudica}
+- **Posicionamento:** {O único X que Y para Z}
 ```
+
+### Passo 2B. Salvar o resumo de argumentos na memória
+
+Além do documento completo, salve (ou sobrescreva) `{pasta-ativa}/memoria/egreen-argumentos.md`. É a versão curta que as outras skills leem pela REGRA 2 (oferta, copy, landing, VSL, mandala, e-mails, stories):
+
+```markdown
+---
+status: aprovado
+fonte: {pasta-ativa}/egreen-concepcao/{arquivo do documento completo}
+atualizado: {YYYY-MM-DD}
+---
+
+# Argumentos do Produto: {Nome}
+
+## Promessa
+{promessa}
+
+## Mecanismo: {nome}
+1. {Fase 1} → {resultado parcial}
+...
+
+## Identidade do Produto
+- Subtítulo: {…}
+- Big Idea: {…}
+- Inimigo: {…}
+- Posicionamento: {…}
+
+## Objeções
+| Objeção | Argumento mais forte (1 a 2 frases) |
+|---|---|
+| {objeção principal 1} | {síntese do melhor dos 7 argumentos} |
+... (5 principais + secundárias)
+
+## Urgências Ocultas
+- **{nome}:** {urgência} · custo de esperar: {…}
+... (7)
+
+## Sonho
+"{frase do sonho}"
+```
+
+Se não houver produto ativo (uso avulso), pule este passo.
 
 ### Passo 3. Confirmar e entregar o caminho
 
 Depois de salvar, mostre EXATAMENTE este bloco (substituindo os valores reais):
 
 ```
-✅ Documento final gerado e salvo.
-
-📄 Arquivo: concepcao-{slug-do-produto}.md
-📁 Caminho completo: {caminho absoluto do arquivo salvo}
-
-Para abrir agora:
-- Windows: clique duas vezes no arquivo na pasta Downloads
-- Mac: abra com TextEdit, Obsidian ou qualquer editor de markdown
-- Linux: abra com seu editor de markdown preferido
+✅ Salvo em: {pasta-ativa}/egreen-concepcao/{YYYY-MM-DD}-concepcao-{slug-do-produto}.md
+✅ Memória atualizada: {pasta-ativa}/memoria/egreen-argumentos.md
 
 Resumo do pacote entregue dentro do arquivo:
 
+📌 PRODUTO: {nome aprovado}, {subtítulo}
 📌 PROMESSA: {promessa aprovada}
+📌 MECANISMO: {nome do método} em {N} fases
+📌 BIG IDEA: {frase}
 📌 BENEFÍCIOS: 50 itens em 5 categorias
 📌 BALDES PARA QUEM É: 5 segmentos distintos
-📌 IDENTIDADE DO CONSUMIDOR: {nome fictício} com 5 objeções e 35 argumentos de quebra
+📌 IDENTIDADE DO CONSUMIDOR: {nome fictício} com 5 objeções, 35 argumentos de quebra e {N} objeções secundárias
+📌 URGÊNCIAS OCULTAS: 7
 📌 ESCOPO MÍNIMO VIÁVEL: {N} entregáveis essenciais na v1, {N} itens na esteira
 📌 PREÇO: R$ {valor informado na Etapa 1}
 
-Concepção concluída.
+Próximo passo: /egreen-curriculo ou /egreen-experiencia (conteúdo de entrega), depois /egreen-oferta
 ```
 
 ### Regras críticas do encerramento
 
 - **Nunca pular esta etapa.** O fluxo só termina quando o arquivo foi gerado E o caminho foi mostrado.
 - **Nunca perguntar se quer gerar.** A geração é obrigatória.
-- **Exibir o caminho absoluto como texto copiável** (não link clicável), para que o aluno consiga abrir no explorador de arquivos.
-- **Se a pasta Downloads não existir ou der erro de permissão**, caia no diretório de trabalho atual e avise o aluno onde salvou.
+- **Sempre mostrar o caminho** onde o arquivo foi salvo.
+- **Se a pasta do produto ativo não existir**, caia no próximo local da lista e avise o aluno onde salvou.
 - **Se houver erro ao salvar**, mostre o conteúdo completo do documento no chat para o aluno copiar manualmente, e diga: "Não consegui salvar o arquivo. Copie o conteúdo acima e cole em um arquivo .md no seu computador."
 
 ---
@@ -627,6 +859,11 @@ Concepção concluída.
 Antes de declarar o fluxo encerrado, verifique:
 
 - [ ] A Promessa cumpre todas as regras (até 10 palavras, infinitivo, sem "e", sem palavras de caminho, sem imperativo, resultado concreto)
+- [ ] O Mecanismo tem nome próprio e 3 a 6 fases, cada uma com resultado parcial
+- [ ] Toda fase do Mecanismo é coberta por pelo menos um Entregável Essencial
+- [ ] As 7 Urgências Ocultas têm custo de esperar concreto e nenhuma usa escassez falsa
+- [ ] A Identidade do Produto tem nome, subtítulo, Big Idea, inimigo e posicionamento
+- [ ] `{pasta-ativa}/memoria/egreen-argumentos.md` foi salvo (quando há produto ativo)
 - [ ] Os 50 Benefícios estão divididos em 5 categorias com exatamente 10 cada
 - [ ] Os 5 Baldes são recortes distintos (não variações do mesmo perfil)
 - [ ] A Identidade do Consumidor tem 5 objeções com 7 argumentos de 2 parágrafos cada
@@ -635,6 +872,6 @@ Antes de declarar o fluxo encerrado, verifique:
 - [ ] Nenhum texto tem travessão, exclamação, lero-lero ou pergunta retórica
 - [ ] O preço informado na Etapa 1 aparece no cabeçalho do documento final e foi usado como referência no Argumento de Valor das objeções
 - [ ] Toda a entrega está em pt_BR com acentuação correta
-- [ ] O arquivo .md foi salvo e o caminho foi mostrado ao aluno
+- [ ] O arquivo .md foi salvo em `{pasta-ativa}/egreen-concepcao/` e o caminho foi mostrado ao aluno
 
 Se algum item falhar, corrija antes de entregar.

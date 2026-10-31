@@ -58,7 +58,8 @@ egreen-os/
     produto-ativo.md       ← aponta para a pasta do produto em uso
   produto-01/
     memoria/
-      egreen-nicho.md, egreen-produto.md, egreen-funil.md, egreen-design.md, brand-voice.md
+      egreen-nicho.md, egreen-produto.md, egreen-funil.md, egreen-design.md, brand-voice.md,
+      egreen-argumentos.md, egreen-oferta.md
     egreen-pesquisa/
     egreen-concepcao/
     egreen-curriculo/       ou egreen-experiencia/
@@ -138,7 +139,7 @@ Pastas `produto-*/` ficam fora do controle de versão — os dados de cada produ
 |---|---|---|
 | `/egreen-pesquisa` | Antes de escolher produto, ou quando pedirem pesquisa de mercado de um nicho | Relatório em 9 eixos com busca real na web |
 | `/egreen-produto` | Depois da pesquisa, na hora de decidir o que vender | 50 ideias em 15 formatos |
-| `/egreen-concepcao` | Depois de escolher o produto | Promessa, 50 benefícios, 5 baldes, identidade do consumidor |
+| `/egreen-concepcao` | Depois de escolher o produto | Promessa, mecanismo nomeado, 50 benefícios, 5 baldes, identidade do consumidor, urgências ocultas, escopo mínimo, identidade do produto |
 | `/egreen-oferta` | Depois da concepção (e do currículo, se houver), antes da copy | Mecanismo nomeado, entregáveis, matriz de objeções, bônus, garantia, stack de valor e pagamento |
 
 ### Fase 2 — Estratégia e conteúdo de entrega
